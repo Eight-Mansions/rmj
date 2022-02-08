@@ -1,4 +1,3 @@
-@echo off
 echo Clearing out the old files and create a clean workspace
 del /s /q cd\rmj_1\* 1>nul
 Xcopy /E /q cd\orig\ cd\rmj_1\ 1>nul

@@ -8,10 +8,10 @@ int DisplaySubtitle()
 
 	//local_10 = FUN_8004bb4c(3,0,0xd8006e,0x19);
 	int imgId = 0x0A;
-	int unk1 = 0x00;
-	int xy = 0x00600095; // x / y
-	int unk3 = 0x00;
-	int wh = 0x00100010;  // width and height, 16x16 hard coded due to font
-	int y = 0xFF;
-	return DisplayFromGraphic16x16(imgId, unk1, xy, unk3, wh, y);
+	int unk1 = 0;
+	int xy = 0x50005c;
+	int unk2 = 0;
+	int wh = 0xd8006e;
+	int unk3 = 0x19;
+	return DisplayFromGraphic16x16(imgId, unk1, xy, unk2, wh, unk3);
 }
