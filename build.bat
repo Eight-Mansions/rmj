@@ -3,9 +3,10 @@ del /s /q cd\rmj_1\* 1>nul
 Xcopy /E /q cd\orig\ cd\rmj_1\ 1>nul
 echo:
 
-::echo Adding the images to the archive files
-::python tools/DATImageInserter.py images cd/kuro
-::echo:
+del /q graphics\*.TMS
+tools\rmj_tms_build.exe graphics\TITLE_TMS
+del /q cd\rmj_1\TIM\TITLE.TMS
+copy graphics\TITLE.TMS cd\rmj_1\TIM\TITLE.TMS
 
 ::Copy translation files
 ::xcopy /e /y trans\* cd\kuro\
