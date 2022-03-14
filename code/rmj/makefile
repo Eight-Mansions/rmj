@@ -19,7 +19,7 @@ LINKOOPTS = /psx /p /c /li $(RELMODE)
 #FIELD_SRC  = char.c
 #MENU_SRC   = menu.c root.c item.c ability.c equip.c status.c bestiary.c config.c save.c
 #BATTLE_SRC = battle.c
-SUBTITLE_SRC = subtitle.c
+SUBTITLE_SRC = subtitle.cpp generated.cpp
 
 
 ## build object names from types ##
@@ -28,7 +28,7 @@ SUBTITLE_SRC = subtitle.c
 #FIELD_OBJ	= $(patsubst %.c, $(RELMODE)/%.obf, ${FIELD_SRC})
 #MENU_OBJ	= $(patsubst %.c, $(RELMODE)/%.obm, ${MENU_SRC})
 #BATTLE_OBJ	= $(patsubst %.c, $(RELMODE)/%.obb, ${BATTLE_SRC})
-SUBTITLE_OBJ = $(patsubst %.c, $(RELMODE)/%.obj, ${SUBTITLE_SRC})
+SUBTITLE_OBJ = $(patsubst %.cpp, $(RELMODE)/%.obj, ${SUBTITLE_SRC})
 
 
 ## list of objects to use for linking ##
@@ -68,7 +68,7 @@ ALL_OBJ = $(ALL_SRC)
 #====================================#
 # subtitle objects                   #
 #====================================#
-$(RELMODE)/%.obj: subtitle/%.c
+$(RELMODE)/%.obj: subtitle/%.cpp
 	$(CC) $(CCOPTIONS) $< -o $@
 
 all: inform $(RELMODE)/${OUTFILE}.cpe

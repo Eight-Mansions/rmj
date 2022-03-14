@@ -8,10 +8,17 @@
 
 .org 0x80091E00
 	.importobj "code\rmj\obj\subtitle.obj"
+	.importobj "code\rmj\obj\generated.obj"
 
+.org 0x8001f2a8 ; Swap first variable to the filename to be used for audio
+	;li a0, 0x03
+	lw a0, 0x0020(fp)
 
 .org 0x8001f2b8
 	jal DisplaySubtitle
+	
+; .org 0x8001f320
+	; nop
 
 ; Below is what gets set for the subtitle
 ; CPU.PC:    80064130

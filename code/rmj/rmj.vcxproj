@@ -88,9 +88,15 @@
     <None Include="makefile" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="subtitle\subtitle.c" />
+    <ClCompile Include="subtitle\generated.cpp" />
+    <ClCompile Include="subtitle\platform.cpp" />
+    <ClCompile Include="subtitle\subs.cpp" />
+    <ClCompile Include="subtitle\subtitle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="subtitle\generated.h" />
+    <ClInclude Include="subtitle\platform.h" />
+    <ClInclude Include="subtitle\subs.h" />
     <ClInclude Include="subtitle\subtitle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
