@@ -2,6 +2,9 @@
 #define PLATFORM_H_
 
 #include <stdint.h>
+#include <types.h>
+
+#define NULL 0
 
 typedef uint8_t u8;
 typedef uint16_t u16;

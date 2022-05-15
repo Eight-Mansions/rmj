@@ -19,7 +19,7 @@ LINKOOPTS = /psx /p /c /li $(RELMODE)
 #FIELD_SRC  = char.c
 #MENU_SRC   = menu.c root.c item.c ability.c equip.c status.c bestiary.c config.c save.c
 #BATTLE_SRC = battle.c
-SUBTITLE_SRC = subtitle.cpp generated.cpp
+SUBTITLE_SRC = subtitle.cpp generated.cpp initsubs.cpp
 
 
 ## build object names from types ##
