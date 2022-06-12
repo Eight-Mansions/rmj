@@ -8,13 +8,6 @@ tools\rmj_tms_build.exe graphics\TITLE_TMS
 del /q cd\rmj_1\TIM\TITLE.TMS
 copy graphics\TITLE.TMS cd\rmj_1\TIM\TITLE.TMS
 
-::Copy translation files
-::xcopy /e /y trans\* cd\kuro\
-::xcopy /e /y fonts\insert\* cd\kuro\
-
-::xcopy /e /y movies\* cd\kuro\
-::THE TRANSLATED OP IS CURSED!!!!!!!!!
-
 ::insert asm, building new exe
 echo Building new EXE file...
 copy /y NUL cd\rmj_1\DATA\SUBTITLES1.DAT >NUL

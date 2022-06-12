@@ -3,6 +3,13 @@
 
 #include <stdint.h>
 #include <types.h>
+#include <SYS\TYPES.H>
+#include <LIBETC.H>
+#include <LIBAPI.H>
+#include <LIBGTE.H>
+#include <LIBGPU.H>
+#include <LIBSPU.H>
+#include <LIBCD.H>
 
 #define NULL 0
 
@@ -17,5 +24,10 @@ typedef int64_t i64;
 
 void itoa(i32 i, char b[]);
 void itox(u32 i, char* s);
+
+extern "C" {
+	
+	extern int printf(const char* fmt, ...);
+}
 
 #endif

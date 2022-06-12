@@ -1,8 +1,10 @@
 .psx
 
-.open "cd\rmj_1\DATA\SUBTITLES1.DAT",0x80110000
+.open "cd\rmj_1\DATA\SUBTITLES1.DAT",0x80100000
 	.importobj "code\rmj\obj\subtitle.obj"
 	.importobj "code\rmj\obj\generated.obj"
+SubFont:
+	.incbin "graphics\font\sub_font.tim" ; Font used for subtitles
 .close
 
 .open "exe\SLPS_010.87",0x8000F800
@@ -18,6 +20,7 @@
 .definelabel memcpy, 0x8005ead4
 .definelabel VSync, 0x8006b888
 .definelabel printf, 0x8005ed78
+.definelabel LoadImage, 0x80062394
 
 
 .org 0x8006c170 ; No clearing out the good stuff in the exe
@@ -28,10 +31,28 @@
 	lw a0, 0x0020(fp)
 
 .org 0x8001f2b8
-	jal DisplaySubtitle
+	jal InitSubtitle
 	
 .org 0x80012f3c
 	j LoadSubtitles1
+	
+.org 0x8001a1cc
+	nop
+	
+.org 0x8001f320
+	j DisplaySubs
+	
+.org 0x8004a1a8
+	j DisplayMovieSubs
+	
+;.org 0x8001a1cc
+;	j DisplayDebug	; take over BNE here that enables debug printing
+	
+;.org 0x8001a21c
+;	nop				; clobber normal debug print
+
+.org 0x8001a21c
+	jal DisplayTest2
 
 .org 0x80091E00
 	.importobj "code\rmj\obj\initsubs.obj"
@@ -39,7 +60,7 @@
 	LoadSubtitles1:
 		addiu sp, sp, -4
 		sw ra, 0(sp)
-		la a0, 0x80110000
+		la a0, 0x80100000
 		jal LoadSubtitles
 		nop
 		lw ra, 0(sp)
@@ -47,6 +68,29 @@
 		jr ra ; 0x80091f0c
 		addiu sp, sp, 4
 
+	; DisplayDebug:
+		; addiu a0, r0, 0x01
+		; jal DisplayTest
+		; nop
+		; j 0x8001a224
+		; nop
+
+	DisplaySubs:
+		jal DisplaySubtitle
+		nop
+		li a0, 0x02
+		jal 0x8004d6e8
+		nop
+		jal 0x800501c4
+		nop
+		j 0x8001f328
+		nop
+	
+	DisplayMovieSubs:
+		la a2, SubFont
+		jal DrawMovieSubtitle
+		nop
+		j 0x8004a1b0
 ; .org 0x8001f320
 	; nop
 
