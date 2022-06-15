@@ -96,13 +96,13 @@ void DisplayTest2(long id, const char* format, int s, int g, int r)
 
 void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 {
+	int srcPixelPos = 0;
 	for (u32 y = 0; y < 16; y++)
 	{
-		u32 srcPixelPos = y * 208; // Just get A for now...
 		u32 destPixelPos = y * 16;
 		for (u32 x = 0; x < 8; x++)
 		{
-			image[destPixelPos + x] = font[srcPixelPos + x];
+			image[destPixelPos + x] = font[srcPixelPos++];
 		}
 	}
 

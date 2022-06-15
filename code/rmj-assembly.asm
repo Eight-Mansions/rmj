@@ -4,7 +4,7 @@
 	.importobj "code\rmj\obj\subtitle.obj"
 	.importobj "code\rmj\obj\generated.obj"
 SubFont:
-	.incbin "graphics\font\sub_font.tim" ; Font used for subtitles
+	.incbin "graphics\font\sub_font.bin" ; Font used for subtitles
 .close
 
 .open "exe\SLPS_010.87",0x8000F800
