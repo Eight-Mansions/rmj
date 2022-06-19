@@ -94,15 +94,42 @@ void DisplayTest2(long id, const char* format, int s, int g, int r)
 	FntPrint(id, "Hello");
 }
 
+u32 text[] = { 0, 1, 2 };
+u32 textIdx = 0;
+u32 textLen = 1;
+u32 textX = 332;
+u32 curDrawX = 0;
+
 void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 {
-	int srcPixelPos = 0;
-	for (u32 y = 0; y < 16; y++)
+	u32 sliceW = area->w;
+	u32 sliceX = area->x;
+
+	if (sliceX <= textX && textX <= sliceX + sliceW)
 	{
-		u32 destPixelPos = y * 16;
-		for (u32 x = 0; x < 8; x++)
+		textIdx = 0;
+		curDrawX = textX - sliceX;
+	}
+
+	
+	while (textIdx < textLen)
+	{
+		u32 srcPixelPos = text[textIdx] * 0x40;
+		for (u32 y = 0; y < 16; y++)
 		{
-			image[destPixelPos + x] = font[srcPixelPos++];
+			u32 destPixelPos = y * 16;
+			for (u32 x = curDrawX; x < (curDrawX + 8); x++)
+			{
+				image[destPixelPos + x] = font[srcPixelPos++];
+			}
+		}
+		textIdx++;
+		curDrawX += 8;
+
+		if (curDrawX >= sliceX + sliceW)
+		{
+			curDrawX = 0;
+			break;
 		}
 	}
 
