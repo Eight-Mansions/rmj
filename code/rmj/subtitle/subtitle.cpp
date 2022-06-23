@@ -96,9 +96,12 @@ void DisplayTest2(long id, const char* format, int s, int g, int r)
 
 u32 text[] = { 0, 1, 2 };
 u32 textIdx = 0;
-u32 textLen = 1;
+u32 textLen = 2;
 u32 textX = 332;
 u32 curDrawX = 0;
+
+u32 overflow[0x80];
+u32 overflowedW = 0;
 
 void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 {
@@ -111,26 +114,54 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 		curDrawX = textX - sliceX;
 	}
 
-	
+	u32 desPixelPos = 0;
 	while (textIdx < textLen)
 	{
-		u32 srcPixelPos = text[textIdx] * 0x40;
+		u32 srcPixelPos = text[textIdx] * 0x80;
+		
+
+		for (u32 x = 0; x < 8; x++)
+		{
+			for (u32 y = 0; y < 16; y++)
+			{
+				image[desPixelPos + (y * 16) + x] = font[srcPixelPos++];
+			}
+		}
+
+		textIdx++;
+		desPixelPos += 8;
+
+		/*u32 overflowIdx = 0;
 		for (u32 y = 0; y < 16; y++)
 		{
 			u32 destPixelPos = y * 16;
-			for (u32 x = curDrawX; x < (curDrawX + 8); x++)
+			for (u32 x = curDrawX; x < (curDrawX + 8); x++, srcPixelPos++)
 			{
-				image[destPixelPos + x] = font[srcPixelPos++];
+				u16 sp = font[srcPixelPos];
+				if (x < sliceW)
+				{
+					if (sp != 0x8000)
+					{
+						image[destPixelPos + x] = sp;
+					}
+				}
+				else
+				{
+					overflow[overflowIdx + (x - sliceW)] = sp;
+				}
 			}
+
+			overflowIdx += 8;
 		}
 		textIdx++;
 		curDrawX += 8;
 
 		if (curDrawX >= sliceX + sliceW)
 		{
+			overflowedW = curDrawX - (sliceX + sliceW);
 			curDrawX = 0;
 			break;
-		}
+		}*/
 	}
 
 	LoadImage(area, (u_long*)image);

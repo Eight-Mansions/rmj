@@ -36,8 +36,8 @@ SubFont:
 .org 0x80012f3c
 	j LoadSubtitles1
 	
-.org 0x8001a1cc
-	nop
+;.org 0x8001a1cc ; branch to see if debug text is enabled
+;	nop
 	
 .org 0x8001f320
 	j DisplaySubs
@@ -51,8 +51,8 @@ SubFont:
 ;.org 0x8001a21c
 ;	nop				; clobber normal debug print
 
-.org 0x8001a21c
-	jal DisplayTest2
+;.org 0x8001a21c
+;	jal DisplayTest2
 
 .org 0x80091E00
 	.importobj "code\rmj\obj\initsubs.obj"
