@@ -103,12 +103,11 @@ u32 curDrawX = 0;
 u32 curDrawY = 0;
 
 u32 overflow[0x80];
-u32 overflowedW = 0;
+i32 overflowedW = 0;
 u32 desPixelPos = 0;
 
 void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 {
-	printf("DMS\n");
 	u32 sliceW = area->w;
 	u32 sliceX = area->x;
 
@@ -116,14 +115,25 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 	{
 		textIdx = 0;
 		curDrawX = textX - sliceX;
-		//curDrawX = 0;
 		curDrawY = textY;
 	}
 
 	u32 overflowIdx = 0;
+	for (int i = overflowedW; i >= 0; i--)
+	{
+		for (u32 y = 0; y < 16; y++)
+		{
+			u16 sp = overflow[overflowIdx++];
+			image[(curDrawX) + ((y * 16) + (curDrawY * 16))] = sp;
+		}
+
+		curDrawX++;
+	}
+	overflowedW = -1;
+
+	overflowIdx = 0;
 	while (textIdx < textLen)
 	{
-		printf("ti : %d\n", textIdx);
 		u32 srcPixelPos = text[textIdx] * 0x80;
 		for (u32 x = 0; x < 8; x++)
 		{
@@ -147,42 +157,9 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 		if (curDrawX >= sliceW)
 		{
 			overflowedW = curDrawX - sliceW;
-			curDrawX = overflowedW;
-			printf("cd : %d\n", curDrawX);
-			break;
-		}
-
-		/*u32 overflowIdx = 0;
-		for (u32 y = 0; y < 16; y++)
-		{
-			u32 destPixelPos = y * 16;
-			for (u32 x = curDrawX; x < (curDrawX + 8); x++, srcPixelPos++)
-			{
-				
-				if (x < sliceW)
-				{
-					if (sp != 0x8000)
-					{
-						image[destPixelPos + x] = sp;
-					}
-				}
-				else
-				{
-					overflow[overflowIdx + (x - sliceW)] = sp;
-				}
-			}
-
-			overflowIdx += 8;
-		}
-		textIdx++;
-		curDrawX += 8;
-
-		if (curDrawX >= sliceX + sliceW)
-		{
-			overflowedW = curDrawX - (sliceX + sliceW);
 			curDrawX = 0;
 			break;
-		}*/
+		}
 	}
 
 	LoadImage(area, (u_long*)image);
