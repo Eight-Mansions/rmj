@@ -96,7 +96,7 @@ void DisplayTest2(long id, const char* format, int s, int g, int r)
 
 u32 text[] = { 0, 1, 2 };
 u32 textIdx = 0;
-u32 textLen = 2;
+u32 textLen = 3;
 u32 textX = 332;
 u32 textY = 176;
 u32 curDrawX = 0;
@@ -108,6 +108,7 @@ u32 desPixelPos = 0;
 
 void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 {
+	printf("DMS\n");
 	u32 sliceW = area->w;
 	u32 sliceX = area->x;
 
@@ -115,24 +116,41 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 	{
 		textIdx = 0;
 		curDrawX = textX - sliceX;
+		//curDrawX = 0;
 		curDrawY = textY;
 	}
 
+	u32 overflowIdx = 0;
 	while (textIdx < textLen)
 	{
+		printf("ti : %d\n", textIdx);
 		u32 srcPixelPos = text[textIdx] * 0x80;
-		
-
 		for (u32 x = 0; x < 8; x++)
 		{
 			for (u32 y = 0; y < 16; y++)
 			{
-				image[(curDrawX + x) + ((y * 16) + (curDrawY * 16))] = font[srcPixelPos++];
+				u16 sp = font[srcPixelPos++];
+				if (curDrawX + x < sliceW)
+				{
+					image[(curDrawX + x) + ((y * 16) + (curDrawY * 16))] = sp;
+				}
+				else
+				{
+					overflow[overflowIdx++] = sp;
+				}
 			}
 		}
 
 		textIdx++;
 		curDrawX += 8;
+
+		if (curDrawX >= sliceW)
+		{
+			overflowedW = curDrawX - sliceW;
+			curDrawX = overflowedW;
+			printf("cd : %d\n", curDrawX);
+			break;
+		}
 
 		/*u32 overflowIdx = 0;
 		for (u32 y = 0; y < 16; y++)
@@ -140,7 +158,7 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 			u32 destPixelPos = y * 16;
 			for (u32 x = curDrawX; x < (curDrawX + 8); x++, srcPixelPos++)
 			{
-				u16 sp = font[srcPixelPos];
+				
 				if (x < sliceW)
 				{
 					if (sp != 0x8000)
