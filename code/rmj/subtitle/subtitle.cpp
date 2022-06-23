@@ -98,10 +98,13 @@ u32 text[] = { 0, 1, 2 };
 u32 textIdx = 0;
 u32 textLen = 2;
 u32 textX = 332;
+u32 textY = 176;
 u32 curDrawX = 0;
+u32 curDrawY = 0;
 
 u32 overflow[0x80];
 u32 overflowedW = 0;
+u32 desPixelPos = 0;
 
 void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 {
@@ -112,9 +115,9 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 	{
 		textIdx = 0;
 		curDrawX = textX - sliceX;
+		curDrawY = textY;
 	}
 
-	u32 desPixelPos = 0;
 	while (textIdx < textLen)
 	{
 		u32 srcPixelPos = text[textIdx] * 0x80;
@@ -124,12 +127,12 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 		{
 			for (u32 y = 0; y < 16; y++)
 			{
-				image[desPixelPos + (y * 16) + x] = font[srcPixelPos++];
+				image[(curDrawX + x) + ((y * 16) + (curDrawY * 16))] = font[srcPixelPos++];
 			}
 		}
 
 		textIdx++;
-		desPixelPos += 8;
+		curDrawX += 8;
 
 		/*u32 overflowIdx = 0;
 		for (u32 y = 0; y < 16; y++)
