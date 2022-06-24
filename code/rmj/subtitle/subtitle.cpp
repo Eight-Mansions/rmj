@@ -115,22 +115,21 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 	{
 		textIdx = 0;
 		curDrawX = textX - sliceX;
-		curDrawY = textY;
+		curDrawY = textY * 16;
 	}
 
 	u32 overflowIdx = 0;
-	for (int i = overflowedW; i > 0; i--)
+	for (; overflowedW > 0; overflowedW--)
 	{
-		for (u32 y = 0; y < 16; y++)
+		for (u32 y = 0; y < 256; y += 16)
 		{
 			u16 sp = overflow[overflowIdx++];
 			if (sp != 0x8000)
-				image[(curDrawX) + ((y * 16) + (curDrawY * 16))] = sp;
+				image[curDrawX + y + curDrawY] = sp;
 		}
-
 		curDrawX++;
 	}
-	overflowedW = -1;
+	curDrawX++;
 
 	overflowIdx = 0;
 	while (textIdx < textLen)
@@ -138,23 +137,24 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 		u32 srcPixelPos = text[textIdx] * 0x80;
 		for (u32 x = 0; x < 8; x++)
 		{
-			for (u32 y = 0; y < 16; y++)
+			for (u32 y = 0; y < 256; y += 16)
 			{
 				u16 sp = font[srcPixelPos++];
-				if (curDrawX + x < sliceW)
+				if (curDrawX < sliceW)
 				{
 					if (sp != 0x8000)
-						image[(curDrawX + x) + ((y * 16) + (curDrawY * 16))] = sp;
+						image[curDrawX + y + curDrawY] = sp;
 				}
 				else
 				{
 					overflow[overflowIdx++] = sp;
 				}
 			}
+
+			curDrawX++;
 		}
 
 		textIdx++;
-		curDrawX += 8;
 
 		if (curDrawX >= sliceW)
 		{
