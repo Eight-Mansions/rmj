@@ -115,16 +115,16 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 	{
 		textIdx = 0;
 		curDrawX = textX - sliceX;
-		curDrawY = textY * 16;
+		curDrawY = textY * 16; // 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)
 	}
 
 	u32 overflowIdx = 0;
 	for (; overflowedW > 0; overflowedW--)
 	{
-		for (u32 y = 0; y < 256; y += 16)
+		for (u32 y = 0; y < 256; y += 16) // += 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)  ----- 256 = may height times the 16 we get from the previous equation
 		{
 			u16 sp = overflow[overflowIdx++];
-			if (sp != 0x8000)
+			if (sp != 0x8000) // 0x8000 is the pixel color of the black background
 				image[curDrawX + y + curDrawY] = sp;
 		}
 		curDrawX++;
@@ -134,15 +134,15 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 	overflowIdx = 0;
 	while (textIdx < textLen)
 	{
-		u32 srcPixelPos = text[textIdx] * 0x80;
-		for (u32 x = 0; x < 8; x++)
+		u32 srcPixelPos = text[textIdx] * 0x80; // 0x80 or 128 is the total bytes of a letter
+		for (u32 x = 0; x < 8; x++) // 8 is our max letter width... soon will be width of letter
 		{
-			for (u32 y = 0; y < 256; y += 16)
+			for (u32 y = 0; y < 256; y += 16) // += 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)  ----- 256 = may height times the 16 we get from the previous equation
 			{
 				u16 sp = font[srcPixelPos++];
 				if (curDrawX < sliceW)
 				{
-					if (sp != 0x8000)
+					if (sp != 0x8000) // 0x8000 is the pixel color of the black background
 						image[curDrawX + y + curDrawY] = sp;
 				}
 				else
