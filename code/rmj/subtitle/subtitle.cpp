@@ -125,7 +125,10 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 		{
 			u16 sp = overflow[overflowIdx++];
 			if (sp != 0x8000) // 0x8000 is the pixel color of the black background
+			{
 				image[curDrawX + y + curDrawY] = sp;
+				image[(curDrawX + 1) + (y + 16) + curDrawY] = 0x8000;
+			}
 		}
 		curDrawX++;
 	}
@@ -134,7 +137,7 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 	overflowIdx = 0;
 	while (textIdx < textLen)
 	{
-		u32 srcPixelPos = text[textIdx] * 0x80; // 0x80 or 128 is the total bytes of a letter
+		u32 srcPixelPos = text[textIdx] * 0x80; // 0x80 is half the width of our letters.  The entire byte count is (w * 2 (16bpp) * h).  We're using shorts or 2 bytes at a time so half.
 		for (u32 x = 0; x < 8; x++) // 8 is our max letter width... soon will be width of letter
 		{
 			for (u32 y = 0; y < 256; y += 16) // += 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)  ----- 256 = may height times the 16 we get from the previous equation
@@ -143,7 +146,11 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 				if (curDrawX < sliceW)
 				{
 					if (sp != 0x8000) // 0x8000 is the pixel color of the black background
+					{
 						image[curDrawX + y + curDrawY] = sp;
+						if (curDrawX + 1 < sliceW)
+							image[(curDrawX + 1) + (y + 16) + curDrawY] = 0x8000;
+					}
 				}
 				else
 				{
