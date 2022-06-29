@@ -1,5 +1,84 @@
 #include "subtitle.h"
 
+const u8 widths[] =
+{
+		0x09, // A
+		0x08, // B
+		0x07, // C
+		0x08, // D
+		0x07, // E
+		0x07, // F
+		0x08, // G
+		0x08, // H
+		0x03, // I
+		0x07, // J
+		0x08, // K
+		0x07, // L
+		0x08, // M
+		0x08, // N
+		0x08, // O
+		0x08, // P
+		0x08, // Q
+		0x08, // R
+		0x07, // S
+		0x08, // T
+		0x07, // U
+		0x08, // V
+		0x09, // W
+		0x07, // X
+		0x07, // Y
+		0x08, // Z
+		0x07, // a
+		0x07, // b
+		0x07, // c
+		0x07, // d
+		0x07, // e
+		0x05, // f
+		0x07, // g
+		0x07, // h
+		0x03, // i
+		0x04, // j
+		0x07, // k
+		0x04, // l
+		0x07, // m
+		0x07, // n
+		0x07, // o
+		0x07, // p
+		0x07, // q
+		0x06, // r
+		0x07, // s
+		0x05, // t
+		0x07, // u
+		0x07, // v
+		0x07, // w
+		0x07, // x
+		0x07, // y
+		0x07, // z
+		0x04, // .
+		0x04, // ,
+		0x03, // !
+		0x07, // ?
+		0x06, // "
+		0x04, // (
+		0x05, // )
+		0x04, // :
+		0x04, // ;
+		0x07, // ~
+		0x03, // '
+		0x06, // -
+		0x07, // 0
+		0x05, // 1
+		0x08, // 2
+		0x07, // 3
+		0x08, // 4
+		0x07, // 5
+		0x07, // 6
+		0x07, // 7
+		0x08, // 8
+		0x07, // 9
+		0x04, //  
+};
+
 //int uv = 0x00120030;
 int subidx = 0;
 
@@ -97,14 +176,10 @@ void DisplayTest2(long id, const char* format, int s, int g, int r)
 u32 text[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 };
 u32 textIdx = 0;
 u32 textLen = 27;
-u32 textX = 332;
+u32 textX = 320;
 u32 textY = 176;
 u32 curDrawX = 0;
 u32 curDrawY = 0;
-
-u32 overflow[0x80];
-i32 overflowedW = 0;
-u32 desPixelPos = 0;
 
 void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 {
@@ -118,43 +193,19 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 		curDrawY = textY * 16; // 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)
 	}
 
-	u32 overflowIdx = 0;
-	for (; overflowedW > 0; overflowedW--)
-	{
-		for (u32 y = 0; y < 256; y += 16) // += 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)  ----- 256 = may height times the 16 we get from the previous equation
-		{
-			u16 sp = overflow[overflowIdx++];
-			if (sp != 0x8000) // 0x8000 is the pixel color of the black background
-			{
-				image[curDrawX + y + curDrawY] = sp;
-				image[(curDrawX + 1) + (y + 16) + curDrawY] = 0x8000;
-			}
-		}
-		curDrawX++;
-	}
-	curDrawX++;
-
-	overflowIdx = 0;
 	while (textIdx < textLen)
 	{
 		u32 srcPixelPos = text[textIdx] * 0x80; // 0x80 is half the width of our letters.  The entire byte count is (w * 2 (16bpp) * h).  We're using shorts or 2 bytes at a time so half.
+		
+		bool overflowed = false;
 		for (u32 x = 0; x < 8; x++) // 8 is our max letter width... soon will be width of letter
 		{
 			for (u32 y = 0; y < 256; y += 16) // += 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)  ----- 256 = may height times the 16 we get from the previous equation
 			{
 				u16 sp = font[srcPixelPos++];
-				if (curDrawX < sliceW)
+				if (sp != 0x8000) // 0x8000 is the pixel color of the black background
 				{
-					if (sp != 0x8000) // 0x8000 is the pixel color of the black background
-					{
-						image[curDrawX + y + curDrawY] = sp;
-						if (curDrawX + 1 < sliceW)
-							image[(curDrawX + 1) + (y + 16) + curDrawY] = 0x8000;
-					}
-				}
-				else
-				{
-					overflow[overflowIdx++] = sp;
+					image[curDrawX + y + curDrawY] = sp;
 				}
 			}
 
@@ -165,7 +216,6 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 
 		if (curDrawX >= sliceW)
 		{
-			overflowedW = curDrawX - sliceW;
 			curDrawX = 0;
 			break;
 		}
