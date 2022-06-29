@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="subtitle\generated.cpp" />
+    <ClCompile Include="subtitle\movie_generated.h" />
     <ClCompile Include="subtitle\platform.cpp" />
     <ClCompile Include="subtitle\initsubs.cpp" />
     <ClCompile Include="subtitle\subtitle.cpp" />

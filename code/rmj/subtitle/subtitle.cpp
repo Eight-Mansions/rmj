@@ -173,7 +173,8 @@ void DisplayTest2(long id, const char* format, int s, int g, int r)
 	FntPrint(id, "Hello");
 }
 
-u32 text[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 };
+//u32 text[] = { 56, 7, 30, 50, 53, 76, 40, 41, 30, 39, 76, 45, 33, 30, 76, 29, 40, 40, 43, 54, 54, 76, 7, 4, 24, 54, 56 };
+
 u32 textIdx = 0;
 u32 textLen = 27;
 u32 textX = 320;
@@ -185,6 +186,7 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 {
 	u32 sliceW = area->w;
 	u32 sliceX = area->x;
+	const char* text = moviesubs[0].parts[0].text;
 
 	if (sliceX <= textX && textX <= sliceX + sliceW)
 	{
