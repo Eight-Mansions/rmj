@@ -175,7 +175,7 @@ void DisplayTest2(long id, const char* format, int s, int g, int r)
 
 //u32 text[] = { 56, 7, 30, 50, 53, 76, 40, 41, 30, 39, 76, 45, 33, 30, 76, 29, 40, 40, 43, 54, 54, 76, 7, 4, 24, 54, 56 };
 
-u32 textIdx = 0;
+//u32 textIdx = 0;
 u32 textLen = 27;
 u32 textX = 320;
 u32 textY = 176;
@@ -186,40 +186,52 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
 {
 	u32 sliceW = area->w;
 	u32 sliceX = area->x;
-	const char* text = moviesubs[0].parts[0].text;
-
-	if (sliceX <= textX && textX <= sliceX + sliceW)
+	u32 curFrame = *((int*)0x800a84a4);
+	
+	for (int i = 0; i < moviesubs[0].partsCount; i++)
 	{
-		textIdx = 0;
-		curDrawX = textX - sliceX;
-		curDrawY = textY * 16; // 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)
-	}
 
-	while (textIdx < textLen)
-	{
-		u32 srcPixelPos = text[textIdx] * 0x80; // 0x80 is half the width of our letters.  The entire byte count is (w * 2 (16bpp) * h).  We're using shorts or 2 bytes at a time so half.
-		
-		bool overflowed = false;
-		for (u32 x = 0; x < 8; x++) // 8 is our max letter width... soon will be width of letter
+		if (moviesubs[0].parts[i].startFrame <= curFrame && curFrame < moviesubs[0].parts[i].endFrame)
 		{
-			for (u32 y = 0; y < 256; y += 16) // += 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)  ----- 256 = may height times the 16 we get from the previous equation
+			const char* text = moviesubs[0].parts[i].text;
+
+
+			if (sliceX <= textX && textX <= sliceX + sliceW)
 			{
-				u16 sp = font[srcPixelPos++];
-				if (sp != 0x8000) // 0x8000 is the pixel color of the black background
+				moviesubs[0].parts[i].textIdx = 0;
+				curDrawX = textX - sliceX;
+				curDrawY = textY * 16; // 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)
+			}
+
+			while (moviesubs[0].parts[i].textIdx < moviesubs[0].parts[i].len)
+			{
+				u32 srcPixelPos = text[moviesubs[0].parts[i].textIdx] * 0x80; // 0x80 is half the width of our letters.  The entire byte count is (w * 2 (16bpp) * h).  We're using shorts or 2 bytes at a time so half.
+
+				bool overflowed = false;
+				for (u32 x = 0; x < 8; x++) // 8 is our max letter width... soon will be width of letter
 				{
-					image[curDrawX + y + curDrawY] = sp;
+					for (u32 y = 0; y < 256; y += 16) // += 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)  ----- 256 = may height times the 16 we get from the previous equation
+					{
+						u16 sp = font[srcPixelPos++];
+						if (sp != 0x8000) // 0x8000 is the pixel color of the black background
+						{
+							image[curDrawX + y + curDrawY] = sp;
+						}
+					}
+
+					curDrawX++;
+				}
+
+				moviesubs[0].parts[i].textIdx++;
+
+				if (curDrawX >= sliceW)
+				{
+					curDrawX = 0;
+					//moviesubs[0].parts[0].textIdx = textIdx;
+					break;
 				}
 			}
 
-			curDrawX++;
-		}
-
-		textIdx++;
-
-		if (curDrawX >= sliceW)
-		{
-			curDrawX = 0;
-			break;
 		}
 	}
 
