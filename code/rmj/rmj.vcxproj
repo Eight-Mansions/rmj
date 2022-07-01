@@ -96,7 +96,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="subtitle\generated.h" />
-    <ClInclude Include="subtitle\mgenerated.h" />
     <ClInclude Include="subtitle\platform.h" />
     <ClInclude Include="subtitle\initsubs.h" />
     <ClInclude Include="subtitle\subtitle.h" />

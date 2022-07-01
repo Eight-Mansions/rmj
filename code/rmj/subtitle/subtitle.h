@@ -4,7 +4,7 @@
 #include <string.h>
 #include "platform.h"
 #include "generated.h"
-#include "mgenerated.h"
+#include "generated.h"
 
 
 extern "C" {
