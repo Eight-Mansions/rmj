@@ -43,6 +43,11 @@ SubFont:
 .org 0x8001f320
 	j DisplaySubs
 	
+	
+.org 0x8001cc88
+	j InitMovieSub
+	nop
+	
 .org 0x8004a1a8
 	j DisplayMovieSubs
 	
@@ -92,6 +97,27 @@ SubFont:
 		jal DrawMovieSubtitle
 		nop
 		j 0x8004a1b0
+		
+	InitMovieSub:
+		addiu sp, sp, -20
+		sw ra, 0(sp)
+		sw a0, 4(sp)
+		sw a1, 8(sp)
+		sw a2, 12(sp)
+		jal InitMovieSubtitle
+		sw a3, 16(sp)
+		
+		lw ra, 0(sp)
+		lw a0, 4(sp)
+		lw a1, 8(sp)
+		lw a2, 12(sp)
+		lw a3, 16(sp)
+		addiu sp, sp, 20
+		
+		lui v0, 0x8009
+		j 0x8001cc90
+		lw v0, 0x5da8(v0)		
+		
 ; .org 0x8001f320
 	; nop
 

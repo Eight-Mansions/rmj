@@ -22,8 +22,13 @@ extern "C" {
 
 	void DisplayTest2(long id, const char* format, int s, int g, int r);
 
+
+	void InitMovieSubtitle(const char* videoname);
+
 	void DrawMovieSubtitle(RECT* area, u16* image, u16* font);
 
 	extern int LoadImage(RECT* rect, u_long* p);
+
+	static int movieSubIdx = -1;
 }
 #endif
