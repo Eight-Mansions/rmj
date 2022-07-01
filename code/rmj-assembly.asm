@@ -51,6 +51,9 @@ SubFont:
 .org 0x8004a1a8
 	j DisplayMovieSubs
 	
+.org 0x8006b168
+	j StoreFrameNumber
+	
 ;.org 0x8001a1cc
 ;	j DisplayDebug	; take over BNE here that enables debug printing
 	
@@ -94,8 +97,10 @@ SubFont:
 	
 	DisplayMovieSubs:
 		la a2, SubFont
+		la a3, framenum
 		jal DrawMovieSubtitle
-		nop
+		lw a3, 0(a3)
+		
 		j 0x8004a1b0
 		
 	InitMovieSub:
@@ -116,7 +121,20 @@ SubFont:
 		
 		lui v0, 0x8009
 		j 0x8001cc90
-		lw v0, 0x5da8(v0)		
+		lw v0, 0x5da8(v0)
+		
+		
+	StoreFrameNumber:
+		;8006b164 : LUI     800b0000 (at), 800b (32779),
+		;8006b168 : SW      000000f7 (v0), 84a4 (800b0000 (at)) [800a84a4]
+		la a0, framenum
+		lui at, 0x800B
+		sw v0, 0x84a4(at)
+		j 0x8006b16c
+		sw v0, 0(a0)
+	
+framenum:
+	.dw 0
 		
 ; .org 0x8001f320
 	; nop

@@ -89,7 +89,7 @@ int sdbmHash(const char* text) {
 	for (; text[i] != 0; i++) {
 		hash = text[i] + (hash << 6) + (hash << 16) - hash;
 	}
-	return hash;
+	return hash & 0xFFFF;
 }
 
 int GetLetterPos(char letter)
@@ -197,11 +197,10 @@ void InitMovieSubtitle(const char* videoname)
 	}
 }
 
-void DrawMovieSubtitle(RECT* area, u16* image, u16* font)
+void DrawMovieSubtitle(RECT* area, u16* image, u16* font, u32 curFrame)
 {
 	u32 sliceW = area->w;
 	u32 sliceX = area->x;
-	u32 curFrame = *((int*)0x800a84a4);
 	
 	if (movieSubIdx >= 0)
 	{

@@ -25,7 +25,7 @@ extern "C" {
 
 	void InitMovieSubtitle(const char* videoname);
 
-	void DrawMovieSubtitle(RECT* area, u16* image, u16* font);
+	void DrawMovieSubtitle(RECT* area, u16* image, u16* font, u32 curFrame);
 
 	extern int LoadImage(RECT* rect, u_long* p);
 
