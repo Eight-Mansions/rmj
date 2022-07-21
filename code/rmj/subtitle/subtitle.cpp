@@ -173,10 +173,6 @@ void DisplayTest2(long id, const char* format, int s, int g, int r)
 	FntPrint(id, "Hello");
 }
 
-//u32 text[] = { 56, 7, 30, 50, 53, 76, 40, 41, 30, 39, 76, 45, 33, 30, 76, 29, 40, 40, 43, 54, 54, 76, 7, 4, 24, 54, 56 };
-
-//u32 textIdx = 0;
-u32 textLen = 27;
 u32 textX = 320;
 u32 textY = 176;
 u32 curDrawX = 0;
@@ -187,9 +183,9 @@ void InitMovieSubtitle(const char* videoname)
 	int videonameHash = sdbmHash(videoname);
 	movieSubIdx = -1;
 	printf("%d\n", videonameHash);
-	for (int i = 0; i < movieSubsCount; i++)
+	for (int i = 0; i < movieSubtitlesCount; i++)
 	{
-		if (videonameHash == moviesubs[i].id)
+		if (videonameHash = movieSubtitles[i].id)
 		{
 			movieSubIdx = i;
 			break;
@@ -204,7 +200,7 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font, u32 curFrame)
 	
 	if (movieSubIdx >= 0)
 	{
-		movie_subtitle subs = moviesubs[movieSubIdx];
+		MovieSubtitle subs = movieSubtitles[movieSubIdx];
 
 		for (int i = 0; i < subs.partsCount; i++)
 		{

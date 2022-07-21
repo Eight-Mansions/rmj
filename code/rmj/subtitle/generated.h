@@ -11,7 +11,7 @@ struct subtitle {
 extern const u32 subsCount;
 extern const subtitle subs[];
 
-struct movie_subtitle_part {
+struct MovieSubtitlePart {
 	const char* text;
 	const u8 len;
 	u8 textIdx;
@@ -19,19 +19,19 @@ struct movie_subtitle_part {
 	const u16 endFrame;
 };
 
-struct movie_subtitle {
+struct MovieSubtitle {
 	const i32 id;
 	const u8 partsCount;
-	movie_subtitle_part* parts;
+	MovieSubtitlePart* parts;
 };
 
-struct movie_subtitle_displayed {
-	const movie_subtitle_part* parts;
+struct MovieSubtitles {
+	const MovieSubtitlePart* parts;
 	u8 partsCount;
 	u8 nextPartIdx;
 	u8 ticksTilNext;
 };
 
-extern const u32 movieSubsCount;
-extern movie_subtitle moviesubs[];
+extern const u32 movieSubtitlesCount;
+extern MovieSubtitle movieSubtitles[];
 #endif
