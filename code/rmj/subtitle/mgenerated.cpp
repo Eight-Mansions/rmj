@@ -25,14 +25,14 @@ const u8 partdata_6[] = { 56, 18, 40, 38, 30, 40, 39, 30, 76, 48, 34, 37, 37, 76
 const u8 partdata_7[] = { 56, 22, 33, 26, 45, 76, 28, 26, 39, 76, 8, 76, 29, 40, 76, 45, 40, 76, 33, 30, 37, 41, 55, 56 };
 
 MovieSubtitlePart sub0_parts[] = {
-	{(const char*)partdata_0, 27, 0, 200, 248},
-	{(const char*)partdata_1, 16, 0, 248, 270},
-	{(const char*)partdata_2, 9, 0, 287, 298},
-	{(const char*)partdata_3, 15, 0, 343, 358},
-	{(const char*)partdata_4, 38, 0, 358, 386},
-	{(const char*)partdata_5, 24, 0, 399, 434},
-	{(const char*)partdata_6, 23, 0, 476, 493},
-	{(const char*)partdata_7, 24, 0, 503, 532},
+	{(const char*)partdata_0, 27, 0, 200, 248, 320, 176, 0, 0},
+	{(const char*)partdata_1, 16, 0, 248, 270, 320, 176, 0, 0},
+	{(const char*)partdata_2, 9, 0, 287, 298, 320, 176, 0, 0},
+	{(const char*)partdata_3, 15, 0, 343, 358, 320, 176, 0, 0},
+	{(const char*)partdata_4, 38, 0, 358, 386, 320, 176, 0, 0},
+	{(const char*)partdata_5, 24, 0, 399, 434, 320, 176, 0, 0},
+	{(const char*)partdata_6, 23, 0, 476, 493, 320, 176, 0, 0},
+	{(const char*)partdata_7, 24, 0, 503, 532, 320, 176, 0, 0},
 };
 
 const u32 movieSubtitlesCount = 1;

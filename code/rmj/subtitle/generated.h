@@ -17,6 +17,10 @@ struct MovieSubtitlePart {
 	u8 textIdx;
 	const u16 startFrame;
 	const u16 endFrame;
+	const u16 x;
+	const u16 y;
+	u16 curX;
+	u16 curY;
 };
 
 struct MovieSubtitle {

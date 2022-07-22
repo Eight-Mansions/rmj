@@ -210,13 +210,16 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font, u32 curFrame)
 				const char* text = subs.parts[i].text;
 
 
-				if (sliceX <= textX && textX <= sliceX + sliceW)
+				if (sliceX <= subs.parts[i].x && subs.parts[i].x <= sliceX + sliceW)
 				{
 					subs.parts[i].textIdx = 0;
-					curDrawX = textX - sliceX;
-					curDrawY = textY * 16; // 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)
+					subs.parts[i].curX = subs.parts[i].x - sliceX;
+					subs.parts[i].curY = subs.parts[i].y * 16; // 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)
 				}
 
+
+				u16 curX = subs.parts[i].curX;
+				u16 curY = subs.parts[i].curY;
 				while (subs.parts[i].textIdx < subs.parts[i].len)
 				{
 					u32 srcPixelPos = text[subs.parts[i].textIdx] * 0x80; // 0x80 is half the width of our letters.  The entire byte count is (w * 2 (16bpp) * h).  We're using shorts or 2 bytes at a time so half.
@@ -226,7 +229,7 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font, u32 curFrame)
 					{
 						for (u32 y = 0; y < 256;) // += 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)  ----- 256 = may height times the 16 we get from the previous equation
 						{
-							u32 imgPos = curDrawX + curDrawY + y;
+							u32 imgPos = curX + curY + y;
 
 							// 0x8000 is the pixel color of the black background
 							u16 sp = font[srcPixelPos++];
@@ -238,15 +241,14 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font, u32 curFrame)
 							y += 32;
 						}
 
-						curDrawX++;
+						curX++;
 					}
 
 					subs.parts[i].textIdx++;
 
-					if (curDrawX >= sliceW)
+					if (curX >= sliceW)
 					{
-						curDrawX = 0;
-						//moviesubs[0].parts[0].textIdx = textIdx;
+						subs.parts[i].curX = 0;
 						break;
 					}
 				}
