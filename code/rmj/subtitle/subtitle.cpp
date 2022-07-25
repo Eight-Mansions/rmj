@@ -79,9 +79,6 @@ const u8 widths[] =
 		0x04, //  
 };
 
-//int uv = 0x00120030;
-int subidx = 0;
-
 int sdbmHash(const char* text) {
 	int hash = 0;
 	int i = 0;
@@ -107,16 +104,15 @@ int GetLetterPos(char letter)
 	return (y << 16 | x);
 }
 
-void InitSubtitle(const char* audioname)
+void InitVoiceSubtitle(const char* audioname)
 {
-	printf("%s\n", audioname);
+	audioSubIdx = -1;
 	int audionameHash = sdbmHash(audioname);
 	for (int i = 0; i < subsCount; i++)
 	{
 		if (audionameHash == subs[i].id)
 		{
-			printf("%d\n", i);
-			subidx = i;
+			audioSubIdx = i;
 			break;
 		}
 	}
@@ -124,10 +120,8 @@ void InitSubtitle(const char* audioname)
 
 int DisplaySubtitle()
 {
-	printf("%d\n", subidx);
-	if (subidx != -1)
+	if (audioSubIdx != -1)
 	{
-
 		int letterIdx = 0;
 		int textId = 0x0A;
 		int unk1 = 0; // Apparently always 0?
@@ -138,23 +132,19 @@ int DisplaySubtitle()
 
 		int returnMe = 0; // Do I need to do this?
 
-
 		letterIdx = 0;
-		char letter = subs[subidx].text[letterIdx];
+		char letter = subs[audioSubIdx].text[letterIdx];
 		letterIdx++;
 		while (letter != 0)
 		{
-			printf("%c\n", letter);
 			uv = GetLetterPos(letter);
 			returnMe = DisplayFromGraphic16x16(textId, unk1, yx, uv, wh, unk3);
 			yx += 0x08;
-			letter = subs[subidx].text[letterIdx];
+			letter = subs[audioSubIdx].text[letterIdx];
 			letterIdx++;
 		}
 
-	printf("\n");
-
-		subidx = -1;
+		audioSubIdx = -1;
 
 		return returnMe;
 	}
@@ -180,12 +170,11 @@ u32 curDrawY = 0;
 
 void InitMovieSubtitle(const char* videoname)
 {
-	int videonameHash = sdbmHash(videoname);
 	movieSubIdx = -1;
-	printf("%d\n", videonameHash);
+	int videonameHash = sdbmHash(videoname);
 	for (int i = 0; i < movieSubtitlesCount; i++)
 	{
-		if (videonameHash = movieSubtitles[i].id)
+		if (videonameHash == movieSubtitles[i].id)
 		{
 			movieSubIdx = i;
 			break;
@@ -217,42 +206,44 @@ void DrawMovieSubtitle(RECT* area, u16* image, u16* font, u32 curFrame)
 					subs.parts[i].curY = subs.parts[i].y * 16; // 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)
 				}
 
-
-				u16 curX = subs.parts[i].curX;
-				u16 curY = subs.parts[i].curY;
-				while (subs.parts[i].textIdx < subs.parts[i].len)
+				if (subs.parts[i].x <= sliceX)
 				{
-					u32 srcPixelPos = text[subs.parts[i].textIdx] * 0x80; // 0x80 is half the width of our letters.  The entire byte count is (w * 2 (16bpp) * h).  We're using shorts or 2 bytes at a time so half.
-
-					bool overflowed = false;
-					for (u32 x = 0; x < 8; x++) // 8 is our max letter width... soon will be width of letter
+					u16 curX = subs.parts[i].curX;
+					u16 curY = subs.parts[i].curY;
+				
+					while (subs.parts[i].textIdx < subs.parts[i].len)
 					{
-						for (u32 y = 0; y < 256;) // += 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)  ----- 256 = may height times the 16 we get from the previous equation
+						u32 srcPixelPos = text[subs.parts[i].textIdx] * 0x80; // 0x80 is half the width of our letters.  The entire byte count is (w * 2 (16bpp) * h).  We're using shorts or 2 bytes at a time so half.
+
+						bool overflowed = false;
+						for (u32 x = 0; x < 8; x++) // 8 is our max letter width... soon will be width of letter
 						{
-							u32 imgPos = curX + curY + y;
+							for (u32 y = 0; y < 256;) // += 16 comes from max width of a character = 8 * 2 (16bpp = 2 bytes)  ----- 256 = may height times the 16 we get from the previous equation
+							{
+								u32 imgPos = curX + curY + y;
 
-							// 0x8000 is the pixel color of the black background
-							u16 sp = font[srcPixelPos++];
-							if (sp != 0x8000) image[imgPos] = sp;
+								// 0x8000 is the pixel color of the black background
+								u16 sp = font[srcPixelPos++];
+								if (sp != 0x8000) image[imgPos] = sp;
 
-							sp = font[srcPixelPos++];
-							if (sp != 0x8000) image[imgPos + 16] = sp;
+								sp = font[srcPixelPos++];
+								if (sp != 0x8000) image[imgPos + 16] = sp;
 
-							y += 32;
+								y += 32;
+							}
+
+							curX++;
 						}
 
-						curX++;
-					}
+						subs.parts[i].textIdx++;
 
-					subs.parts[i].textIdx++;
-
-					if (curX >= sliceW)
-					{
-						subs.parts[i].curX = 0;
-						break;
+						if (curX >= sliceW)
+						{
+							subs.parts[i].curX = 0;
+							break;
+						}
 					}
 				}
-
 			}
 		}
 	}

@@ -19,6 +19,7 @@ struct MovieSubtitlePart {
 	const u16 endFrame;
 	const u16 x;
 	const u16 y;
+	const u16 w;
 	u16 curX;
 	u16 curY;
 };

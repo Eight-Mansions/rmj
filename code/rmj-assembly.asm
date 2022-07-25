@@ -27,21 +27,18 @@ SubFont:
 .org 0x8006c170 ; No clearing out the good stuff in the exe
 	nop
 
-.org 0x8001f2a8 ; Swap first variable to the filename to be used for audio
-	;li a0, 0x03
-	lw a0, 0x0020(fp)
-
-.org 0x8001f2b8
-	jal InitSubtitle
-	
+; Code to load subtitles for both audio and video for disc 1
 .org 0x80012f3c
 	j LoadSubtitles1
+
+.org 0x8001f1d8
+	jal InitVoiceSub
 	
 ;.org 0x8001a1cc ; branch to see if debug text is enabled
 ;	nop
 	
 .org 0x8001f320
-	j DisplaySubs
+	j DisplayVoiceSubs
 	
 	
 .org 0x8001cc88
@@ -76,6 +73,20 @@ SubFont:
 		nop
 		jr ra ; 0x80091f0c
 		addiu sp, sp, 4
+		
+	InitVoiceSub:
+		addiu sp, sp, -8
+		sw ra, 0(sp)
+		jal InitVoiceSubtitle
+		sw a0, 4(sp)
+		
+		lw ra, 0(sp)
+		lw a0, 4(sp)
+		addiu sp, sp, 8
+		
+		li v0, 0x01
+		j 0x8001f1e0
+		lui at, 0x8009
 
 	; DisplayDebug:
 		; addiu a0, r0, 0x01
@@ -84,7 +95,7 @@ SubFont:
 		; j 0x8001a224
 		; nop
 
-	DisplaySubs:
+	DisplayVoiceSubs:
 		jal DisplaySubtitle
 		nop
 		li a0, 0x02

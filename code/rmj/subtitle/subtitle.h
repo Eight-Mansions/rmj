@@ -10,7 +10,7 @@
 extern "C" {
 	extern int DisplayFromGraphic16x16(int imgId, int unk1, int unk2, int unk3, int unk4, int unk5);
 
-	void InitSubtitle(const char* audioname);
+	void InitVoiceSubtitle(const char* audioname);
 
 	int DisplaySubtitle();
 
@@ -30,5 +30,7 @@ extern "C" {
 	extern int LoadImage(RECT* rect, u_long* p);
 
 	static int movieSubIdx = -1;
+
+	static int audioSubIdx = -1;
 }
 #endif
