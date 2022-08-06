@@ -30,13 +30,6 @@ struct MovieSubtitle {
 	MovieSubtitlePart* parts;
 };
 
-struct MovieSubtitles {
-	const MovieSubtitlePart* parts;
-	u8 partsCount;
-	u8 nextPartIdx;
-	u8 ticksTilNext;
-};
-
 extern const u32 movieSubtitlesCount;
 extern MovieSubtitle movieSubtitles[];
 #endif

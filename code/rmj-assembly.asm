@@ -113,6 +113,7 @@ SubFont:
 		lw a3, 0(a3)
 		
 		j 0x8004a1b0
+		nop
 		
 	InitMovieSub:
 		addiu sp, sp, -20
