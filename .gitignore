@@ -1,0 +1,17 @@
+cd/*.bin
+cd/*.cue
+cd/*.cat
+cd/*.sys
+cd/orig/*
+cd/rmj_1/*
+
+*.xdelta3
+*.zip
+*.log
+*error.txt
+
+exe/SLPS*
+
+.vs
+*vcxproj*
+

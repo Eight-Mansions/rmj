@@ -20,7 +20,7 @@ mkdir orig
 mkdir %working_name%
 
 echo Normalizing bin name...
-ren "%~1" "%filename%_original.bin"
+copy "%~1" "%filename%_original.bin"
 echo:
 
 echo Writing out a new cue file...
