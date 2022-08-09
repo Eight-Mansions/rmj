@@ -1,0 +1,237 @@
+system_area {
+  file "rmj_1.sys"
+}
+
+volume {
+  system_id [PLAYSTATION]
+  volume_id []
+  volume_set_id []
+  publisher_id []
+  preparer_id []
+  application_id [PLAYSTATION]
+  copyright_file_id []
+  abstract_file_id []
+  bibliographic_file_id []
+  creation_date 1997-10-06 12:42:19.00 36
+  modification_date 0000-00-00 00:00:00.00 0
+  expiration_date 0000-00-00 00:00:00.00 0
+  effective_date 0000-00-00 00:00:00.00 0
+}
+
+dir {
+  file SLPS_010.87
+  file SYSTEM.CNF
+  file MJ0001.DAT
+  dir OL {
+    file OL0.TMS
+    file OL1.TMS
+    file OL2.TMS
+    file OL3.TMS
+    file OL4.TMS
+    file OL5.TMS
+    file OL6.TMS
+    file OL7.TMS
+  }
+  dir TIM {
+    file DIAG1.TMS
+    file DIAG2.TMS
+    file DIAG3.TMS
+    file DISKMSG.TIM
+    file ELEVATOR.TMS
+    file GUARD1.TMS
+    file GUARD2.TMS
+    file ITEM.TMS
+    file LIGHT.TIM
+    file NOWLOAD.TIM
+    file OVER.TMS
+    file REST1.TMS
+    file REST2.TMS
+    file REST3.TMS
+    file REST4.TMS
+    file SAVE.TMS
+    file TDEV1.TMS
+    file TDEV2.TMS
+    file TITLE.TMS
+    file VLCHECK.TMS
+    file VLSUIT.TMS
+    file WAIT.TMS
+    dir BS {
+      file DIC.BS
+      file GUIDE.BS
+      file MANUAL.BS
+      file NEWS.BS
+      file PIC3F.BS
+      file PIC4F.BS
+      file PICTURE.BS
+      file POSTER3F.BS
+      file POSTER4F.BS
+      file RF_REP1.BS
+      file RF_REP2.BS
+      file RF_REP3.BS
+      file RF_REP4.BS
+      file RF_REP5.BS
+    }
+    dir REST {
+      file P01.BS
+      file P02.BS
+      file P03.BS
+      file P04.BS
+      file P05.BS
+      file P06.BS
+      file P07.BS
+      file P08.BS
+      file P09.BS
+      file P10.BS
+      file P11.BS
+      file P12.BS
+      file P13.BS
+      file P14.BS
+      file P15.BS
+      file P16.BS
+      file P17.BS
+      file P18.BS
+      file P19.BS
+      file P20.BS
+      file P21.BS
+      file P99.BS
+    }
+    dir STORY {
+      file BIG01.TIM
+      file BIG02.TIM
+      file BIG03.TIM
+      file BIG04.TIM
+      file BIG05.TIM
+      file BIG06.TIM
+      file BIG07.TIM
+      file BIG08.TIM
+      file BIG09.TIM
+      file BIG10.TIM
+      file BIG11.TIM
+      file BIG12.TIM
+      file BIG13.TIM
+      file BIG14.TIM
+      file BIG15.TIM
+    }
+    dir VBLAB {
+      file VBC_P18.BS
+      file VBC_P19.BS
+      file VBC_P20.BS
+      file VBC_P21.BS
+      file VBC_P22.BS
+      file VBLAB.TMS
+    }
+  }
+  dir BGM {
+    file BGM007.SEQ
+    file BGM007.VX
+    file BGM008.SEQ
+    file BGM008.VX
+    file BGM009.SEQ
+    file BGM009.VX
+    file BGM010.SEQ
+    file BGM010.VX
+    file BGM011.SEQ
+    file BGM011.VX
+    file BGM012.SEQ
+    file BGM012.VX
+    file BGM013.SEQ
+    file BGM013.VX
+    file BGM014.SEQ
+    file BGM014.VX
+    file BGM020.SEQ
+    file BGM020.VX
+  }
+  dir SOUND {
+    file FOOT1.VX
+    file FOOT2.VX
+    file FOOT2D.VX
+    file FOOT2_2.VX
+    file SEB.SEP
+    file SEB.VX
+    file SEG.SEP
+    file SEG.VX
+    file SEG017.SEQ
+    file SEG018.SEQ
+    file SEG019.SEQ
+    file SEG020.SEQ
+    file SEG055.SEQ
+    file SEG056.SEQ
+    file SEG057.SEQ
+    file SEG058.SEQ
+    file SEG064.SEQ
+    file SEG065.SEQ
+    file SEGREST.VX
+    dir XA1 {
+      file EMO1.INF
+      xafile EMO1.XAI
+      file EMO2.INF
+      xafile EMO2.XAI
+      file EMO3.INF
+      xafile EMO3.XAI
+      file EMO4.INF
+      xafile EMO4.XAI
+      file EMO5.INF
+      xafile EMO5.XAI
+      file EMO6.INF
+      xafile EMO6.XAI
+      file EMO7.INF
+      xafile EMO7.XAI
+      file GOK11.INF
+      xafile GOK11.XAI
+      file GOK12.INF
+      xafile GOK12.XAI
+      file GOK13.INF
+      xafile GOK13.XAI
+      file GOK14.INF
+      xafile GOK14.XAI
+      file GOK15.INF
+      xafile GOK15.XAI
+      file SE1.INF
+      xafile SE1.XAI
+      file SE2.INF
+      xafile SE2.XAI
+      file SE3.INF
+      xafile SE3.XAI
+    }
+    dir XA2 {
+      file WP11.INF
+      xafile WP11.XAI
+      file WP12.INF
+      xafile WP12.XAI
+      file WP13.INF
+      xafile WP13.XAI
+      file WS11.INF
+      xafile WS11.XAI
+      file WS12.INF
+      xafile WS12.XAI
+      file WS13.INF
+      xafile WS13.XAI
+      file WS14.INF
+      xafile WS14.XAI
+      file WS15.INF
+      xafile WS15.XAI
+      file WS16.INF
+      xafile WS16.XAI
+      file WS17.INF
+      xafile WS17.XAI
+    }
+  }
+  dir DATA {
+    xafile EV1A.DAT
+    file EV1A.INF
+    xafile EV2A.DAT
+    file EV2A.INF
+    xafile OPENA.DAT
+    file OPENA.INF
+	file SUBTITLES1.DAT
+    file WH.DAT
+    file WH.INF
+    xafile WHA.DAT
+    file WHA.INF
+    file WL1.DAT
+    file WL1.INF
+    xafile WL1A.DAT
+    file WL1A.INF
+  }
+  file ATMP.TMP
+}

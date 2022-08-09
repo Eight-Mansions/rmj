@@ -46,12 +46,8 @@ echo Backing up files as the original files...
 xcopy /e /h /q %working_name% orig
 echo:
 
-:: The tool doesn't like it when you specify a name for the catalog, so it defaults
-:: to the output directory name. Rename it.
-:: echo Fixing catalog image name...
-:: ren orig.cat %working_name%.cat
-:: ren orig.sys %working_name%.sys
-:: echo:
+:: We added files to the disc, so use the managed catalog file
+copy rmj_1_base.cat rmj_1.cat
 
 echo Success~!
 goto :EXIT
