@@ -14,7 +14,7 @@ Audio File: EV3A.DAT[6].avi
 Video File: EV3A.DAT[6].avi
 Video AR Mode: 4
 Video AR Value: 1.666667
-Active Line: 10
+Active Line: 4
 Video Position: 821
 
 [V4+ Styles]
@@ -27,7 +27,7 @@ Dialogue: 0,0:00:10.10,0:00:13.23,Default,,0,0,0,,It can't be!? This one's not M
 Dialogue: 0,0:00:15.70,0:00:17.63,Default,,0,0,0,,Where is it!?
 Dialogue: 0,0:00:19.03,0:00:21.76,Default,,0,0,0,,If MJ's not here, then...\NWhat have we...
 Dialogue: 0,0:00:21.96,0:00:23.63,Default,,0,0,0,,Boss! MJ!
-Dialogue: 0,0:00:23.83,0:00:25.36,Default,,0,0,0,,Oh my God!
+Dialogue: 0,0:00:23.83,0:00:25.36,Default,,0,0,0,,Oh my god!
 Dialogue: 0,0:00:25.83,0:00:27.90,Default,,0,0,0,,MJ... It's MJ!
 Dialogue: 0,0:00:29.96,0:00:32.03,Default,,0,0,0,,Alright, let's make the panacea!
 Dialogue: 0,0:00:39.03,0:00:40.70,Default,,0,0,0,,The medicine of our dreams!

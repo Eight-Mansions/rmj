@@ -15,8 +15,7 @@ Video File: EV3A.DAT[4].avi
 Video AR Mode: 4
 Video AR Value: 1.666667
 Video Zoom Percent: 2.000000
-Scroll Position: 9
-Active Line: 43
+Active Line: 1
 Video Position: 2303
 
 [V4+ Styles]
@@ -26,7 +25,7 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 0,0:00:00.00,0:00:02.56,Default,,0,0,0,,Ugh! It's so rancid!!
-Dialogue: 0,0:00:06.50,0:00:08.56,Default,,0,0,0,,Oh God, it's so gross!!
+Dialogue: 0,0:00:06.50,0:00:08.56,Default,,0,0,0,,Oh god, it's so gross!!
 Dialogue: 0,0:00:02.56,0:00:04.30,Default,,0,0,0,,What's this SMELL!?
 Dialogue: 0,0:00:08.56,0:00:10.43,Default,,0,0,0,,Are you okay, Misato!?
 Dialogue: 0,0:00:10.90,0:00:13.10,Default,,0,0,0,,Look! There's someone inside!
