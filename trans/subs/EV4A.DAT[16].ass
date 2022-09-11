@@ -10,13 +10,12 @@ PlayResX: 320
 PlayResY: 192
 
 [Aegisub Project Garbage]
-Audio File: EV1A.DAT[0].avi
-Video File: EV1A.DAT[0].avi
+Audio File: C:/Users/yagen/OneDrive/Games/Translations/R-MJ/resources/disc 2/videos/DATA/videos_to_sub/EV4A.DAT[16].avi
+Video File: C:/Users/yagen/OneDrive/Games/Translations/R-MJ/resources/disc 2/videos/DATA/videos_to_sub/EV4A.DAT[16].avi
 Video AR Mode: 4
 Video AR Value: 1.666667
-Video Zoom Percent: 2.000000
-Active Line: 4
-Video Position: 363
+Active Line: 3
+Video Position: 558
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -24,11 +23,7 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:13.36,0:00:16.56,Default,,0,0,0,,Hey, open the door! HEY!
-Dialogue: 0,0:00:16.56,0:00:18.03,Default,,0,0,0,,Help, anyone!!
-Dialogue: 0,0:00:19.16,0:00:19.90,Default,,0,0,0,,Damnit!
-Dialogue: 0,0:00:22.90,0:00:23.90,Default,,0,0,0,,No luck here!
-Dialogue: 0,0:00:23.90,0:00:25.76,Default,,0,0,0,,What if there's another explosion!?
-Dialogue: 0,0:00:26.63,0:00:28.96,Default,,0,0,0,,No need to panic, Aya.
-Dialogue: 0,0:00:31.76,0:00:32.90,Default,,0,0,0,,Someone will find us.
-Dialogue: 0,0:00:33.56,0:00:35.50,Default,,0,0,0,,What can I do to help?
+Dialogue: 0,0:00:01.83,0:00:02.56,Default,,0,0,0,,Ryo!
+Dialogue: 0,0:00:13.76,0:00:18.03,Default,,0,0,0,,TOMOWO!
+Dialogue: 0,0:00:19.23,0:00:20.16,Default,,0,0,0,,Come on!
+Dialogue: 0,0:00:36.96,0:00:39.36,Default,,0,0,0,,GET ON THE FUCKING\NTRAIN NOW!
