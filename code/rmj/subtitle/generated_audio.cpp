@@ -7,7 +7,7 @@ const u8 partdata_0[] = { 12, 31, 46, 63, 45, 75, 34, 47, 44, 44, 51, 55, 0 };
 const u8 partdata_1[] = { 75, 0 };
 
 const subtitle_part sub0_parts[] = {
-	{(const char*)partdata_0, 6, 0},
+	{(const char*)partdata_0, 6, 1},
 	{(const char*)partdata_1, 1, 22},
 };
 
@@ -18,7 +18,7 @@ const u8 partdata_2[] = { 4, 41, 40, 63, 46, 75, 36, 47, 45, 46, 75, 45, 46, 27,
 const u8 partdata_3[] = { 75, 0 };
 
 const subtitle_part sub1_parts[] = {
-	{(const char*)partdata_2, 12, 0},
+	{(const char*)partdata_2, 12, 1},
 	{(const char*)partdata_3, 1, 38},
 };
 
@@ -29,7 +29,7 @@ const u8 partdata_4[] = { 3, 41, 39, 31, 75, 41, 40, 54, 75, 34, 47, 44, 44, 51,
 const u8 partdata_5[] = { 75, 0 };
 
 const subtitle_part sub2_parts[] = {
-	{(const char*)partdata_4, 9, 0},
+	{(const char*)partdata_4, 9, 1},
 	{(const char*)partdata_5, 1, 40},
 };
 
@@ -40,7 +40,7 @@ const u8 partdata_6[] = { 23, 34, 31, 49, 54, 75, 9, 63, 39, 75, 31, 50, 34, 27,
 const u8 partdata_7[] = { 75, 0 };
 
 const subtitle_part sub3_parts[] = {
-	{(const char*)partdata_6, 10, 0},
+	{(const char*)partdata_6, 10, 1},
 	{(const char*)partdata_7, 1, 36},
 };
 
@@ -51,7 +51,7 @@ const u8 partdata_8[] = { 14, 41, 49, 75, 49, 34, 27, 46, 75, 30, 41, 75, 49, 31
 const u8 partdata_9[] = { 75, 0 };
 
 const subtitle_part sub4_parts[] = {
-	{(const char*)partdata_8, 10, 0},
+	{(const char*)partdata_8, 10, 1},
 	{(const char*)partdata_9, 1, 45},
 };
 
@@ -62,7 +62,7 @@ const u8 partdata_10[] = { 15, 34, 75, 42, 38, 31, 27, 45, 31, 54, 75, 7, 41, 30
 const u8 partdata_11[] = { 75, 0 };
 
 const subtitle_part sub5_parts[] = {
-	{(const char*)partdata_10, 8, 0},
+	{(const char*)partdata_10, 8, 1},
 	{(const char*)partdata_11, 1, 30},
 };
 
@@ -73,7 +73,7 @@ const u8 partdata_12[] = { 13, 51, 75, 34, 27, 40, 30, 45, 75, 27, 44, 31, 75, 4
 const u8 partdata_13[] = { 75, 0 };
 
 const subtitle_part sub6_parts[] = {
-	{(const char*)partdata_12, 17, 0},
+	{(const char*)partdata_12, 17, 1},
 	{(const char*)partdata_13, 1, 52},
 };
 
@@ -84,7 +84,7 @@ const u8 partdata_14[] = { 9, 63, 48, 31, 75, 33, 41, 46, 75, 27, 75, 28, 27, 30
 const u8 partdata_15[] = { 75, 0 };
 
 const subtitle_part sub7_parts[] = {
-	{(const char*)partdata_14, 17, 0},
+	{(const char*)partdata_14, 17, 1},
 	{(const char*)partdata_15, 1, 46},
 };
 
@@ -95,7 +95,7 @@ const u8 partdata_16[] = { 5, 48, 31, 44, 51, 46, 34, 35, 40, 33, 63, 45, 75, 33
 const u8 partdata_17[] = { 75, 0 };
 
 const subtitle_part sub8_parts[] = {
-	{(const char*)partdata_16, 14, 0},
+	{(const char*)partdata_16, 14, 1},
 	{(const char*)partdata_17, 1, 38},
 };
 
@@ -106,7 +106,7 @@ const u8 partdata_18[] = { 20, 27, 37, 31, 75, 27, 75, 30, 31, 31, 42, 75, 28, 4
 const u8 partdata_19[] = { 75, 0 };
 
 const subtitle_part sub9_parts[] = {
-	{(const char*)partdata_18, 10, 0},
+	{(const char*)partdata_18, 10, 1},
 	{(const char*)partdata_19, 1, 24},
 };
 
@@ -117,7 +117,7 @@ const u8 partdata_20[] = { 7, 41, 46, 46, 27, 75, 37, 31, 31, 42, 75, 41, 47, 44
 const u8 partdata_21[] = { 75, 0 };
 
 const subtitle_part sub10_parts[] = {
-	{(const char*)partdata_20, 15, 0},
+	{(const char*)partdata_20, 15, 1},
 	{(const char*)partdata_21, 1, 33},
 };
 
@@ -128,7 +128,7 @@ const u8 partdata_22[] = { 20, 41, 39, 41, 49, 41, 54, 75, 51, 41, 47, 75, 41, 3
 const u8 partdata_23[] = { 75, 0 };
 
 const subtitle_part sub11_parts[] = {
-	{(const char*)partdata_22, 9, 0},
+	{(const char*)partdata_22, 9, 1},
 	{(const char*)partdata_23, 1, 56},
 };
 
@@ -139,7 +139,7 @@ const u8 partdata_24[] = { 13, 35, 45, 27, 46, 41, 54, 75, 42, 38, 31, 27, 45, 3
 const u8 partdata_25[] = { 75, 0 };
 
 const subtitle_part sub12_parts[] = {
-	{(const char*)partdata_24, 20, 0},
+	{(const char*)partdata_24, 20, 1},
 	{(const char*)partdata_25, 1, 46},
 };
 
@@ -150,7 +150,7 @@ const u8 partdata_26[] = { 18, 51, 41, 54, 75, 30, 41, 40, 63, 46, 75, 42, 47, 4
 const u8 partdata_27[] = { 75, 0 };
 
 const subtitle_part sub13_parts[] = {
-	{(const char*)partdata_26, 13, 0},
+	{(const char*)partdata_26, 13, 1},
 	{(const char*)partdata_27, 1, 58},
 };
 
@@ -161,7 +161,7 @@ const u8 partdata_28[] = { 8, 27, 36, 35, 39, 31, 55, 0 };
 const u8 partdata_29[] = { 75, 0 };
 
 const subtitle_part sub14_parts[] = {
-	{(const char*)partdata_28, 4, 0},
+	{(const char*)partdata_28, 4, 1},
 	{(const char*)partdata_29, 1, 24},
 };
 
@@ -172,7 +172,7 @@ const u8 partdata_30[] = { 15, 34, 75, 40, 41, 0, 0 };
 const u8 partdata_31[] = { 75, 0 };
 
 const subtitle_part sub15_parts[] = {
-	{(const char*)partdata_30, 3, 0},
+	{(const char*)partdata_30, 3, 1},
 	{(const char*)partdata_31, 1, 36},
 };
 
@@ -183,7 +183,7 @@ const u8 partdata_32[] = { 12, 31, 46, 63, 45, 75, 33, 31, 46, 75, 33, 41, 35, 4
 const u8 partdata_33[] = { 75, 0 };
 
 const subtitle_part sub16_parts[] = {
-	{(const char*)partdata_32, 12, 0},
+	{(const char*)partdata_32, 12, 1},
 	{(const char*)partdata_33, 1, 48},
 };
 
@@ -194,7 +194,7 @@ const u8 partdata_34[] = { 4, 41, 40, 63, 46, 75, 36, 47, 45, 46, 75, 45, 46, 27
 const u8 partdata_35[] = { 75, 0 };
 
 const subtitle_part sub17_parts[] = {
-	{(const char*)partdata_34, 15, 0},
+	{(const char*)partdata_34, 15, 1},
 	{(const char*)partdata_35, 1, 64},
 };
 
@@ -205,7 +205,7 @@ const u8 partdata_36[] = { 21, 33, 34, 54, 75, 46, 34, 35, 45, 75, 35, 45, 75, 4
 const u8 partdata_37[] = { 75, 0 };
 
 const subtitle_part sub18_parts[] = {
-	{(const char*)partdata_36, 15, 0},
+	{(const char*)partdata_36, 15, 1},
 	{(const char*)partdata_37, 1, 56},
 };
 
@@ -216,7 +216,7 @@ const u8 partdata_38[] = { 3, 41, 39, 31, 75, 41, 40, 54, 75, 30, 41, 40, 63, 46
 const u8 partdata_39[] = { 75, 0 };
 
 const subtitle_part sub19_parts[] = {
-	{(const char*)partdata_38, 14, 0},
+	{(const char*)partdata_38, 14, 1},
 	{(const char*)partdata_39, 1, 48},
 };
 
@@ -227,7 +227,7 @@ const u8 partdata_40[] = { 19, 46, 41, 42, 75, 27, 38, 44, 31, 27, 30, 51, 54, 7
 const u8 partdata_41[] = { 75, 0 };
 
 const subtitle_part sub20_parts[] = {
-	{(const char*)partdata_40, 12, 0},
+	{(const char*)partdata_40, 12, 1},
 	{(const char*)partdata_41, 1, 44},
 };
 
@@ -238,7 +238,7 @@ const u8 partdata_42[] = { 0, 45, 35, 33, 34, 0, 0 };
 const u8 partdata_43[] = { 75, 0 };
 
 const subtitle_part sub21_parts[] = {
-	{(const char*)partdata_42, 3, 0},
+	{(const char*)partdata_42, 3, 1},
 	{(const char*)partdata_43, 1, 38},
 };
 
@@ -249,7 +249,7 @@ const u8 partdata_44[] = { 9, 75, 29, 27, 40, 63, 46, 75, 30, 41, 75, 46, 34, 35
 const u8 partdata_45[] = { 75, 0 };
 
 const subtitle_part sub22_parts[] = {
-	{(const char*)partdata_44, 12, 0},
+	{(const char*)partdata_44, 12, 1},
 	{(const char*)partdata_45, 1, 46},
 };
 
@@ -260,7 +260,7 @@ const u8 partdata_46[] = { 15, 34, 54, 75, 35, 46, 63, 45, 75, 29, 38, 31, 27, 4
 const u8 partdata_47[] = { 75, 0 };
 
 const subtitle_part sub23_parts[] = {
-	{(const char*)partdata_46, 16, 0},
+	{(const char*)partdata_46, 16, 1},
 	{(const char*)partdata_47, 1, 58},
 };
 
@@ -271,7 +271,7 @@ const u8 partdata_48[] = { 9, 63, 48, 31, 75, 33, 41, 46, 75, 27, 75, 28, 27, 30
 const u8 partdata_49[] = { 75, 0 };
 
 const subtitle_part sub24_parts[] = {
-	{(const char*)partdata_48, 17, 0},
+	{(const char*)partdata_48, 17, 1},
 	{(const char*)partdata_49, 1, 46},
 };
 
@@ -282,7 +282,7 @@ const u8 partdata_50[] = { 25, 41, 47, 63, 44, 31, 75, 36, 47, 45, 46, 75, 46, 3
 const u8 partdata_51[] = { 75, 0 };
 
 const subtitle_part sub25_parts[] = {
-	{(const char*)partdata_50, 11, 0},
+	{(const char*)partdata_50, 11, 1},
 	{(const char*)partdata_51, 1, 58},
 };
 
@@ -293,7 +293,7 @@ const u8 partdata_52[] = { 23, 34, 27, 46, 75, 45, 34, 41, 47, 38, 30, 75, 49, 3
 const u8 partdata_53[] = { 75, 0 };
 
 const subtitle_part sub26_parts[] = {
-	{(const char*)partdata_52, 14, 0},
+	{(const char*)partdata_52, 14, 1},
 	{(const char*)partdata_53, 1, 42},
 };
 
@@ -304,7 +304,7 @@ const u8 partdata_54[] = { 20, 34, 27, 46, 63, 45, 75, 31, 40, 41, 47, 33, 34, 7
 const u8 partdata_55[] = { 75, 0 };
 
 const subtitle_part sub27_parts[] = {
-	{(const char*)partdata_54, 11, 0},
+	{(const char*)partdata_54, 11, 1},
 	{(const char*)partdata_55, 1, 36},
 };
 
@@ -315,7 +315,7 @@ const u8 partdata_56[] = { 1, 51, 27, 54, 75, 42, 38, 31, 27, 45, 31, 75, 30, 41
 const u8 partdata_57[] = { 75, 0 };
 
 const subtitle_part sub28_parts[] = {
-	{(const char*)partdata_56, 13, 0},
+	{(const char*)partdata_56, 13, 1},
 	{(const char*)partdata_57, 1, 58},
 };
 
@@ -326,7 +326,7 @@ const u8 partdata_58[] = { 4, 41, 40, 63, 46, 75, 29, 41, 39, 31, 75, 27, 40, 51
 const u8 partdata_59[] = { 75, 0 };
 
 const subtitle_part sub29_parts[] = {
-	{(const char*)partdata_58, 11, 0},
+	{(const char*)partdata_58, 11, 1},
 	{(const char*)partdata_59, 1, 30},
 };
 
@@ -337,7 +337,7 @@ const u8 partdata_60[] = { 8, 31, 51, 54, 75, 27, 44, 31, 75, 51, 41, 47, 75, 44
 const u8 partdata_61[] = { 75, 0 };
 
 const subtitle_part sub30_parts[] = {
-	{(const char*)partdata_60, 13, 0},
+	{(const char*)partdata_60, 13, 1},
 	{(const char*)partdata_61, 1, 54},
 };
 
@@ -348,7 +348,7 @@ const u8 partdata_62[] = { 1, 51, 27, 55, 0 };
 const u8 partdata_63[] = { 75, 0 };
 
 const subtitle_part sub31_parts[] = {
-	{(const char*)partdata_62, 2, 0},
+	{(const char*)partdata_62, 2, 1},
 	{(const char*)partdata_63, 1, 24},
 };
 
@@ -359,7 +359,7 @@ const u8 partdata_64[] = { 14, 41, 75, 49, 27, 27, 27, 51, 62, 0 };
 const u8 partdata_65[] = { 75, 0 };
 
 const subtitle_part sub32_parts[] = {
-	{(const char*)partdata_64, 5, 0},
+	{(const char*)partdata_64, 5, 1},
 	{(const char*)partdata_65, 1, 50},
 };
 
@@ -370,7 +370,7 @@ const u8 partdata_66[] = { 12, 31, 46, 63, 45, 75, 33, 31, 46, 75, 39, 41, 48, 3
 const u8 partdata_67[] = { 75, 0 };
 
 const subtitle_part sub33_parts[] = {
-	{(const char*)partdata_66, 9, 0},
+	{(const char*)partdata_66, 9, 1},
 	{(const char*)partdata_67, 1, 30},
 };
 
@@ -381,7 +381,7 @@ const u8 partdata_68[] = { 23, 31, 75, 33, 41, 46, 46, 27, 75, 37, 31, 31, 42, 7
 const u8 partdata_69[] = { 75, 0 };
 
 const subtitle_part sub34_parts[] = {
-	{(const char*)partdata_68, 11, 0},
+	{(const char*)partdata_68, 11, 1},
 	{(const char*)partdata_69, 1, 50},
 };
 
@@ -392,7 +392,7 @@ const u8 partdata_70[] = { 12, 31, 46, 63, 45, 75, 42, 35, 29, 37, 75, 47, 42, 7
 const u8 partdata_71[] = { 75, 0 };
 
 const subtitle_part sub35_parts[] = {
-	{(const char*)partdata_70, 12, 0},
+	{(const char*)partdata_70, 12, 1},
 	{(const char*)partdata_71, 1, 38},
 };
 
@@ -403,7 +403,7 @@ const u8 partdata_72[] = { 19, 46, 35, 38, 38, 75, 40, 41, 46, 75, 46, 34, 31, 4
 const u8 partdata_73[] = { 75, 0 };
 
 const subtitle_part sub36_parts[] = {
-	{(const char*)partdata_72, 17, 0},
+	{(const char*)partdata_72, 17, 1},
 	{(const char*)partdata_73, 1, 64},
 };
 
@@ -414,7 +414,7 @@ const u8 partdata_74[] = { 21, 33, 34, 54, 75, 46, 34, 35, 45, 75, 35, 45, 75, 3
 const u8 partdata_75[] = { 75, 0 };
 
 const subtitle_part sub37_parts[] = {
-	{(const char*)partdata_74, 16, 0},
+	{(const char*)partdata_74, 16, 1},
 	{(const char*)partdata_75, 1, 68},
 };
 
@@ -425,7 +425,7 @@ const u8 partdata_76[] = { 0, 45, 35, 33, 34, 0, 0 };
 const u8 partdata_77[] = { 75, 0 };
 
 const subtitle_part sub38_parts[] = {
-	{(const char*)partdata_76, 3, 0},
+	{(const char*)partdata_76, 3, 1},
 	{(const char*)partdata_77, 1, 48},
 };
 
@@ -436,7 +436,7 @@ const u8 partdata_78[] = { 4, 27, 39, 40, 35, 46, 0, 0 };
 const u8 partdata_79[] = { 75, 0 };
 
 const subtitle_part sub39_parts[] = {
-	{(const char*)partdata_78, 4, 0},
+	{(const char*)partdata_78, 4, 1},
 	{(const char*)partdata_79, 1, 48},
 };
 
@@ -447,7 +447,7 @@ const u8 partdata_80[] = { 20, 34, 31, 75, 32, 47, 29, 37, 63, 45, 75, 31, 48, 3
 const u8 partdata_81[] = { 75, 0 };
 
 const subtitle_part sub40_parts[] = {
-	{(const char*)partdata_80, 15, 0},
+	{(const char*)partdata_80, 15, 1},
 	{(const char*)partdata_81, 1, 54},
 };
 
@@ -458,7 +458,7 @@ const u8 partdata_82[] = { 12, 31, 46, 63, 45, 75, 45, 46, 41, 42, 75, 27, 38, 4
 const u8 partdata_83[] = { 75, 0 };
 
 const subtitle_part sub41_parts[] = {
-	{(const char*)partdata_82, 10, 0},
+	{(const char*)partdata_82, 10, 1},
 	{(const char*)partdata_83, 1, 52},
 };
 
@@ -469,7 +469,7 @@ const u8 partdata_84[] = { 6, 41, 44, 75, 3, 34, 44, 35, 45, 46, 63, 45, 75, 45,
 const u8 partdata_85[] = { 75, 0 };
 
 const subtitle_part sub42_parts[] = {
-	{(const char*)partdata_84, 9, 0},
+	{(const char*)partdata_84, 9, 1},
 	{(const char*)partdata_85, 1, 34},
 };
 
@@ -480,7 +480,7 @@ const u8 partdata_86[] = { 14, 41, 49, 75, 46, 34, 31, 40, 0, 0 };
 const u8 partdata_87[] = { 75, 0 };
 
 const subtitle_part sub43_parts[] = {
-	{(const char*)partdata_86, 5, 0},
+	{(const char*)partdata_86, 5, 1},
 	{(const char*)partdata_87, 1, 40},
 };
 
@@ -491,7 +491,7 @@ const u8 partdata_88[] = { 5, 48, 31, 44, 51, 46, 34, 35, 40, 33, 75, 49, 35, 38
 const u8 partdata_89[] = { 75, 0 };
 
 const subtitle_part sub44_parts[] = {
-	{(const char*)partdata_88, 13, 0},
+	{(const char*)partdata_88, 13, 1},
 	{(const char*)partdata_89, 1, 46},
 };
 
@@ -502,7 +502,7 @@ const u8 partdata_90[] = { 9, 75, 45, 27, 35, 30, 75, 40, 41, 46, 75, 46, 41, 75
 const u8 partdata_91[] = { 75, 0 };
 
 const subtitle_part sub45_parts[] = {
-	{(const char*)partdata_90, 10, 0},
+	{(const char*)partdata_90, 10, 1},
 	{(const char*)partdata_91, 1, 60},
 };
 
@@ -513,7 +513,7 @@ const u8 partdata_92[] = { 20, 41, 39, 41, 49, 41, 54, 75, 51, 41, 47, 75, 30, 4
 const u8 partdata_93[] = { 75, 0 };
 
 const subtitle_part sub46_parts[] = {
-	{(const char*)partdata_92, 12, 0},
+	{(const char*)partdata_92, 12, 1},
 	{(const char*)partdata_93, 1, 48},
 };
 
@@ -524,7 +524,7 @@ const u8 partdata_94[] = { 4, 41, 40, 63, 46, 75, 49, 41, 44, 44, 51, 75, 27, 28
 const u8 partdata_95[] = { 75, 0 };
 
 const subtitle_part sub47_parts[] = {
-	{(const char*)partdata_94, 13, 0},
+	{(const char*)partdata_94, 13, 1},
 	{(const char*)partdata_95, 1, 56},
 };
 
@@ -535,7 +535,7 @@ const u8 partdata_96[] = { 8, 27, 36, 35, 39, 31, 55, 0 };
 const u8 partdata_97[] = { 75, 0 };
 
 const subtitle_part sub48_parts[] = {
-	{(const char*)partdata_96, 4, 0},
+	{(const char*)partdata_96, 4, 1},
 	{(const char*)partdata_97, 1, 24},
 };
 
@@ -546,7 +546,7 @@ const u8 partdata_98[] = { 18, 31, 27, 38, 38, 51, 75, 40, 41, 49, 0, 0 };
 const u8 partdata_99[] = { 75, 0 };
 
 const subtitle_part sub49_parts[] = {
-	{(const char*)partdata_98, 6, 0},
+	{(const char*)partdata_98, 6, 1},
 	{(const char*)partdata_99, 1, 36},
 };
 
@@ -557,7 +557,7 @@ const u8 partdata_100[] = { 3, 41, 39, 31, 75, 41, 40, 54, 75, 38, 31, 46, 63, 4
 const u8 partdata_101[] = { 75, 0 };
 
 const subtitle_part sub50_parts[] = {
-	{(const char*)partdata_100, 10, 0},
+	{(const char*)partdata_100, 10, 1},
 	{(const char*)partdata_101, 1, 27},
 };
 
@@ -568,7 +568,7 @@ const u8 partdata_102[] = { 23, 31, 75, 29, 27, 40, 63, 46, 75, 36, 47, 45, 46, 
 const u8 partdata_103[] = { 75, 0 };
 
 const subtitle_part sub51_parts[] = {
-	{(const char*)partdata_102, 13, 0},
+	{(const char*)partdata_102, 13, 1},
 	{(const char*)partdata_103, 1, 34},
 };
 
@@ -579,7 +579,7 @@ const u8 partdata_104[] = { 20, 34, 35, 45, 75, 35, 45, 75, 28, 27, 30, 55, 75, 
 const u8 partdata_105[] = { 75, 0 };
 
 const subtitle_part sub52_parts[] = {
-	{(const char*)partdata_104, 15, 0},
+	{(const char*)partdata_104, 15, 1},
 	{(const char*)partdata_105, 1, 44},
 };
 
@@ -590,7 +590,7 @@ const u8 partdata_106[] = { 9, 63, 39, 75, 33, 31, 46, 46, 35, 40, 33, 75, 28, 3
 const u8 partdata_107[] = { 75, 0 };
 
 const subtitle_part sub53_parts[] = {
-	{(const char*)partdata_106, 9, 0},
+	{(const char*)partdata_106, 9, 1},
 	{(const char*)partdata_107, 1, 44},
 };
 
@@ -601,7 +601,7 @@ const u8 partdata_108[] = { 20, 34, 35, 45, 75, 35, 45, 75, 40, 41, 46, 75, 38, 
 const u8 partdata_109[] = { 75, 0 };
 
 const subtitle_part sub54_parts[] = {
-	{(const char*)partdata_108, 13, 0},
+	{(const char*)partdata_108, 13, 1},
 	{(const char*)partdata_109, 1, 38},
 };
 
@@ -612,7 +612,7 @@ const u8 partdata_110[] = { 0, 45, 35, 33, 34, 0, 0 };
 const u8 partdata_111[] = { 75, 0 };
 
 const subtitle_part sub55_parts[] = {
-	{(const char*)partdata_110, 3, 0},
+	{(const char*)partdata_110, 3, 1},
 	{(const char*)partdata_111, 1, 46},
 };
 
@@ -623,7 +623,7 @@ const u8 partdata_112[] = { 1, 44, 31, 75, 49, 31, 75, 44, 31, 27, 38, 38, 51, 7
 const u8 partdata_113[] = { 75, 0 };
 
 const subtitle_part sub56_parts[] = {
-	{(const char*)partdata_112, 14, 0},
+	{(const char*)partdata_112, 14, 1},
 	{(const char*)partdata_113, 1, 46},
 };
 
@@ -634,7 +634,7 @@ const u8 partdata_114[] = { 20, 34, 27, 46, 75, 49, 27, 45, 75, 44, 31, 27, 38, 
 const u8 partdata_115[] = { 75, 0 };
 
 const subtitle_part sub57_parts[] = {
-	{(const char*)partdata_114, 11, 0},
+	{(const char*)partdata_114, 11, 1},
 	{(const char*)partdata_115, 1, 42},
 };
 
@@ -645,7 +645,7 @@ const u8 partdata_116[] = { 15, 34, 75, 39, 27, 40, 54, 75, 9, 75, 44, 31, 27, 3
 const u8 partdata_117[] = { 75, 0 };
 
 const subtitle_part sub58_parts[] = {
-	{(const char*)partdata_116, 16, 0},
+	{(const char*)partdata_116, 16, 1},
 	{(const char*)partdata_117, 1, 50},
 };
 
@@ -656,7 +656,7 @@ const u8 partdata_118[] = { 9, 63, 39, 75, 32, 35, 40, 31, 54, 75, 9, 63, 39, 75
 const u8 partdata_119[] = { 75, 0 };
 
 const subtitle_part sub59_parts[] = {
-	{(const char*)partdata_118, 10, 0},
+	{(const char*)partdata_118, 10, 1},
 	{(const char*)partdata_119, 1, 82},
 };
 
@@ -667,7 +667,7 @@ const u8 partdata_120[] = { 1, 44, 31, 75, 51, 41, 47, 75, 32, 47, 29, 37, 35, 4
 const u8 partdata_121[] = { 75, 0 };
 
 const subtitle_part sub60_parts[] = {
-	{(const char*)partdata_120, 14, 0},
+	{(const char*)partdata_120, 14, 1},
 	{(const char*)partdata_121, 1, 60},
 };
 
@@ -678,7 +678,7 @@ const u8 partdata_122[] = { 9, 75, 29, 27, 40, 63, 46, 75, 30, 31, 27, 38, 75, 4
 const u8 partdata_123[] = { 75, 0 };
 
 const subtitle_part sub61_parts[] = {
-	{(const char*)partdata_122, 18, 0},
+	{(const char*)partdata_122, 18, 1},
 	{(const char*)partdata_123, 1, 62},
 };
 
@@ -689,7 +689,7 @@ const u8 partdata_124[] = { 18, 51, 41, 54, 75, 9, 63, 39, 75, 45, 41, 44, 44, 5
 const u8 partdata_125[] = { 75, 0 };
 
 const subtitle_part sub62_parts[] = {
-	{(const char*)partdata_124, 10, 0},
+	{(const char*)partdata_124, 10, 1},
 	{(const char*)partdata_125, 1, 68},
 };
 
@@ -700,7 +700,7 @@ const u8 partdata_126[] = { 9, 63, 39, 75, 45, 41, 44, 44, 51, 54, 75, 31, 48, 3
 const u8 partdata_127[] = { 75, 0 };
 
 const subtitle_part sub63_parts[] = {
-	{(const char*)partdata_126, 10, 0},
+	{(const char*)partdata_126, 10, 1},
 	{(const char*)partdata_127, 1, 50},
 };
 
@@ -711,7 +711,7 @@ const u8 partdata_128[] = { 8, 27, 36, 35, 39, 31, 55, 0 };
 const u8 partdata_129[] = { 75, 0 };
 
 const subtitle_part sub64_parts[] = {
-	{(const char*)partdata_128, 4, 0},
+	{(const char*)partdata_128, 4, 1},
 	{(const char*)partdata_129, 1, 26},
 };
 
@@ -722,7 +722,7 @@ const u8 partdata_130[] = { 1, 51, 27, 55, 0 };
 const u8 partdata_131[] = { 75, 0 };
 
 const subtitle_part sub65_parts[] = {
-	{(const char*)partdata_130, 2, 0},
+	{(const char*)partdata_130, 2, 1},
 	{(const char*)partdata_131, 1, 24},
 };
 
@@ -733,7 +733,7 @@ const u8 partdata_132[] = { 9, 46, 63, 45, 75, 31, 46, 34, 27, 40, 41, 38, 54, 7
 const u8 partdata_133[] = { 75, 0 };
 
 const subtitle_part sub66_parts[] = {
-	{(const char*)partdata_132, 24, 0},
+	{(const char*)partdata_132, 24, 1},
 	{(const char*)partdata_133, 1, 98},
 };
 
@@ -744,7 +744,7 @@ const u8 partdata_134[] = { 23, 34, 27, 46, 63, 45, 75, 49, 35, 46, 34, 75, 46, 
 const u8 partdata_135[] = { 75, 0 };
 
 const subtitle_part sub67_parts[] = {
-	{(const char*)partdata_134, 12, 0},
+	{(const char*)partdata_134, 12, 1},
 	{(const char*)partdata_135, 1, 46},
 };
 
@@ -755,7 +755,7 @@ const u8 partdata_136[] = { 23, 34, 27, 46, 63, 45, 75, 46, 34, 27, 46, 75, 45, 
 const u8 partdata_137[] = { 75, 0 };
 
 const subtitle_part sub68_parts[] = {
-	{(const char*)partdata_136, 10, 0},
+	{(const char*)partdata_136, 10, 1},
 	{(const char*)partdata_137, 1, 48},
 };
 
@@ -766,7 +766,7 @@ const u8 partdata_138[] = { 21, 33, 34, 54, 75, 35, 46, 75, 44, 31, 31, 37, 45, 
 const u8 partdata_139[] = { 75, 0 };
 
 const subtitle_part sub69_parts[] = {
-	{(const char*)partdata_138, 8, 0},
+	{(const char*)partdata_138, 8, 1},
 	{(const char*)partdata_139, 1, 44},
 };
 
@@ -777,7 +777,7 @@ const u8 partdata_140[] = { 5, 49, 49, 54, 75, 35, 45, 75, 46, 34, 27, 46, 75, 3
 const u8 partdata_141[] = { 75, 0 };
 
 const subtitle_part sub70_parts[] = {
-	{(const char*)partdata_140, 11, 0},
+	{(const char*)partdata_140, 11, 1},
 	{(const char*)partdata_141, 1, 64},
 };
 
@@ -788,7 +788,7 @@ const u8 partdata_142[] = { 19, 31, 31, 39, 45, 75, 49, 31, 63, 44, 31, 75, 41, 
 const u8 partdata_143[] = { 75, 0 };
 
 const subtitle_part sub71_parts[] = {
-	{(const char*)partdata_142, 22, 0},
+	{(const char*)partdata_142, 22, 1},
 	{(const char*)partdata_143, 1, 52},
 };
 
@@ -799,7 +799,7 @@ const u8 partdata_144[] = { 8, 27, 40, 33, 75, 41, 40, 75, 27, 75, 45, 31, 29, 5
 const u8 partdata_145[] = { 75, 0 };
 
 const subtitle_part sub72_parts[] = {
-	{(const char*)partdata_144, 7, 0},
+	{(const char*)partdata_144, 7, 1},
 	{(const char*)partdata_145, 1, 32},
 };
 
@@ -810,7 +810,7 @@ const u8 partdata_146[] = { 23, 64, 49, 34, 51, 63, 45, 75, 46, 34, 31, 44, 31, 
 const u8 partdata_147[] = { 75, 0 };
 
 const subtitle_part sub73_parts[] = {
-	{(const char*)partdata_146, 13, 0},
+	{(const char*)partdata_146, 13, 1},
 	{(const char*)partdata_147, 1, 56},
 };
 
@@ -821,7 +821,7 @@ const u8 partdata_148[] = { 1, 8, 8, 75, 12, 15, 15, 11, 55, 0 };
 const u8 partdata_149[] = { 75, 0 };
 
 const subtitle_part sub74_parts[] = {
-	{(const char*)partdata_148, 5, 0},
+	{(const char*)partdata_148, 5, 1},
 	{(const char*)partdata_149, 1, 38},
 };
 
@@ -832,7 +832,7 @@ const u8 partdata_150[] = { 9, 46, 63, 45, 75, 36, 47, 45, 46, 75, 39, 51, 0, 51
 const u8 partdata_151[] = { 75, 0 };
 
 const subtitle_part sub75_parts[] = {
-	{(const char*)partdata_150, 22, 0},
+	{(const char*)partdata_150, 22, 1},
 	{(const char*)partdata_151, 1, 40},
 };
 
@@ -843,7 +843,7 @@ const u8 partdata_152[] = { 9, 45, 40, 63, 46, 75, 35, 46, 75, 30, 35, 32, 32, 3
 const u8 partdata_153[] = { 75, 0 };
 
 const subtitle_part sub76_parts[] = {
-	{(const char*)partdata_152, 16, 0},
+	{(const char*)partdata_152, 16, 1},
 	{(const char*)partdata_153, 1, 48},
 };
 
@@ -854,7 +854,7 @@ const u8 partdata_154[] = { 9, 46, 75, 44, 31, 27, 38, 38, 51, 75, 45, 31, 31, 3
 const u8 partdata_155[] = { 75, 0 };
 
 const subtitle_part sub77_parts[] = {
-	{(const char*)partdata_154, 19, 0},
+	{(const char*)partdata_154, 19, 1},
 	{(const char*)partdata_155, 1, 45},
 };
 
@@ -865,7 +865,7 @@ const u8 partdata_156[] = { 4, 35, 30, 75, 51, 41, 47, 75, 45, 31, 31, 75, 46, 3
 const u8 partdata_157[] = { 75, 0 };
 
 const subtitle_part sub78_parts[] = {
-	{(const char*)partdata_156, 13, 0},
+	{(const char*)partdata_156, 13, 1},
 	{(const char*)partdata_157, 1, 36},
 };
 
@@ -876,7 +876,7 @@ const u8 partdata_158[] = { 7, 27, 45, 56, 0 };
 const u8 partdata_159[] = { 75, 0 };
 
 const subtitle_part sub79_parts[] = {
-	{(const char*)partdata_158, 2, 0},
+	{(const char*)partdata_158, 2, 1},
 	{(const char*)partdata_159, 1, 24},
 };
 
@@ -887,7 +887,7 @@ const u8 partdata_160[] = { 23, 34, 27, 46, 63, 45, 75, 46, 34, 27, 46, 75, 45, 
 const u8 partdata_161[] = { 75, 0 };
 
 const subtitle_part sub80_parts[] = {
-	{(const char*)partdata_160, 9, 0},
+	{(const char*)partdata_160, 9, 1},
 	{(const char*)partdata_161, 1, 32},
 };
 
@@ -898,7 +898,7 @@ const u8 partdata_162[] = { 23, 34, 27, 46, 63, 45, 75, 46, 34, 27, 46, 75, 45, 
 const u8 partdata_163[] = { 75, 0 };
 
 const subtitle_part sub81_parts[] = {
-	{(const char*)partdata_162, 9, 0},
+	{(const char*)partdata_162, 9, 1},
 	{(const char*)partdata_163, 1, 27},
 };
 
@@ -909,7 +909,7 @@ const u8 partdata_164[] = { 6, 41, 41, 46, 45, 46, 31, 42, 45, 56, 0 };
 const u8 partdata_165[] = { 75, 0 };
 
 const subtitle_part sub82_parts[] = {
-	{(const char*)partdata_164, 5, 0},
+	{(const char*)partdata_164, 5, 1},
 	{(const char*)partdata_165, 1, 30},
 };
 
@@ -920,7 +920,7 @@ const u8 partdata_166[] = { 8, 27, 40, 33, 75, 41, 40, 54, 75, 9, 75, 34, 31, 27
 const u8 partdata_167[] = { 75, 0 };
 
 const subtitle_part sub83_parts[] = {
-	{(const char*)partdata_166, 14, 0},
+	{(const char*)partdata_166, 14, 1},
 	{(const char*)partdata_167, 1, 52},
 };
 
@@ -931,7 +931,7 @@ const u8 partdata_168[] = { 9, 46, 63, 45, 75, 45, 39, 41, 37, 31, 54, 75, 28, 4
 const u8 partdata_169[] = { 75, 0 };
 
 const subtitle_part sub84_parts[] = {
-	{(const char*)partdata_168, 19, 0},
+	{(const char*)partdata_168, 19, 1},
 	{(const char*)partdata_169, 1, 56},
 };
 
@@ -942,7 +942,7 @@ const u8 partdata_170[] = { 4, 41, 40, 63, 46, 75, 36, 47, 45, 46, 75, 46, 27, 3
 const u8 partdata_171[] = { 75, 0 };
 
 const subtitle_part sub85_parts[] = {
-	{(const char*)partdata_170, 34, 0},
+	{(const char*)partdata_170, 34, 1},
 	{(const char*)partdata_171, 1, 96},
 };
 
@@ -953,7 +953,7 @@ const u8 partdata_172[] = { 1, 44, 33, 34, 54, 75, 35, 46, 63, 45, 75, 45, 41, 7
 const u8 partdata_173[] = { 75, 0 };
 
 const subtitle_part sub86_parts[] = {
-	{(const char*)partdata_172, 10, 0},
+	{(const char*)partdata_172, 10, 1},
 	{(const char*)partdata_173, 1, 66},
 };
 
@@ -964,7 +964,7 @@ const u8 partdata_174[] = { 12, 27, 45, 46, 75, 29, 27, 38, 38, 75, 28, 41, 27, 
 const u8 partdata_175[] = { 75, 0 };
 
 const subtitle_part sub87_parts[] = {
-	{(const char*)partdata_174, 13, 0},
+	{(const char*)partdata_174, 13, 1},
 	{(const char*)partdata_175, 1, 38},
 };
 
@@ -975,7 +975,7 @@ const u8 partdata_176[] = { 23, 34, 27, 46, 63, 45, 75, 46, 34, 27, 46, 56, 0 };
 const u8 partdata_177[] = { 75, 0 };
 
 const subtitle_part sub88_parts[] = {
-	{(const char*)partdata_176, 6, 0},
+	{(const char*)partdata_176, 6, 1},
 	{(const char*)partdata_177, 1, 30},
 };
 
@@ -986,7 +986,7 @@ const u8 partdata_178[] = { 4, 27, 39, 40, 54, 75, 46, 34, 31, 44, 31, 63, 45, 7
 const u8 partdata_179[] = { 75, 0 };
 
 const subtitle_part sub89_parts[] = {
-	{(const char*)partdata_178, 25, 0},
+	{(const char*)partdata_178, 25, 1},
 	{(const char*)partdata_179, 1, 94},
 };
 
@@ -997,7 +997,7 @@ const u8 partdata_180[] = { 23, 27, 35, 46, 54, 75, 30, 41, 40, 63, 46, 75, 46, 
 const u8 partdata_181[] = { 75, 0 };
 
 const subtitle_part sub90_parts[] = {
-	{(const char*)partdata_180, 12, 0},
+	{(const char*)partdata_180, 12, 1},
 	{(const char*)partdata_181, 1, 42},
 };
 
@@ -1008,7 +1008,7 @@ const u8 partdata_182[] = { 25, 41, 47, 63, 44, 31, 75, 45, 46, 44, 31, 45, 45, 
 const u8 partdata_183[] = { 75, 0 };
 
 const subtitle_part sub91_parts[] = {
-	{(const char*)partdata_182, 15, 0},
+	{(const char*)partdata_182, 15, 1},
 	{(const char*)partdata_183, 1, 38},
 };
 
@@ -1019,7 +1019,7 @@ const u8 partdata_184[] = { 23, 34, 27, 46, 75, 27, 28, 41, 47, 46, 75, 46, 34, 
 const u8 partdata_185[] = { 75, 0 };
 
 const subtitle_part sub92_parts[] = {
-	{(const char*)partdata_184, 13, 0},
+	{(const char*)partdata_184, 13, 1},
 	{(const char*)partdata_185, 1, 36},
 };
 
@@ -1030,7 +1030,7 @@ const u8 partdata_186[] = { 58, 27, 75, 44, 41, 41, 39, 75, 35, 45, 75, 28, 47, 
 const u8 partdata_187[] = { 75, 0 };
 
 const subtitle_part sub93_parts[] = {
-	{(const char*)partdata_186, 15, 0},
+	{(const char*)partdata_186, 15, 1},
 	{(const char*)partdata_187, 1, 78},
 };
 
@@ -1041,7 +1041,7 @@ const u8 partdata_188[] = { 9, 46, 75, 45, 39, 31, 38, 38, 45, 75, 45, 41, 75, 4
 const u8 partdata_189[] = { 75, 0 };
 
 const subtitle_part sub94_parts[] = {
-	{(const char*)partdata_188, 10, 0},
+	{(const char*)partdata_188, 10, 1},
 	{(const char*)partdata_189, 1, 46},
 };
 
@@ -1052,7 +1052,7 @@ const u8 partdata_190[] = { 12, 41, 41, 37, 55, 0 };
 const u8 partdata_191[] = { 75, 0 };
 
 const subtitle_part sub95_parts[] = {
-	{(const char*)partdata_190, 3, 0},
+	{(const char*)partdata_190, 3, 1},
 	{(const char*)partdata_191, 1, 26},
 };
 
@@ -1063,7 +1063,7 @@ const u8 partdata_192[] = { 12, 41, 41, 37, 75, 47, 42, 55, 0 };
 const u8 partdata_193[] = { 75, 0 };
 
 const subtitle_part sub96_parts[] = {
-	{(const char*)partdata_192, 4, 0},
+	{(const char*)partdata_192, 4, 1},
 	{(const char*)partdata_193, 1, 28},
 };
 
@@ -1074,7 +1074,7 @@ const u8 partdata_194[] = { 23, 34, 27, 46, 63, 45, 75, 46, 34, 27, 46, 75, 41, 
 const u8 partdata_195[] = { 75, 0 };
 
 const subtitle_part sub97_parts[] = {
-	{(const char*)partdata_194, 12, 0},
+	{(const char*)partdata_194, 12, 1},
 	{(const char*)partdata_195, 1, 26},
 };
 
@@ -1085,7 +1085,7 @@ const u8 partdata_196[] = { 19, 41, 39, 31, 41, 40, 31, 63, 45, 75, 34, 31, 44, 
 const u8 partdata_197[] = { 75, 0 };
 
 const subtitle_part sub98_parts[] = {
-	{(const char*)partdata_196, 8, 0},
+	{(const char*)partdata_196, 8, 1},
 	{(const char*)partdata_197, 1, 28},
 };
 
@@ -1096,7 +1096,7 @@ const u8 partdata_198[] = { 4, 41, 40, 63, 46, 75, 51, 41, 47, 75, 34, 31, 27, 4
 const u8 partdata_199[] = { 75, 0 };
 
 const subtitle_part sub99_parts[] = {
-	{(const char*)partdata_198, 13, 0},
+	{(const char*)partdata_198, 13, 1},
 	{(const char*)partdata_199, 1, 30},
 };
 
@@ -1107,7 +1107,7 @@ const u8 partdata_200[] = { 23, 34, 27, 46, 63, 45, 75, 46, 34, 27, 46, 55, 56, 
 const u8 partdata_201[] = { 75, 0 };
 
 const subtitle_part sub100_parts[] = {
-	{(const char*)partdata_200, 7, 0},
+	{(const char*)partdata_200, 7, 1},
 	{(const char*)partdata_201, 1, 26},
 };
 
@@ -1118,7 +1118,7 @@ const u8 partdata_202[] = { 25, 41, 47, 63, 44, 31, 75, 34, 27, 40, 30, 45, 75, 
 const u8 partdata_203[] = { 75, 0 };
 
 const subtitle_part sub101_parts[] = {
-	{(const char*)partdata_202, 24, 0},
+	{(const char*)partdata_202, 24, 1},
 	{(const char*)partdata_203, 1, 92},
 };
 
@@ -1129,7 +1129,7 @@ const u8 partdata_204[] = { 15, 34, 75, 36, 31, 31, 52, 54, 75, 9, 75, 46, 41, 4
 const u8 partdata_205[] = { 75, 0 };
 
 const subtitle_part sub102_parts[] = {
-	{(const char*)partdata_204, 11, 0},
+	{(const char*)partdata_204, 11, 1},
 	{(const char*)partdata_205, 1, 50},
 };
 
@@ -1140,7 +1140,7 @@ const u8 partdata_206[] = { 1, 75, 39, 27, 42, 75, 41, 32, 75, 46, 34, 35, 45, 7
 const u8 partdata_207[] = { 75, 0 };
 
 const subtitle_part sub103_parts[] = {
-	{(const char*)partdata_206, 10, 0},
+	{(const char*)partdata_206, 10, 1},
 	{(const char*)partdata_207, 1, 62},
 };
 
@@ -1151,7 +1151,7 @@ const u8 partdata_208[] = { 20, 64, 20, 34, 27, 46, 55, 0 };
 const u8 partdata_209[] = { 75, 0 };
 
 const subtitle_part sub104_parts[] = {
-	{(const char*)partdata_208, 4, 0},
+	{(const char*)partdata_208, 4, 1},
 	{(const char*)partdata_209, 1, 36},
 };
 
@@ -1162,7 +1162,7 @@ const u8 partdata_210[] = { 19, 41, 44, 44, 51, 62, 0 };
 const u8 partdata_211[] = { 75, 0 };
 
 const subtitle_part sub105_parts[] = {
-	{(const char*)partdata_210, 3, 0},
+	{(const char*)partdata_210, 3, 1},
 	{(const char*)partdata_211, 1, 24},
 };
 
@@ -1173,7 +1173,7 @@ const u8 partdata_212[] = { 4, 41, 75, 51, 41, 47, 75, 45, 39, 31, 38, 38, 75, 4
 const u8 partdata_213[] = { 75, 0 };
 
 const subtitle_part sub106_parts[] = {
-	{(const char*)partdata_212, 12, 0},
+	{(const char*)partdata_212, 12, 1},
 	{(const char*)partdata_213, 1, 50},
 };
 
@@ -1184,7 +1184,7 @@ const u8 partdata_214[] = { 4, 27, 39, 40, 54, 75, 35, 46, 75, 49, 41, 40, 63, 4
 const u8 partdata_215[] = { 75, 0 };
 
 const subtitle_part sub107_parts[] = {
-	{(const char*)partdata_214, 14, 0},
+	{(const char*)partdata_214, 14, 1},
 	{(const char*)partdata_215, 1, 82},
 };
 
@@ -1195,7 +1195,7 @@ const u8 partdata_216[] = { 9, 46, 75, 39, 35, 33, 34, 46, 75, 31, 50, 42, 38, 4
 const u8 partdata_217[] = { 75, 0 };
 
 const subtitle_part sub108_parts[] = {
-	{(const char*)partdata_216, 12, 0},
+	{(const char*)partdata_216, 12, 1},
 	{(const char*)partdata_217, 1, 40},
 };
 
@@ -1206,7 +1206,7 @@ const u8 partdata_218[] = { 23, 34, 27, 46, 63, 45, 75, 46, 34, 27, 46, 75, 45, 
 const u8 partdata_219[] = { 75, 0 };
 
 const subtitle_part sub109_parts[] = {
-	{(const char*)partdata_218, 9, 0},
+	{(const char*)partdata_218, 9, 1},
 	{(const char*)partdata_219, 1, 25},
 };
 
@@ -1217,7 +1217,7 @@ const u8 partdata_220[] = { 8, 27, 36, 35, 39, 31, 55, 0 };
 const u8 partdata_221[] = { 75, 0 };
 
 const subtitle_part sub110_parts[] = {
-	{(const char*)partdata_220, 4, 0},
+	{(const char*)partdata_220, 4, 1},
 	{(const char*)partdata_221, 1, 24},
 };
 
@@ -1234,7 +1234,7 @@ const u8 partdata_224[] = { 23, 31, 38, 38, 54, 75, 38, 31, 46, 63, 45, 75, 38, 
 const u8 partdata_225[] = { 75, 0 };
 
 const subtitle_part sub111_parts[] = {
-	{(const char*)partdata_222, 15, 0},
+	{(const char*)partdata_222, 15, 1},
 	{(const char*)partdata_223, 23, 50},
 	{(const char*)partdata_224, 12, 78},
 	{(const char*)partdata_225, 1, 42},
@@ -1250,7 +1250,7 @@ const u8 partdata_227[] = { 9, 63, 39, 75, 33, 41, 40, 40, 27, 75, 29, 34, 31, 2
 const u8 partdata_228[] = { 75, 0 };
 
 const subtitle_part sub112_parts[] = {
-	{(const char*)partdata_226, 10, 0},
+	{(const char*)partdata_226, 10, 1},
 	{(const char*)partdata_227, 17, 64},
 	{(const char*)partdata_228, 1, 46},
 };
@@ -1265,7 +1265,7 @@ const u8 partdata_230[] = { 12, 31, 46, 63, 45, 75, 46, 44, 47, 45, 46, 75, 46, 
 const u8 partdata_231[] = { 75, 0 };
 
 const subtitle_part sub113_parts[] = {
-	{(const char*)partdata_229, 16, 0},
+	{(const char*)partdata_229, 16, 1},
 	{(const char*)partdata_230, 28, 72},
 	{(const char*)partdata_231, 1, 58},
 };
@@ -1298,7 +1298,7 @@ const u8 partdata_239[] = { 23, 34, 51, 55, 56, 75, 23, 34, 51, 75, 27, 44, 31, 
 const u8 partdata_240[] = { 75, 0 };
 
 const subtitle_part sub114_parts[] = {
-	{(const char*)partdata_232, 0, 0},
+	{(const char*)partdata_232, 0, 1},
 	{(const char*)partdata_233, 7, 24},
 	{(const char*)partdata_234, 0, 32},
 	{(const char*)partdata_235, 16, 32},
@@ -1319,7 +1319,7 @@ const u8 partdata_242[] = { 9, 75, 27, 33, 44, 31, 31, 54, 75, 38, 31, 46, 63, 4
 const u8 partdata_243[] = { 75, 0 };
 
 const subtitle_part sub115_parts[] = {
-	{(const char*)partdata_241, 20, 0},
+	{(const char*)partdata_241, 20, 1},
 	{(const char*)partdata_242, 20, 58},
 	{(const char*)partdata_243, 1, 76},
 };
@@ -1337,7 +1337,7 @@ const u8 partdata_246[] = { 15, 8, 75, 7, 15, 4, 75, 9, 20, 63, 19, 75, 9, 14, 7
 const u8 partdata_247[] = { 75, 0 };
 
 const subtitle_part sub116_parts[] = {
-	{(const char*)partdata_244, 13, 0},
+	{(const char*)partdata_244, 13, 1},
 	{(const char*)partdata_245, 6, 116},
 	{(const char*)partdata_246, 12, 26},
 	{(const char*)partdata_247, 1, 50},
@@ -1353,7 +1353,7 @@ const u8 partdata_249[] = { 20, 34, 31, 44, 31, 63, 45, 75, 45, 41, 39, 31, 75, 
 const u8 partdata_250[] = { 75, 0 };
 
 const subtitle_part sub117_parts[] = {
-	{(const char*)partdata_248, 14, 0},
+	{(const char*)partdata_248, 14, 1},
 	{(const char*)partdata_249, 18, 48},
 	{(const char*)partdata_250, 1, 38},
 };
@@ -1365,7 +1365,7 @@ const u8 partdata_251[] = { 8, 27, 36, 35, 39, 31, 55, 75, 0, 30, 27, 39, 40, 35
 const u8 partdata_252[] = { 75, 0 };
 
 const subtitle_part sub118_parts[] = {
-	{(const char*)partdata_251, 8, 0},
+	{(const char*)partdata_251, 8, 1},
 	{(const char*)partdata_252, 1, 0.1},
 };
 
@@ -1376,7 +1376,7 @@ const u8 partdata_253[] = { 20, 34, 31, 44, 31, 63, 45, 75, 27, 75, 28, 47, 46, 
 const u8 partdata_254[] = { 75, 0 };
 
 const subtitle_part sub119_parts[] = {
-	{(const char*)partdata_253, 26, 0},
+	{(const char*)partdata_253, 26, 1},
 	{(const char*)partdata_254, 1, 96},
 };
 
@@ -1387,7 +1387,7 @@ const u8 partdata_255[] = { 9, 75, 46, 34, 35, 40, 37, 75, 35, 46, 75, 41, 40, 3
 const u8 partdata_256[] = { 75, 0 };
 
 const subtitle_part sub120_parts[] = {
-	{(const char*)partdata_255, 19, 0},
+	{(const char*)partdata_255, 19, 1},
 	{(const char*)partdata_256, 1, 106},
 };
 
@@ -1398,7 +1398,7 @@ const u8 partdata_257[] = { 8, 27, 36, 35, 39, 31, 54, 75, 45, 46, 27, 51, 75, 4
 const u8 partdata_258[] = { 75, 0 };
 
 const subtitle_part sub121_parts[] = {
-	{(const char*)partdata_257, 9, 0},
+	{(const char*)partdata_257, 9, 1},
 	{(const char*)partdata_258, 1, 66},
 };
 
@@ -1409,7 +1409,7 @@ const u8 partdata_259[] = { 9, 63, 39, 75, 45, 47, 44, 31, 75, 8, 27, 36, 35, 39
 const u8 partdata_260[] = { 75, 0 };
 
 const subtitle_part sub122_parts[] = {
-	{(const char*)partdata_259, 14, 0},
+	{(const char*)partdata_259, 14, 1},
 	{(const char*)partdata_260, 1, 65},
 };
 
@@ -1420,7 +1420,7 @@ const u8 partdata_261[] = { 1, 51, 27, 55, 0 };
 const u8 partdata_262[] = { 75, 0 };
 
 const subtitle_part sub123_parts[] = {
-	{(const char*)partdata_261, 2, 0},
+	{(const char*)partdata_261, 2, 1},
 	{(const char*)partdata_262, 1, 40},
 };
 
@@ -1431,7 +1431,7 @@ const u8 partdata_263[] = { 19, 41, 44, 44, 51, 54, 75, 9, 63, 39, 75, 40, 41, 4
 const u8 partdata_264[] = { 75, 0 };
 
 const subtitle_part sub124_parts[] = {
-	{(const char*)partdata_263, 16, 0},
+	{(const char*)partdata_263, 16, 1},
 	{(const char*)partdata_264, 1, 114},
 };
 
@@ -1442,7 +1442,7 @@ const u8 partdata_265[] = { 1, 51, 27, 55, 75, 19, 46, 27, 51, 75, 49, 35, 46, 3
 const u8 partdata_266[] = { 75, 0 };
 
 const subtitle_part sub125_parts[] = {
-	{(const char*)partdata_265, 9, 0},
+	{(const char*)partdata_265, 9, 1},
 	{(const char*)partdata_266, 1, 74},
 };
 
@@ -1453,7 +1453,7 @@ const u8 partdata_267[] = { 20, 34, 31, 44, 31, 63, 45, 75, 40, 41, 75, 39, 31, 
 const u8 partdata_268[] = { 75, 0 };
 
 const subtitle_part sub126_parts[] = {
-	{(const char*)partdata_267, 13, 0},
+	{(const char*)partdata_267, 13, 1},
 	{(const char*)partdata_268, 1, 50},
 };
 
@@ -1464,7 +1464,7 @@ const u8 partdata_269[] = { 9, 64, 35, 45, 75, 1, 51, 27, 75, 35, 40, 32, 31, 29
 const u8 partdata_270[] = { 75, 0 };
 
 const subtitle_part sub127_parts[] = {
-	{(const char*)partdata_269, 15, 0},
+	{(const char*)partdata_269, 15, 1},
 	{(const char*)partdata_270, 1, 100},
 };
 
@@ -1475,7 +1475,7 @@ const u8 partdata_271[] = { 9, 64, 9, 75, 30, 41, 40, 63, 46, 75, 37, 40, 41, 49
 const u8 partdata_272[] = { 75, 0 };
 
 const subtitle_part sub128_parts[] = {
-	{(const char*)partdata_271, 29, 0},
+	{(const char*)partdata_271, 29, 1},
 	{(const char*)partdata_272, 1, 128},
 };
 
@@ -1489,7 +1489,7 @@ const u8 partdata_274[] = { 58, 23, 20, 16, 12, 66, 68, 59, 0 };
 const u8 partdata_275[] = { 75, 0 };
 
 const subtitle_part sub129_parts[] = {
-	{(const char*)partdata_273, 0, 0},
+	{(const char*)partdata_273, 0, 1},
 	{(const char*)partdata_274, 4, 42},
 	{(const char*)partdata_275, 1, 50},
 };
@@ -1501,7 +1501,7 @@ const u8 partdata_276[] = { 3, 27, 44, 31, 32, 47, 38, 55, 75, 20, 34, 31, 75, 3
 const u8 partdata_277[] = { 75, 0 };
 
 const subtitle_part sub130_parts[] = {
-	{(const char*)partdata_276, 20, 0},
+	{(const char*)partdata_276, 20, 1},
 	{(const char*)partdata_277, 1, 94},
 };
 
@@ -1512,7 +1512,7 @@ const u8 partdata_278[] = { 3, 41, 47, 38, 30, 75, 46, 34, 31, 75, 39, 31, 30, 3
 const u8 partdata_279[] = { 75, 0 };
 
 const subtitle_part sub131_parts[] = {
-	{(const char*)partdata_278, 15, 0},
+	{(const char*)partdata_278, 15, 1},
 	{(const char*)partdata_279, 1, 90},
 };
 
@@ -1523,7 +1523,7 @@ const u8 partdata_280[] = { 14, 64, 40, 41, 55, 75, 5, 48, 31, 44, 51, 41, 40, 3
 const u8 partdata_281[] = { 75, 0 };
 
 const subtitle_part sub132_parts[] = {
-	{(const char*)partdata_280, 19, 0},
+	{(const char*)partdata_280, 19, 1},
 	{(const char*)partdata_281, 1, 90},
 };
 
@@ -1534,7 +1534,7 @@ const u8 partdata_282[] = { 8, 27, 40, 33, 75, 35, 40, 75, 46, 34, 31, 44, 31, 5
 const u8 partdata_283[] = { 75, 0 };
 
 const subtitle_part sub133_parts[] = {
-	{(const char*)partdata_282, 32, 0},
+	{(const char*)partdata_282, 32, 1},
 	{(const char*)partdata_283, 1, 168},
 };
 
@@ -1545,7 +1545,7 @@ const u8 partdata_284[] = { 8, 27, 36, 35, 39, 31, 54, 75, 46, 34, 31, 75, 39, 3
 const u8 partdata_285[] = { 75, 0 };
 
 const subtitle_part sub134_parts[] = {
-	{(const char*)partdata_284, 15, 0},
+	{(const char*)partdata_284, 15, 1},
 	{(const char*)partdata_285, 1, 106},
 };
 
@@ -1556,7 +1556,7 @@ const u8 partdata_286[] = { 20, 41, 39, 41, 49, 41, 54, 75, 34, 27, 40, 33, 75, 
 const u8 partdata_287[] = { 75, 0 };
 
 const subtitle_part sub135_parts[] = {
-	{(const char*)partdata_286, 25, 0},
+	{(const char*)partdata_286, 25, 1},
 	{(const char*)partdata_287, 1, 136},
 };
 
@@ -1567,7 +1567,7 @@ const u8 partdata_288[] = { 16, 64, 42, 38, 31, 27, 45, 31, 54, 75, 40, 41, 75, 
 const u8 partdata_289[] = { 75, 0 };
 
 const subtitle_part sub136_parts[] = {
-	{(const char*)partdata_288, 10, 0},
+	{(const char*)partdata_288, 10, 1},
 	{(const char*)partdata_289, 1, 104},
 };
 
@@ -1581,7 +1581,7 @@ const u8 partdata_291[] = { 0, 8, 27, 0, 36, 35, 53, 53, 53, 39, 31, 0, 0 };
 const u8 partdata_292[] = { 75, 0 };
 
 const subtitle_part sub137_parts[] = {
-	{(const char*)partdata_290, 0, 0},
+	{(const char*)partdata_290, 0, 1},
 	{(const char*)partdata_291, 6, 118},
 	{(const char*)partdata_292, 1, 88},
 };
@@ -1596,7 +1596,7 @@ const u8 partdata_294[] = { 0, 8, 27, 36, 35, 39, 31, 0, 0 };
 const u8 partdata_295[] = { 75, 0 };
 
 const subtitle_part sub138_parts[] = {
-	{(const char*)partdata_293, 0, 0},
+	{(const char*)partdata_293, 0, 1},
 	{(const char*)partdata_294, 4, 92},
 	{(const char*)partdata_295, 1, 38},
 };
@@ -1608,7 +1608,7 @@ const u8 partdata_296[] = { 1, 75, 42, 34, 41, 46, 41, 56, 75, 16, 38, 31, 27, 4
 const u8 partdata_297[] = { 75, 0 };
 
 const subtitle_part sub139_parts[] = {
-	{(const char*)partdata_296, 30, 0},
+	{(const char*)partdata_296, 30, 1},
 	{(const char*)partdata_297, 1, 98},
 };
 
@@ -1619,7 +1619,7 @@ const u8 partdata_298[] = { 4, 41, 29, 46, 41, 44, 55, 0 };
 const u8 partdata_299[] = { 75, 0 };
 
 const subtitle_part sub140_parts[] = {
-	{(const char*)partdata_298, 4, 0},
+	{(const char*)partdata_298, 4, 1},
 	{(const char*)partdata_299, 1, 35},
 };
 
@@ -1630,7 +1630,7 @@ const u8 partdata_300[] = { 16, 44, 47, 30, 31, 40, 46, 54, 75, 27, 44, 31, 40, 
 const u8 partdata_301[] = { 75, 0 };
 
 const subtitle_part sub141_parts[] = {
-	{(const char*)partdata_300, 25, 0},
+	{(const char*)partdata_300, 25, 1},
 	{(const char*)partdata_301, 1, 86},
 };
 
@@ -1641,7 +1641,7 @@ const u8 partdata_302[] = { 22, 35, 45, 35, 46, 35, 40, 33, 75, 46, 41, 30, 27, 
 const u8 partdata_303[] = { 75, 0 };
 
 const subtitle_part sub142_parts[] = {
-	{(const char*)partdata_302, 25, 0},
+	{(const char*)partdata_302, 25, 1},
 	{(const char*)partdata_303, 1, 88},
 };
 
@@ -1652,7 +1652,7 @@ const u8 partdata_304[] = { 25, 41, 47, 75, 27, 33, 27, 35, 40, 56, 75, 6, 35, 3
 const u8 partdata_305[] = { 75, 0 };
 
 const subtitle_part sub143_parts[] = {
-	{(const char*)partdata_304, 19, 0},
+	{(const char*)partdata_304, 19, 1},
 	{(const char*)partdata_305, 1, 90},
 };
 
@@ -1663,7 +1663,7 @@ const u8 partdata_306[] = { 14, 41, 75, 29, 41, 40, 40, 31, 29, 46, 35, 41, 40, 
 const u8 partdata_307[] = { 75, 0 };
 
 const subtitle_part sub144_parts[] = {
-	{(const char*)partdata_306, 7, 0},
+	{(const char*)partdata_306, 7, 1},
 	{(const char*)partdata_307, 1, 30},
 };
 
@@ -1674,7 +1674,7 @@ const u8 partdata_308[] = { 20, 34, 31, 75, 45, 31, 29, 47, 44, 35, 46, 51, 75, 
 const u8 partdata_309[] = { 75, 0 };
 
 const subtitle_part sub145_parts[] = {
-	{(const char*)partdata_308, 16, 0},
+	{(const char*)partdata_308, 16, 1},
 	{(const char*)partdata_309, 1, 52},
 };
 
@@ -1685,7 +1685,7 @@ const u8 partdata_310[] = { 20, 34, 31, 75, 45, 46, 44, 31, 46, 29, 34, 31, 44, 
 const u8 partdata_311[] = { 75, 0 };
 
 const subtitle_part sub146_parts[] = {
-	{(const char*)partdata_310, 24, 0},
+	{(const char*)partdata_310, 24, 1},
 	{(const char*)partdata_311, 1, 88},
 };
 
@@ -1696,7 +1696,7 @@ const u8 partdata_312[] = { 9, 75, 46, 34, 41, 47, 33, 34, 46, 75, 12, 27, 39, 3
 const u8 partdata_313[] = { 75, 0 };
 
 const subtitle_part sub147_parts[] = {
-	{(const char*)partdata_312, 23, 0},
+	{(const char*)partdata_312, 23, 1},
 	{(const char*)partdata_313, 1, 62},
 };
 
@@ -1707,7 +1707,7 @@ const u8 partdata_314[] = { 9, 75, 34, 41, 42, 31, 75, 18, 51, 41, 75, 27, 40, 3
 const u8 partdata_315[] = { 75, 0 };
 
 const subtitle_part sub148_parts[] = {
-	{(const char*)partdata_314, 18, 0},
+	{(const char*)partdata_314, 18, 1},
 	{(const char*)partdata_315, 1, 64},
 };
 
@@ -1718,7 +1718,7 @@ const u8 partdata_316[] = { 9, 46, 63, 45, 75, 36, 47, 45, 46, 75, 39, 31, 30, 3
 const u8 partdata_317[] = { 75, 0 };
 
 const subtitle_part sub149_parts[] = {
-	{(const char*)partdata_316, 14, 0},
+	{(const char*)partdata_316, 14, 1},
 	{(const char*)partdata_317, 1, 43},
 };
 
@@ -1729,7 +1729,7 @@ const u8 partdata_318[] = { 1, 38, 38, 75, 46, 34, 31, 75, 45, 34, 47, 46, 46, 3
 const u8 partdata_319[] = { 75, 0 };
 
 const subtitle_part sub150_parts[] = {
-	{(const char*)partdata_318, 17, 0},
+	{(const char*)partdata_318, 17, 1},
 	{(const char*)partdata_319, 1, 86},
 };
 
@@ -1740,7 +1740,7 @@ const u8 partdata_320[] = { 20, 34, 31, 75, 42, 34, 41, 40, 31, 45, 75, 27, 44, 
 const u8 partdata_321[] = { 75, 0 };
 
 const subtitle_part sub151_parts[] = {
-	{(const char*)partdata_320, 14, 0},
+	{(const char*)partdata_320, 14, 1},
 	{(const char*)partdata_321, 1, 62},
 };
 
@@ -1751,7 +1751,7 @@ const u8 partdata_322[] = { 4, 35, 30, 75, 51, 41, 47, 75, 32, 35, 40, 30, 75, 4
 const u8 partdata_323[] = { 75, 0 };
 
 const subtitle_part sub152_parts[] = {
-	{(const char*)partdata_322, 12, 0},
+	{(const char*)partdata_322, 12, 1},
 	{(const char*)partdata_323, 1, 34},
 };
 
@@ -1762,7 +1762,7 @@ const u8 partdata_324[] = { 14, 41, 49, 63, 45, 75, 40, 41, 46, 75, 46, 34, 31, 
 const u8 partdata_325[] = { 75, 0 };
 
 const subtitle_part sub153_parts[] = {
-	{(const char*)partdata_324, 21, 0},
+	{(const char*)partdata_324, 21, 1},
 	{(const char*)partdata_325, 1, 72},
 };
 
@@ -1773,7 +1773,7 @@ const u8 partdata_326[] = { 9, 46, 63, 45, 75, 46, 41, 41, 75, 29, 44, 27, 29, 3
 const u8 partdata_327[] = { 75, 0 };
 
 const subtitle_part sub154_parts[] = {
-	{(const char*)partdata_326, 35, 0},
+	{(const char*)partdata_326, 35, 1},
 	{(const char*)partdata_327, 1, 108},
 };
 
@@ -1784,7 +1784,7 @@ const u8 partdata_328[] = { 2, 47, 52, 52, 75, 41, 32, 32, 75, 27, 38, 44, 31, 2
 const u8 partdata_329[] = { 75, 0 };
 
 const subtitle_part sub155_parts[] = {
-	{(const char*)partdata_328, 9, 0},
+	{(const char*)partdata_328, 9, 1},
 	{(const char*)partdata_329, 1, 38},
 };
 
@@ -1795,7 +1795,7 @@ const u8 partdata_330[] = { 15, 34, 75, 51, 31, 27, 34, 54, 75, 51, 41, 47, 75, 
 const u8 partdata_331[] = { 75, 0 };
 
 const subtitle_part sub156_parts[] = {
-	{(const char*)partdata_330, 20, 0},
+	{(const char*)partdata_330, 20, 1},
 	{(const char*)partdata_331, 1, 62},
 };
 
@@ -1806,7 +1806,7 @@ const u8 partdata_332[] = { 9, 46, 63, 45, 75, 29, 38, 41, 45, 31, 30, 75, 34, 3
 const u8 partdata_333[] = { 75, 0 };
 
 const subtitle_part sub157_parts[] = {
-	{(const char*)partdata_332, 11, 0},
+	{(const char*)partdata_332, 11, 1},
 	{(const char*)partdata_333, 1, 46},
 };
 
@@ -1817,7 +1817,7 @@ const u8 partdata_334[] = { 20, 34, 35, 45, 75, 35, 45, 75, 45, 41, 75, 29, 34, 
 const u8 partdata_335[] = { 75, 0 };
 
 const subtitle_part sub158_parts[] = {
-	{(const char*)partdata_334, 10, 0},
+	{(const char*)partdata_334, 10, 1},
 	{(const char*)partdata_335, 1, 43},
 };
 
@@ -1828,7 +1828,7 @@ const u8 partdata_336[] = { 9, 46, 63, 45, 75, 27, 75, 38, 35, 46, 46, 38, 31, 7
 const u8 partdata_337[] = { 75, 0 };
 
 const subtitle_part sub159_parts[] = {
-	{(const char*)partdata_336, 23, 0},
+	{(const char*)partdata_336, 23, 1},
 	{(const char*)partdata_337, 1, 92},
 };
 
@@ -1839,7 +1839,7 @@ const u8 partdata_338[] = { 12, 31, 33, 31, 40, 30, 56, 75, 9, 46, 75, 45, 41, 4
 const u8 partdata_339[] = { 75, 0 };
 
 const subtitle_part sub160_parts[] = {
-	{(const char*)partdata_338, 17, 0},
+	{(const char*)partdata_338, 17, 1},
 	{(const char*)partdata_339, 1, 112},
 };
 
@@ -1850,7 +1850,7 @@ const u8 partdata_340[] = { 20, 34, 31, 75, 29, 34, 35, 38, 30, 75, 34, 31, 44, 
 const u8 partdata_341[] = { 75, 0 };
 
 const subtitle_part sub161_parts[] = {
-	{(const char*)partdata_340, 16, 0},
+	{(const char*)partdata_340, 16, 1},
 	{(const char*)partdata_341, 1, 70},
 };
 
@@ -1861,7 +1861,7 @@ const u8 partdata_342[] = { 9, 46, 63, 45, 75, 45, 31, 27, 38, 31, 30, 75, 45, 3
 const u8 partdata_343[] = { 75, 0 };
 
 const subtitle_part sub162_parts[] = {
-	{(const char*)partdata_342, 13, 0},
+	{(const char*)partdata_342, 13, 1},
 	{(const char*)partdata_343, 1, 48},
 };
 
@@ -1872,7 +1872,7 @@ const u8 partdata_344[] = { 20, 34, 31, 75, 38, 35, 33, 34, 46, 75, 41, 32, 75, 
 const u8 partdata_345[] = { 75, 0 };
 
 const subtitle_part sub163_parts[] = {
-	{(const char*)partdata_344, 10, 0},
+	{(const char*)partdata_344, 10, 1},
 	{(const char*)partdata_345, 1, 46},
 };
 
@@ -1883,7 +1883,7 @@ const u8 partdata_346[] = { 20, 34, 35, 45, 75, 42, 27, 35, 40, 46, 35, 40, 33, 
 const u8 partdata_347[] = { 75, 0 };
 
 const subtitle_part sub164_parts[] = {
-	{(const char*)partdata_346, 18, 0},
+	{(const char*)partdata_346, 18, 1},
 	{(const char*)partdata_347, 1, 78},
 };
 
@@ -1894,7 +1894,7 @@ const u8 partdata_348[] = { 9, 46, 75, 49, 41, 40, 63, 46, 75, 41, 42, 31, 40, 5
 const u8 partdata_349[] = { 75, 0 };
 
 const subtitle_part sub165_parts[] = {
-	{(const char*)partdata_348, 23, 0},
+	{(const char*)partdata_348, 23, 1},
 	{(const char*)partdata_349, 1, 86},
 };
 
@@ -1905,7 +1905,7 @@ const u8 partdata_350[] = { 20, 34, 31, 75, 45, 47, 44, 33, 31, 44, 51, 75, 44, 
 const u8 partdata_351[] = { 75, 0 };
 
 const subtitle_part sub166_parts[] = {
-	{(const char*)partdata_350, 14, 0},
+	{(const char*)partdata_350, 14, 1},
 	{(const char*)partdata_351, 1, 52},
 };
 
@@ -1916,7 +1916,7 @@ const u8 partdata_352[] = { 23, 31, 75, 44, 31, 27, 38, 38, 51, 75, 30, 41, 40, 
 const u8 partdata_353[] = { 75, 0 };
 
 const subtitle_part sub167_parts[] = {
-	{(const char*)partdata_352, 23, 0},
+	{(const char*)partdata_352, 23, 1},
 	{(const char*)partdata_353, 1, 54},
 };
 
@@ -1927,7 +1927,7 @@ const u8 partdata_354[] = { 20, 34, 35, 45, 75, 35, 45, 75, 39, 27, 37, 35, 40, 
 const u8 partdata_355[] = { 75, 0 };
 
 const subtitle_part sub168_parts[] = {
-	{(const char*)partdata_354, 23, 0},
+	{(const char*)partdata_354, 23, 1},
 	{(const char*)partdata_355, 1, 54},
 };
 
@@ -1938,7 +1938,7 @@ const u8 partdata_356[] = { 8, 27, 36, 35, 39, 31, 54, 75, 46, 34, 31, 75, 37, 3
 const u8 partdata_357[] = { 75, 0 };
 
 const subtitle_part sub169_parts[] = {
-	{(const char*)partdata_356, 8, 0},
+	{(const char*)partdata_356, 8, 1},
 	{(const char*)partdata_357, 1, 45},
 };
 
@@ -1949,7 +1949,7 @@ const u8 partdata_358[] = { 12, 31, 46, 63, 45, 75, 34, 31, 27, 30, 75, 28, 27, 
 const u8 partdata_359[] = { 75, 0 };
 
 const subtitle_part sub170_parts[] = {
-	{(const char*)partdata_358, 12, 0},
+	{(const char*)partdata_358, 12, 1},
 	{(const char*)partdata_359, 1, 50},
 };
 
@@ -1960,7 +1960,7 @@ const u8 partdata_360[] = { 23, 34, 27, 46, 63, 45, 75, 46, 34, 35, 45, 75, 39, 
 const u8 partdata_361[] = { 75, 0 };
 
 const subtitle_part sub171_parts[] = {
-	{(const char*)partdata_360, 12, 0},
+	{(const char*)partdata_360, 12, 1},
 	{(const char*)partdata_361, 1, 50},
 };
 
@@ -1971,7 +1971,7 @@ const u8 partdata_362[] = { 20, 41, 39, 41, 49, 41, 55, 75, 18, 51, 41, 55, 0 };
 const u8 partdata_363[] = { 75, 0 };
 
 const subtitle_part sub172_parts[] = {
-	{(const char*)partdata_362, 6, 0},
+	{(const char*)partdata_362, 6, 1},
 	{(const char*)partdata_363, 1, 94},
 };
 
@@ -1982,7 +1982,7 @@ const u8 partdata_364[] = { 1, 75, 48, 27, 29, 29, 35, 40, 31, 55, 75, 9, 32, 75
 const u8 partdata_365[] = { 75, 0 };
 
 const subtitle_part sub173_parts[] = {
-	{(const char*)partdata_364, 25, 0},
+	{(const char*)partdata_364, 25, 1},
 	{(const char*)partdata_365, 1, 130},
 };
 
@@ -1993,7 +1993,7 @@ const u8 partdata_366[] = { 12, 27, 39, 35, 27, 63, 45, 75, 45, 42, 44, 31, 27, 
 const u8 partdata_367[] = { 75, 0 };
 
 const subtitle_part sub174_parts[] = {
-	{(const char*)partdata_366, 25, 0},
+	{(const char*)partdata_366, 25, 1},
 	{(const char*)partdata_367, 1, 122},
 };
 
@@ -2004,7 +2004,7 @@ const u8 partdata_368[] = { 9, 46, 63, 45, 75, 48, 27, 29, 29, 35, 40, 31, 75, 4
 const u8 partdata_369[] = { 75, 0 };
 
 const subtitle_part sub175_parts[] = {
-	{(const char*)partdata_368, 18, 0},
+	{(const char*)partdata_368, 18, 1},
 	{(const char*)partdata_369, 1, 46},
 };
 
@@ -2015,7 +2015,7 @@ const u8 partdata_370[] = { 23, 34, 31, 44, 31, 75, 29, 27, 40, 75, 49, 31, 75, 
 const u8 partdata_371[] = { 75, 0 };
 
 const subtitle_part sub176_parts[] = {
-	{(const char*)partdata_370, 15, 0},
+	{(const char*)partdata_370, 15, 1},
 	{(const char*)partdata_371, 1, 68},
 };
 
@@ -2026,7 +2026,7 @@ const u8 partdata_372[] = { 9, 63, 39, 75, 33, 41, 35, 40, 33, 75, 41, 40, 75, 4
 const u8 partdata_373[] = { 75, 0 };
 
 const subtitle_part sub177_parts[] = {
-	{(const char*)partdata_372, 13, 0},
+	{(const char*)partdata_372, 13, 1},
 	{(const char*)partdata_373, 1, 40},
 };
 
@@ -2037,7 +2037,7 @@ const u8 partdata_374[] = { 8, 27, 36, 35, 39, 31, 54, 75, 9, 63, 39, 75, 33, 31
 const u8 partdata_375[] = { 75, 0 };
 
 const subtitle_part sub178_parts[] = {
-	{(const char*)partdata_374, 15, 0},
+	{(const char*)partdata_374, 15, 1},
 	{(const char*)partdata_375, 1, 93},
 };
 
@@ -2048,7 +2048,7 @@ const u8 partdata_376[] = { 8, 27, 36, 35, 39, 31, 54, 75, 9, 63, 39, 75, 32, 31
 const u8 partdata_377[] = { 75, 0 };
 
 const subtitle_part sub179_parts[] = {
-	{(const char*)partdata_376, 18, 0},
+	{(const char*)partdata_376, 18, 1},
 	{(const char*)partdata_377, 1, 110},
 };
 
@@ -2059,7 +2059,7 @@ const u8 partdata_378[] = { 8, 27, 36, 35, 39, 31, 54, 75, 9, 75, 29, 27, 40, 63
 const u8 partdata_379[] = { 75, 0 };
 
 const subtitle_part sub180_parts[] = {
-	{(const char*)partdata_378, 15, 0},
+	{(const char*)partdata_378, 15, 1},
 	{(const char*)partdata_379, 1, 86},
 };
 
@@ -2070,7 +2070,7 @@ const u8 partdata_380[] = { 23, 34, 41, 75, 49, 27, 45, 75, 46, 34, 27, 46, 75, 
 const u8 partdata_381[] = { 75, 0 };
 
 const subtitle_part sub181_parts[] = {
-	{(const char*)partdata_380, 15, 0},
+	{(const char*)partdata_380, 15, 1},
 	{(const char*)partdata_381, 1, 78},
 };
 
@@ -2081,7 +2081,7 @@ const u8 partdata_382[] = { 23, 34, 27, 46, 75, 37, 35, 40, 30, 75, 41, 32, 75, 
 const u8 partdata_383[] = { 75, 0 };
 
 const subtitle_part sub182_parts[] = {
-	{(const char*)partdata_382, 13, 0},
+	{(const char*)partdata_382, 13, 1},
 	{(const char*)partdata_383, 1, 44},
 };
 
@@ -2092,7 +2092,7 @@ const u8 partdata_384[] = { 23, 31, 75, 29, 27, 40, 63, 46, 75, 33, 31, 46, 75, 
 const u8 partdata_385[] = { 75, 0 };
 
 const subtitle_part sub183_parts[] = {
-	{(const char*)partdata_384, 21, 0},
+	{(const char*)partdata_384, 21, 1},
 	{(const char*)partdata_385, 1, 62},
 };
 
@@ -2103,7 +2103,7 @@ const u8 partdata_386[] = { 23, 34, 27, 46, 75, 30, 35, 30, 75, 9, 75, 30, 41, 7
 const u8 partdata_387[] = { 75, 0 };
 
 const subtitle_part sub184_parts[] = {
-	{(const char*)partdata_386, 16, 0},
+	{(const char*)partdata_386, 16, 1},
 	{(const char*)partdata_387, 1, 48},
 };
 
@@ -2114,7 +2114,7 @@ const u8 partdata_388[] = { 21, 33, 34, 54, 75, 9, 63, 39, 75, 28, 31, 27, 46, 5
 const u8 partdata_389[] = { 75, 0 };
 
 const subtitle_part sub185_parts[] = {
-	{(const char*)partdata_388, 7, 0},
+	{(const char*)partdata_388, 7, 1},
 	{(const char*)partdata_389, 1, 58},
 };
 
@@ -2125,7 +2125,7 @@ const u8 partdata_390[] = { 8, 27, 36, 35, 39, 31, 54, 75, 49, 34, 31, 44, 31, 7
 const u8 partdata_391[] = { 75, 0 };
 
 const subtitle_part sub186_parts[] = {
-	{(const char*)partdata_390, 12, 0},
+	{(const char*)partdata_390, 12, 1},
 	{(const char*)partdata_391, 1, 56},
 };
 
@@ -2136,7 +2136,7 @@ const u8 partdata_392[] = { 9, 46, 63, 45, 75, 36, 47, 45, 46, 75, 45, 41, 39, 3
 const u8 partdata_393[] = { 75, 0 };
 
 const subtitle_part sub187_parts[] = {
-	{(const char*)partdata_392, 23, 0},
+	{(const char*)partdata_392, 23, 1},
 	{(const char*)partdata_393, 1, 65},
 };
 
@@ -2147,7 +2147,7 @@ const u8 partdata_394[] = { 4, 27, 39, 40, 35, 46, 54, 75, 35, 46, 75, 49, 41, 4
 const u8 partdata_395[] = { 75, 0 };
 
 const subtitle_part sub188_parts[] = {
-	{(const char*)partdata_394, 11, 0},
+	{(const char*)partdata_394, 11, 1},
 	{(const char*)partdata_395, 1, 78},
 };
 
@@ -2158,7 +2158,7 @@ const u8 partdata_396[] = { 6, 21, 3, 11, 55, 0 };
 const u8 partdata_397[] = { 75, 0 };
 
 const subtitle_part sub189_parts[] = {
-	{(const char*)partdata_396, 3, 0},
+	{(const char*)partdata_396, 3, 1},
 	{(const char*)partdata_397, 1, 34},
 };
 
@@ -2169,7 +2169,7 @@ const u8 partdata_398[] = { 12, 31, 46, 63, 45, 75, 46, 27, 37, 31, 75, 27, 75, 
 const u8 partdata_399[] = { 75, 0 };
 
 const subtitle_part sub190_parts[] = {
-	{(const char*)partdata_398, 18, 0},
+	{(const char*)partdata_398, 18, 1},
 	{(const char*)partdata_399, 1, 63},
 };
 
@@ -2180,7 +2180,7 @@ const u8 partdata_400[] = { 9, 46, 63, 45, 75, 42, 41, 45, 45, 35, 28, 38, 31, 5
 const u8 partdata_401[] = { 75, 0 };
 
 const subtitle_part sub191_parts[] = {
-	{(const char*)partdata_400, 10, 0},
+	{(const char*)partdata_400, 10, 1},
 	{(const char*)partdata_401, 1, 42},
 };
 
@@ -2191,7 +2191,7 @@ const u8 partdata_402[] = { 8, 41, 49, 75, 49, 31, 35, 44, 30, 0, 0 };
 const u8 partdata_403[] = { 75, 0 };
 
 const subtitle_part sub192_parts[] = {
-	{(const char*)partdata_402, 5, 0},
+	{(const char*)partdata_402, 5, 1},
 	{(const char*)partdata_403, 1, 34},
 };
 
@@ -2202,7 +2202,7 @@ const u8 partdata_404[] = { 9, 46, 75, 45, 41, 47, 40, 30, 45, 75, 38, 35, 37, 3
 const u8 partdata_405[] = { 75, 0 };
 
 const subtitle_part sub193_parts[] = {
-	{(const char*)partdata_404, 21, 0},
+	{(const char*)partdata_404, 21, 1},
 	{(const char*)partdata_405, 1, 54},
 };
 
@@ -2213,7 +2213,7 @@ const u8 partdata_406[] = { 4, 41, 75, 51, 41, 47, 75, 34, 31, 27, 44, 75, 44, 2
 const u8 partdata_407[] = { 75, 0 };
 
 const subtitle_part sub194_parts[] = {
-	{(const char*)partdata_406, 9, 0},
+	{(const char*)partdata_406, 9, 1},
 	{(const char*)partdata_407, 1, 32},
 };
 
@@ -2224,7 +2224,7 @@ const u8 partdata_408[] = { 1, 44, 31, 40, 63, 46, 75, 51, 41, 47, 75, 34, 47, 4
 const u8 partdata_409[] = { 75, 0 };
 
 const subtitle_part sub195_parts[] = {
-	{(const char*)partdata_408, 9, 0},
+	{(const char*)partdata_408, 9, 1},
 	{(const char*)partdata_409, 1, 32},
 };
 
@@ -2235,7 +2235,7 @@ const u8 partdata_410[] = { 9, 46, 63, 45, 75, 27, 38, 44, 31, 27, 30, 51, 75, 2
 const u8 partdata_411[] = { 75, 0 };
 
 const subtitle_part sub196_parts[] = {
-	{(const char*)partdata_410, 13, 0},
+	{(const char*)partdata_410, 13, 1},
 	{(const char*)partdata_411, 1, 52},
 };
 
@@ -2246,7 +2246,7 @@ const u8 partdata_412[] = { 20, 34, 31, 44, 31, 63, 45, 75, 44, 31, 27, 38, 38, 
 const u8 partdata_413[] = { 75, 0 };
 
 const subtitle_part sub197_parts[] = {
-	{(const char*)partdata_412, 14, 0},
+	{(const char*)partdata_412, 14, 1},
 	{(const char*)partdata_413, 1, 34},
 };
 
@@ -2257,7 +2257,7 @@ const u8 partdata_414[] = { 8, 41, 49, 75, 35, 45, 75, 46, 34, 31, 44, 31, 75, 4
 const u8 partdata_415[] = { 75, 0 };
 
 const subtitle_part sub198_parts[] = {
-	{(const char*)partdata_414, 13, 0},
+	{(const char*)partdata_414, 13, 1},
 	{(const char*)partdata_415, 1, 36},
 };
 
@@ -2268,7 +2268,7 @@ const u8 partdata_416[] = { 14, 41, 46, 75, 39, 51, 75, 32, 27, 47, 38, 46, 75, 
 const u8 partdata_417[] = { 75, 0 };
 
 const subtitle_part sub199_parts[] = {
-	{(const char*)partdata_416, 12, 0},
+	{(const char*)partdata_416, 12, 1},
 	{(const char*)partdata_417, 1, 58},
 };
 
@@ -2279,7 +2279,7 @@ const u8 partdata_418[] = { 23, 31, 75, 33, 41, 46, 46, 27, 75, 33, 41, 75, 46, 
 const u8 partdata_419[] = { 75, 0 };
 
 const subtitle_part sub200_parts[] = {
-	{(const char*)partdata_418, 28, 0},
+	{(const char*)partdata_418, 28, 1},
 	{(const char*)partdata_419, 1, 64},
 };
 
