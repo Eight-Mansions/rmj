@@ -3,9 +3,21 @@
 
 #include "platform.h"
 
+struct subtitle_part {
+	const char* text;
+	const u8 len;
+	const u16 displayTime;
+};
 struct subtitle {
-    const i16 id;
-    const char* text;
+	const i32 id;
+	const u8 partsCount;
+	const subtitle_part* parts;
+};
+struct subtitle_displayed {
+	const subtitle_part* parts;
+	u8 partsCount;
+	u8 nextPartIdx;
+	u8 ticksTilNext;
 };
 
 extern const u32 subsCount;

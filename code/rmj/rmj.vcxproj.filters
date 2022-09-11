@@ -21,7 +21,7 @@
     <ClCompile Include="subtitle\subtitle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="subtitle\generated.cpp">
+    <ClCompile Include="subtitle\generated_audio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="subtitle\platform.cpp">
@@ -30,7 +30,7 @@
     <ClCompile Include="subtitle\initsubs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="subtitle\mgenerated.cpp">
+    <ClCompile Include="subtitle\generated_movie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -133,14 +133,14 @@ int DisplaySubtitle()
 		int returnMe = 0; // Do I need to do this?
 
 		letterIdx = 0;
-		char letter = subs[audioSubIdx].text[letterIdx];
+		char letter = subs[audioSubIdx].parts[0].text[letterIdx];
 		letterIdx++;
 		while (letter != 0)
 		{
 			uv = GetLetterPos(letter);
 			returnMe = DisplayFromGraphic16x16(textId, unk1, yx, uv, wh, unk3);
 			yx += 0x08;
-			letter = subs[audioSubIdx].text[letterIdx];
+			letter = subs[audioSubIdx].parts[0].text[letterIdx];
 			letterIdx++;
 		}
 
