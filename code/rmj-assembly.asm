@@ -36,10 +36,9 @@ SubFont:
 	
 ;.org 0x8001a1cc ; branch to see if debug text is enabled
 ;	nop
-	
-.org 0x8001f320
+
+.org 0x8001f328
 	j DisplayVoiceSubs
-	
 	
 .org 0x8001cc88
 	j InitMovieSub
@@ -101,9 +100,9 @@ SubFont:
 		li a0, 0x02
 		jal 0x8004d6e8
 		nop
-		jal 0x800501c4
+		jal 0x800503c8
 		nop
-		j 0x8001f328
+		j 0x8001f330
 		nop
 	
 	DisplayMovieSubs:

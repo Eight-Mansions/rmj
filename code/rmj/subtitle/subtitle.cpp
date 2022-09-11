@@ -106,6 +106,8 @@ int GetLetterPos(char letter)
 	return (y << 16 | x);
 }
 
+int yx = 0x0050005c;
+
 void InitVoiceSubtitle(const char* audioname)
 {
 	int audionameHash = sdbmHash(audioname);
@@ -119,6 +121,7 @@ void InitVoiceSubtitle(const char* audioname)
 			currSub.partsCount = subs[i].partsCount;
 			currSub.nextPartIdx = 0;
 			currSub.ticksTilNext = subs[i].parts[currSub.nextPartIdx].displayTime;
+			yx = 0x0050005c;
 			break;
 		}
 	}
@@ -143,7 +146,7 @@ int DisplaySubtitle()
 		int letterIdx = 0;
 		int textId = 0x0A;
 		int unk1 = 0; // Apparently always 0?
-		int yx = 0x50005c;
+		
 		int uv = 0;
 		int wh = 0x00100008;
 		int unk3 = 0x19; // Is this the "order" on the screen?
@@ -158,6 +161,9 @@ int DisplaySubtitle()
 			letterIdx = 0;
 			char letter = currSub.parts[currSub.nextPartIdx].text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
 			letterIdx++;
+
+			yx = currSub.parts[currSub.nextPartIdx].x | currSub.parts[currSub.nextPartIdx].y << 0x10;
+			printf("xy: %X\n", yx);
 
 			//for (int i = 0; i < currSub.parts[currSub.nextPartIdx].len; i++)
 			while(letter != 0)
