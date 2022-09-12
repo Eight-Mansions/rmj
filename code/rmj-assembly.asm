@@ -22,6 +22,7 @@ SubFont:
 .definelabel VSync, 0x8006b888
 .definelabel printf, 0x8005ed78
 .definelabel LoadImage, 0x80062394
+.definelabel UpdateOTAG, 0x8004d6e8
 
 
 .org 0x8006c170 ; No clearing out the good stuff in the exe

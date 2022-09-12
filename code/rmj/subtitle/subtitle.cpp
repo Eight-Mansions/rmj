@@ -91,7 +91,7 @@ int sdbmHash(const char* text) {
 	return hash & 0xFFFF;
 }
 
-int GetLetterPos(char letter)
+int GetLetterPos(u8 letter)
 {
 	int y = 0;
 	int x = 0;
@@ -156,25 +156,36 @@ int DisplaySubtitle()
 		currSub.ticksTilNext--;
 		if (currSub.partsCount != 0 && currSub.ticksTilNext == 0)
 		{
+
+			//UpdateOTAG(1);
+			//VSync(1);
+
 			printf("Disaply\n");
 
 			letterIdx = 0;
-			char letter = currSub.parts[currSub.nextPartIdx].text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
+			u8 letter = currSub.parts[currSub.nextPartIdx].text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
 			letterIdx++;
 
 			yx = currSub.parts[currSub.nextPartIdx].x | currSub.parts[currSub.nextPartIdx].y << 0x10;
-			printf("xy: %X\n", yx);
+			//printf("xy: %X\n", yx);
 
 			//for (int i = 0; i < currSub.parts[currSub.nextPartIdx].len; i++)
 			while(letter != 0)
 			{
 				//DisplayText(currSub.parts[currSub.nextPartIdx].text, i, 0, 0, 0);
+				//if (letter != 0x7F)
+				{
 
-				uv = GetLetterPos(letter);
-				returnMe = DisplayFromGraphic16x16(textId, unk1, yx, uv, wh, unk3);
-				yx += 0x08;
-				letter = currSub.parts[currSub.nextPartIdx].text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
-				letterIdx++;
+					uv = GetLetterPos(letter);
+					returnMe = DisplayFromGraphic16x16(textId, unk1, yx, uv, wh, unk3);
+					yx += 0x08;
+					letter = currSub.parts[currSub.nextPartIdx].text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
+					letterIdx++;
+				}
+				/*else
+				{
+					yx = currSub.parts[currSub.nextPartIdx].x | ((currSub.parts[currSub.nextPartIdx].y + 12) << 0x10);
+				}*/
 			}
 
 			currSub.nextPartIdx++;
