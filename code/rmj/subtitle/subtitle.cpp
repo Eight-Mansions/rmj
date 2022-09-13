@@ -79,6 +79,8 @@ const u8 widths[] =
 		0x04, //  
 };
 
+int counter = 0;
+
 int sdbmHash(const char* text) {
 	int hash = 0;
 	int i = 0;
@@ -89,7 +91,7 @@ int sdbmHash(const char* text) {
 	return hash & 0xFFFF;
 }
 
-int GetLetterPos(char letter)
+int GetLetterPos(u8 letter)
 {
 	int y = 0;
 	int x = 0;
@@ -104,9 +106,27 @@ int GetLetterPos(char letter)
 	return (y << 16 | x);
 }
 
+int yx = 0x0050005c;
+
 void InitVoiceSubtitle(const char* audioname)
 {
-	audioSubIdx = -1;
+	int audionameHash = sdbmHash(audioname);
+	for (int i = 0; i < subsCount; i++)
+	{
+		if (audionameHash == subs[i].id)
+		{
+			printf("s: %d\n", i);
+			counter = 0;
+			currSub.parts = subs[i].parts;
+			currSub.partsCount = subs[i].partsCount;
+			currSub.nextPartIdx = 0;
+			currSub.ticksTilNext = subs[i].parts[currSub.nextPartIdx].displayTime;
+			yx = 0x0050005c;
+			break;
+		}
+	}
+
+	/*audioSubIdx = -1;
 	int audionameHash = sdbmHash(audioname);
 	for (int i = 0; i < subsCount; i++)
 	{
@@ -115,36 +135,69 @@ void InitVoiceSubtitle(const char* audioname)
 			audioSubIdx = i;
 			break;
 		}
-	}
+	}*/
 }
 
 int DisplaySubtitle()
 {
-	if (audioSubIdx != -1)
+	if (currSub.parts != NULL)
 	{
+		
 		int letterIdx = 0;
 		int textId = 0x0A;
 		int unk1 = 0; // Apparently always 0?
-		int yx = 0x50005c;
+		
 		int uv = 0;
 		int wh = 0x00100008;
 		int unk3 = 0x19; // Is this the "order" on the screen?
 
 		int returnMe = 0; // Do I need to do this?
 
-		letterIdx = 0;
-		char letter = subs[audioSubIdx].parts[0].text[letterIdx];
-		letterIdx++;
-		while (letter != 0)
+		currSub.ticksTilNext--;
+		if (currSub.partsCount != 0 && currSub.ticksTilNext == 0)
 		{
-			uv = GetLetterPos(letter);
-			returnMe = DisplayFromGraphic16x16(textId, unk1, yx, uv, wh, unk3);
-			yx += 0x08;
-			letter = subs[audioSubIdx].parts[0].text[letterIdx];
-			letterIdx++;
-		}
 
-		audioSubIdx = -1;
+			//UpdateOTAG(1);
+			//VSync(1);
+
+			printf("Disaply\n");
+
+			letterIdx = 0;
+			u8 letter = currSub.parts[currSub.nextPartIdx].text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
+			letterIdx++;
+
+			yx = currSub.parts[currSub.nextPartIdx].x | currSub.parts[currSub.nextPartIdx].y << 0x10;
+			//printf("xy: %X\n", yx);
+
+			//for (int i = 0; i < currSub.parts[currSub.nextPartIdx].len; i++)
+			while(letter != 0)
+			{
+				//DisplayText(currSub.parts[currSub.nextPartIdx].text, i, 0, 0, 0);
+				//if (letter != 0x7F)
+				{
+
+					uv = GetLetterPos(letter);
+					returnMe = DisplayFromGraphic16x16(textId, unk1, yx, uv, wh, unk3);
+					yx += 0x08;
+					letter = currSub.parts[currSub.nextPartIdx].text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
+					letterIdx++;
+				}
+				/*else
+				{
+					yx = currSub.parts[currSub.nextPartIdx].x | ((currSub.parts[currSub.nextPartIdx].y + 12) << 0x10);
+				}*/
+			}
+
+			currSub.nextPartIdx++;
+			if (currSub.nextPartIdx < currSub.partsCount)
+			{
+				currSub.ticksTilNext = currSub.parts[currSub.nextPartIdx].displayTime;
+			}
+			else
+			{
+				currSub.partsCount = 0; // No parts left to show
+			}
+		}
 
 		return returnMe;
 	}

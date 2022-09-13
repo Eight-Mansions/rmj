@@ -7,6 +7,8 @@ struct subtitle_part {
 	const char* text;
 	const u8 len;
 	const u16 displayTime;
+	const u8 x;
+	const u8 y;
 };
 struct subtitle {
 	const i32 id;

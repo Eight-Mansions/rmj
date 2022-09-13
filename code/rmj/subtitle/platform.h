@@ -28,6 +28,7 @@ void itox(u32 i, char* s);
 extern "C" {
 	
 	extern int printf(const char* fmt, ...);
+	extern void UpdateOTAG(int unk);
 }
 
 #endif

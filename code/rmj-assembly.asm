@@ -22,6 +22,7 @@ SubFont:
 .definelabel VSync, 0x8006b888
 .definelabel printf, 0x8005ed78
 .definelabel LoadImage, 0x80062394
+.definelabel UpdateOTAG, 0x8004d6e8
 
 
 .org 0x8006c170 ; No clearing out the good stuff in the exe
@@ -36,10 +37,9 @@ SubFont:
 	
 ;.org 0x8001a1cc ; branch to see if debug text is enabled
 ;	nop
-	
-.org 0x8001f320
+
+.org 0x8001f328
 	j DisplayVoiceSubs
-	
 	
 .org 0x8001cc88
 	j InitMovieSub
@@ -101,9 +101,9 @@ SubFont:
 		li a0, 0x02
 		jal 0x8004d6e8
 		nop
-		jal 0x800501c4
+		jal 0x800503c8
 		nop
-		j 0x8001f328
+		j 0x8001f330
 		nop
 	
 	DisplayMovieSubs:
