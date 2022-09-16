@@ -13,7 +13,7 @@ extern "C" {
 
 	void InitVoiceSubtitle(const char* audioname);
 
-	void DisplaySubtitle();
+	void DrawAudioSubtitle();
 
 	//extern long FntPrint(long id, const char* format, ...);
 

@@ -129,7 +129,7 @@ void InitVoiceSubtitle(const char* audioname)
 	}
 }
 
-void DisplaySubtitle()
+void DrawAudioSubtitle()
 {
 	if (currSub.partsCount != 0)
 	{
@@ -151,27 +151,35 @@ void DisplaySubtitle()
 			yx = part.x | part.y << 0x10;
 			const char* text = part.text;
 
-			int letterIdx = 0;
-			u8 letter = text[letterIdx];
-			letterIdx++;
-			
-			while(letter != 0)
+			for (int i = 0; i < part.len - 1; i++)
 			{
-				//DisplayText(currSub.parts[currSub.nextPartIdx].text, i, 0, 0, 0);
-				//if (letter != 0x7F)
-				{
-
-					uv = GetLetterPos(letter);
-					DisplayFromGraphic16x16(0x0A, 0, yx, uv, wh, 0x19);
-					yx += 0x08;
-					letter = text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
-					letterIdx++;
-				}
-				/*else
-				{
-					yx = currSub.parts[currSub.nextPartIdx].x | ((currSub.parts[currSub.nextPartIdx].y + 12) << 0x10);
-				}*/
+				u8 letter = text[i];
+				uv = GetLetterPos(letter);
+				DisplayFromGraphic16x16(0x0A, 0, yx, uv, wh, 0x19);
+				yx += 0x08;
 			}
+
+			//int letterIdx = 0;
+			/*u8 letter = text[letterIdx];
+			letterIdx++;*/
+			
+			//while(letter != 0)
+			//{
+			//	//DisplayText(currSub.parts[currSub.nextPartIdx].text, i, 0, 0, 0);
+			//	//if (letter != 0x7F)
+			//	{
+
+			//		uv = GetLetterPos(letter);
+			//		DisplayFromGraphic16x16(0x0A, 0, yx, uv, wh, 0x19);
+			//		yx += 0x08;
+			//		letter = text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
+			//		letterIdx++;
+			//	}
+			//	/*else
+			//	{
+			//		yx = part.x | (part.y + 12) << 0x10;
+			//	}*/
+			//}
 
 			currSub.nextPartIdx++;
 			if (currSub.nextPartIdx < currSub.partsCount)

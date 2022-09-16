@@ -98,7 +98,7 @@ SubFont:
 		; nop
 
 	DisplayVoiceSubs:
-		jal DisplaySubtitle
+		jal DrawAudioSubtitle
 		nop
 		;li a0, 0x02
 		;jal 0x8004d6e8
