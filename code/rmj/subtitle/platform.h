@@ -29,6 +29,8 @@ extern "C" {
 	
 	extern int printf(const char* fmt, ...);
 	extern void UpdateOTAG(int unk);
+	extern void ResetOTAG();
+	extern int InitOTAG(i32 unk1, u32 unk2, i32 unk3, i32 unk4);
 }
 
 #endif
