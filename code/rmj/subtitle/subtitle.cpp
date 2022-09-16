@@ -154,32 +154,17 @@ void DrawAudioSubtitle()
 			for (int i = 0; i < part.len - 1; i++)
 			{
 				u8 letter = text[i];
-				uv = GetLetterPos(letter);
-				DisplayFromGraphic16x16(0x0A, 0, yx, uv, wh, 0x19);
-				yx += 0x08;
+				if (letter != 0x7F)
+				{
+					uv = GetLetterPos(letter);
+					DisplayFromGraphic16x16(0x0A, 0, yx, uv, wh, 0x19);
+					yx += 0x08;
+				}
+				else
+				{
+					yx = part.x | (part.y + 12) << 0x10;
+				}
 			}
-
-			//int letterIdx = 0;
-			/*u8 letter = text[letterIdx];
-			letterIdx++;*/
-			
-			//while(letter != 0)
-			//{
-			//	//DisplayText(currSub.parts[currSub.nextPartIdx].text, i, 0, 0, 0);
-			//	//if (letter != 0x7F)
-			//	{
-
-			//		uv = GetLetterPos(letter);
-			//		DisplayFromGraphic16x16(0x0A, 0, yx, uv, wh, 0x19);
-			//		yx += 0x08;
-			//		letter = text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
-			//		letterIdx++;
-			//	}
-			//	/*else
-			//	{
-			//		yx = part.x | (part.y + 12) << 0x10;
-			//	}*/
-			//}
 
 			currSub.nextPartIdx++;
 			if (currSub.nextPartIdx < currSub.partsCount)
