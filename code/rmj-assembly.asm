@@ -23,6 +23,8 @@ SubFont:
 .definelabel printf, 0x8005ed78
 .definelabel LoadImage, 0x80062394
 .definelabel UpdateOTAG, 0x8004d6e8
+.definelabel ResetOTAG, 0x8004bb1c
+.definelabel InitOTAG, 0x8004bb4c
 
 
 .org 0x8006c170 ; No clearing out the good stuff in the exe
@@ -96,10 +98,10 @@ SubFont:
 		; nop
 
 	DisplayVoiceSubs:
-		jal DisplaySubtitle
+		jal DrawAudioSubtitle
 		nop
-		li a0, 0x02
-		jal 0x8004d6e8
+		;li a0, 0x02
+		;jal 0x8004d6e8
 		nop
 		jal 0x800503c8
 		nop
