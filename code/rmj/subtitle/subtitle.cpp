@@ -127,34 +127,12 @@ void InitVoiceSubtitle(const char* audioname)
 			break;
 		}
 	}
-
-	/*audioSubIdx = -1;
-	int audionameHash = sdbmHash(audioname);
-	for (int i = 0; i < subsCount; i++)
-	{
-		if (audionameHash == subs[i].id)
-		{
-			audioSubIdx = i;
-			break;
-		}
-	}*/
 }
 
-int DisplaySubtitle()
+void DisplaySubtitle()
 {
-	if (currSub.parts != NULL)
+	if (currSub.partsCount != 0)
 	{
-		
-		int letterIdx = 0;
-		//int textId = 0x0A;
-		//int unk1 = 0; // Apparently always 0?
-		
-		int uv = 0;
-		int wh = 0x00100008;
-		//int unk3 = 0x19; // Is this the "order" on the screen?
-
-		int returnMe = 0; // Do I need to do this?
-
 		currSub.ticksTilNext--;
 		if (currSub.partsCount != 0 && currSub.ticksTilNext == 0)
 		{
@@ -165,34 +143,28 @@ int DisplaySubtitle()
 				*((u32*)0x800aa228) = otagLength;
 			}
 
-			//InitOTAG(0, 0, 0x180000, 0x1e);
-			
-			//UpdateOTAG(1);
-			//VSync(1);
+			int uv = 0;
+			int wh = 0x00100008;
 
-			//printf("Disaply\n");
+			subtitle_part part = currSub.parts[currSub.nextPartIdx];
+			curAudioSubtitleLength = part.len - 1;
+			yx = part.x | part.y << 0x10;
+			const char* text = part.text;
 
-			letterIdx = 0;
-			u8 letter = currSub.parts[currSub.nextPartIdx].text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
+			int letterIdx = 0;
+			u8 letter = text[letterIdx];
 			letterIdx++;
-
-			yx = currSub.parts[currSub.nextPartIdx].x | currSub.parts[currSub.nextPartIdx].y << 0x10;
-
-			curAudioSubtitleLength = currSub.parts[currSub.nextPartIdx].len - 1;
-			//printf("xy: %X\n", yx);
-
-			//for (int i = 0; i < currSub.parts[currSub.nextPartIdx].len; i++)
+			
 			while(letter != 0)
 			{
-				
 				//DisplayText(currSub.parts[currSub.nextPartIdx].text, i, 0, 0, 0);
 				//if (letter != 0x7F)
 				{
 
 					uv = GetLetterPos(letter);
-					returnMe = DisplayFromGraphic16x16(0x0A, 0, yx, uv, wh, 0x19);
+					DisplayFromGraphic16x16(0x0A, 0, yx, uv, wh, 0x19);
 					yx += 0x08;
-					letter = currSub.parts[currSub.nextPartIdx].text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
+					letter = text[letterIdx]; //subs[audioSubIdx].parts[0].text[letterIdx];
 					letterIdx++;
 				}
 				/*else
@@ -213,8 +185,6 @@ int DisplaySubtitle()
 		}
 
 		UpdateOTAG(2);
-
-		return returnMe;
 	}
 }
 
