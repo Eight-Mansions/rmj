@@ -146,7 +146,6 @@ namespace rmg_generate_audio_subtitles
                     mappings.Add(mapping.IndexOf(line[i]) + 1);
                 }
             }
-            mappings.Add(0);
             return mappings.ToArray();
         }
 
@@ -203,10 +202,11 @@ namespace rmg_generate_audio_subtitles
                     List<string> timings = new List<string> { "1" };
                     timings.AddRange(sub.notes.Replace("0,1\n", "").Split(new char[] { '\n' }));
 
-                    int y = 80;
+                   
 
                     for (int i = 0; i < subLines.Count; i++)
                     {
+                        int y = 432;
                         string subLine = subLines[i].Replace("…", "...");
                         if (subLine.Contains("shutters"))
                         {
@@ -214,6 +214,10 @@ namespace rmg_generate_audio_subtitles
                         }
                         //string[] formatted = Format(subLine, 288, null).Split(new char[] { '\n' });
                         string line = Format(subLine, 288, null);
+                        if (String.IsNullOrEmpty(line))
+                        {
+                            line = " ";
+                        }
 
                         string timing = timings[i];
 

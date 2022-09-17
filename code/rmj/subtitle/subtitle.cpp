@@ -147,11 +147,11 @@ void DrawAudioSubtitle()
 			int wh = 0x00100008;
 
 			subtitle_part part = currSub.parts[currSub.nextPartIdx];
-			curAudioSubtitleLength = part.len - 1;
+			curAudioSubtitleLength = part.len;
 			yx = part.x | part.y << 0x10;
 			const char* text = part.text;
 
-			for (int i = 0; i < part.len - 1; i++)
+			for (int i = 0; i < part.len; i++)
 			{
 				u8 letter = text[i];
 				if (letter != 0x7F)
@@ -163,6 +163,7 @@ void DrawAudioSubtitle()
 				else
 				{
 					yx = part.x | (part.y + 12) << 0x10;
+					curAudioSubtitleLength -= 1;
 				}
 			}
 
