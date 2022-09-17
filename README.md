@@ -9,4 +9,5 @@
 ### Build
 - To build, run either `build_disc_1.bat` or `build_disc_2.bat` in the root folder. Then your bin/cue will be in the cd folder.
 
+### Patch
 To create a patch release, run `create_patch.bat` and an xdelta patch will be created under `release\patch_data`.
