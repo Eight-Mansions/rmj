@@ -1,7 +1,7 @@
 @echo off
-set filename=rmj_1
-set working_name=rmj_1
-set disc=1
+set filename=rmj_2
+set working_name=rmj_2
+set disc=2
 pushd %~dp0
 
 echo Attempting to prepare the original game files.
@@ -48,7 +48,7 @@ xcopy /e /h /q %working_name% orig_%disc%
 echo:
 
 :: We added files to the disc, so use the managed catalog file
-copy %working_name%_base.cat %working_name%.cat
+:: copy %working_name%_base.cat %working_name%.cat
 
 echo Success~!
 goto :EXIT

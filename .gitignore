@@ -2,8 +2,8 @@ cd/*.bin
 cd/*.cue
 cd/*.cat
 cd/*.sys
-cd/orig/*
-cd/rmj_1/*
+cd/orig_*/*
+cd/rmj_*/*
 
 *.xdelta3
 *.zip
