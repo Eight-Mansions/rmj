@@ -146,6 +146,7 @@ namespace rmg_generate_audio_subtitles
                     mappings.Add(mapping.IndexOf(line[i]) + 1);
                 }
             }
+            mappings.Add(0);
             return mappings.ToArray();
         }
 
@@ -163,13 +164,19 @@ namespace rmg_generate_audio_subtitles
 
         static void Main(string[] args)
         {
-            Subtitles all = JsonConvert.DeserializeObject<Subtitles>(File.ReadAllText("rmj_audio.txt"));
+            string audioSubsPath = args[0]; //"trans\\audio_subs\\rmj_audio.txt";
+            string mappingFile = args[1];
+            string audioSubsDisc = args[2]; // "disc1";
+
+            Subtitles all = JsonConvert.DeserializeObject<Subtitles>(File.ReadAllText(audioSubsPath));
             List<Subtitle> subs = all.data.Where(x => !String.IsNullOrEmpty(x.notes)).ToList();
 
-            string mappingfilename = "mapping.txt";
+            string mappingfilename = mappingFile;
             string mapping = File.ReadAllText(mappingfilename).Replace("\r", "").Replace("\n", "");
 
-            StreamWriter generated = new StreamWriter("generated_audio.cpp", false, Encoding.GetEncoding("SJIS"));
+            string generatedAudioFilename = (audioSubsDisc == "disc1") ? "generated_audio_1.cpp" : "generated_audio_2.cpp";
+
+            StreamWriter generated = new StreamWriter("code\\rmj\\subtitle\\" + generatedAudioFilename, false, Encoding.GetEncoding("SJIS"));
             generated.WriteLine("#include \"generated.h\"");
             generated.WriteLine("");
 
@@ -179,7 +186,7 @@ namespace rmg_generate_audio_subtitles
             List<string> collected = new List<string>();
             foreach (Subtitle sub in subs)
             {
-                if (sub.original.ToLower().Contains("disc1"))
+                if (sub.original.ToLower().Contains(audioSubsDisc))
                 {
 
 
@@ -202,11 +209,10 @@ namespace rmg_generate_audio_subtitles
                     List<string> timings = new List<string> { "1" };
                     timings.AddRange(sub.notes.Replace("0,1\n", "").Split(new char[] { '\n' }));
 
-                   
+                    int y = 80;
 
                     for (int i = 0; i < subLines.Count; i++)
                     {
-                        int y = 432;
                         string subLine = subLines[i].Replace("…", "...");
                         if (subLine.Contains("shutters"))
                         {
@@ -214,10 +220,6 @@ namespace rmg_generate_audio_subtitles
                         }
                         //string[] formatted = Format(subLine, 288, null).Split(new char[] { '\n' });
                         string line = Format(subLine, 288, null);
-                        if (String.IsNullOrEmpty(line))
-                        {
-                            line = " ";
-                        }
 
                         string timing = timings[i];
 

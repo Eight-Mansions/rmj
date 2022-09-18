@@ -24,11 +24,17 @@ Xcopy /E /q /Y graphics\tims\ cd\%working_name%_%disc%\ 1>nul
 Xcopy /E /q /Y graphics\tims_disc_%disc%\ cd\%working_name%_%disc%\ 1>nul
 echo:
 
-echo Building RMJ psx sdk code
+echo Generate audio subtitles for Ddsc 1
+tools\rmg_generate_audio_subtitles.exe trans\audio_subs\audio_translation.txt tools\font_mapping.txt disc1
+
+echo Generate audio subtitles for disc 2
+tools\rmg_generate_audio_subtitles.exe trans\audio_subs\audio_translation.txt tools\font_mapping.txt disc2
+
+echo Building RMJ PSX code for disc 1
 pushd code\rmj
 pmake -e RELMODE=DEBUG clean
 mkdir Debug
-pmake -e RELMODE=DEBUG -e OUTFILE=main -e OPTIMIZE=2
+pmake -e RELMODE=DEBUG -e OUTFILE=main -e OPTIMIZE=2 -f disc1
 popd
 
 REM ::insert asm, building new exe
