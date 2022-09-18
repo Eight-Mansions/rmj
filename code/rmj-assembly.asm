@@ -63,7 +63,7 @@ SubFont:
 ;	jal DisplayTest2
 
 .org 0x80091E00
-	.importobj "code\rmj\obj\initsubs.obj"
+	.importobj "code\rmj\obj_disc1\initsubs.obj"
 
 	LoadSubtitles1:
 		addiu sp, sp, -4
