@@ -24,6 +24,13 @@ Xcopy /E /q /Y graphics\tims\ cd\%working_name%_%disc%\ 1>nul
 Xcopy /E /q /Y graphics\tims_disc_%disc%\ cd\%working_name%_%disc%\ 1>nul
 echo:
 
+echo Building RMJ psx sdk code
+pushd code\rmj
+pmake -e RELMODE=DEBUG clean
+mkdir Debug
+pmake -e RELMODE=DEBUG -e OUTFILE=main -e OPTIMIZE=2
+popd
+
 REM ::insert asm, building new exe
 echo Building new EXE file...
 copy /y NUL cd\%working_name%_%disc%\DATA\SUBTITLES1.DAT >NUL
