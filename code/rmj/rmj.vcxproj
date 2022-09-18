@@ -88,7 +88,8 @@
     <None Include="makefile" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="subtitle\generated_audio.cpp" />
+    <ClCompile Include="subtitle\generated_audio_1.cpp" />
+    <ClCompile Include="subtitle\generated_audio_2.cpp" />
     <ClCompile Include="subtitle\generated_movie.cpp" />
     <ClCompile Include="subtitle\platform.cpp" />
     <ClCompile Include="subtitle\initsubs.cpp" />

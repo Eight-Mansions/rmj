@@ -19,7 +19,7 @@ LINKOOPTS = /psx /p /c /li $(RELMODE)
 #FIELD_SRC  = char.c
 #MENU_SRC   = menu.c root.c item.c ability.c equip.c status.c bestiary.c config.c save.c
 #BATTLE_SRC = battle.c
-SUBTITLE_SRC = subtitle.cpp generated_audio.cpp generated_movie.cpp initsubs.cpp
+SUBTITLE_SRC = subtitle.cpp generated_audio_2.cpp generated_movie.cpp initsubs.cpp
 
 
 ## build object names from types ##
@@ -88,7 +88,7 @@ endif
 	@echo "------------------------"
 
 $(RELMODE)/${OUTFILE}.cpe: ${ALL_OBJ}
-	copy $(RELMODE)\*.o* obj\ /y
+	copy $(RELMODE)\*.o* obj_disc2\ /y
 
 clean:
 	rmdir /q /s $(RELMODE)

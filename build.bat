@@ -35,6 +35,10 @@ pushd code\rmj
 pmake -e RELMODE=DEBUG clean
 mkdir Debug
 pmake -e RELMODE=DEBUG -e OUTFILE=main -e OPTIMIZE=2 -f disc1
+
+pmake -e RELMODE=DEBUG clean
+mkdir Debug
+pmake -e RELMODE=DEBUG -e OUTFILE=main -e OPTIMIZE=2 -f disc2
 popd
 
 REM ::insert asm, building new exe

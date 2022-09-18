@@ -88,7 +88,7 @@ endif
 	@echo "------------------------"
 
 $(RELMODE)/${OUTFILE}.cpe: ${ALL_OBJ}
-	copy $(RELMODE)\*.o* obj\ /y
+	copy $(RELMODE)\*.o* obj_disc1\ /y
 
 clean:
 	rmdir /q /s $(RELMODE)
