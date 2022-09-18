@@ -1,9 +1,9 @@
 .psx
 
 .open "cd\rmj_1\DATA\SUBTITLES1.DAT",0x80100000
-	.importobj "code\rmj\obj\subtitle.obj"
-	.importobj "code\rmj\obj\generated_audio_1.obj"
-	.importobj "code\rmj\obj\generated_movie.obj"
+	.importobj "code\rmj\obj_disc1\subtitle.obj"
+	.importobj "code\rmj\obj_disc1\generated_audio_1.obj"
+	.importobj "code\rmj\obj_disc1\generated_movie.obj"
 SubFont:
 	.incbin "graphics\font\sub_font.bin" ; Font used for subtitles
 .close
