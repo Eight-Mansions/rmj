@@ -45,7 +45,7 @@ REM ::insert asm, building new exe
 echo Building new EXE file...
 copy /y NUL cd\%working_name%_%disc%\DATA\SUBTITLES1.DAT >NUL
 copy exe\orig_%disc%\%exe% exe\%exe%
-tools\armips.exe code\rmj-assembly.asm
+tools\armips.exe code\rmj-assembly_%disc%.asm
 ::tools\atlas exe\SLPS_005.05 trans\exe_translations.txt >> exe_error.txt
 copy exe\%exe% cd\%working_name%_%disc%\%exe%
 echo:
