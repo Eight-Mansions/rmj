@@ -1,6 +1,6 @@
 .psx
 
-.open "cd\rmj_1\DATA\SUBTITLES1.DAT",0x80100000
+.open "cd\rmj_1\DATA\SUBTITLES1.DAT",0x801F0000
 	.importobj "code\rmj\obj_disc1\subtitle.obj"
 	.importobj "code\rmj\obj_disc1\generated_audio_1.obj"
 	.importobj "code\rmj\obj_disc1\generated_movie.obj"
@@ -68,7 +68,7 @@ SubFont:
 	LoadSubtitles1:
 		addiu sp, sp, -4
 		sw ra, 0(sp)
-		la a0, 0x80100000
+		la a0, 0x801F0000
 		jal LoadSubtitles
 		nop
 		lw ra, 0(sp)
