@@ -21,8 +21,8 @@ if not exist cd\%working_disc_1% (
 
 :: Create a patch with the two bins
 echo Creating patch, please wait...
-release\patch_data\xdelta.exe -9 -S djw -B 1812725760 -e -vfs cd\%original_disc_1% cd\%working_disc_1% release\patch_data\rmj_disc_1-patch.xdelta3
-release\patch_data\xdelta.exe -9 -S djw -B 1812725760 -e -vfs cd\%original_disc_2% cd\%working_disc_2% release\patch_data\rmj_disc_2-patch.xdelta3
+release\patch_data\xdelta.exe -9 -S none -B 1812725760 -e -vfs cd\%original_disc_1% cd\%working_disc_1% release\patch_data\rmj_disc_1-patch.xdelta
+release\patch_data\xdelta.exe -9 -S none -B 1812725760 -e -vfs cd\%original_disc_2% cd\%working_disc_2% release\patch_data\rmj_disc_2-patch.xdelta
 
 echo Patch created successfully in the release\patch_data folder!
 
