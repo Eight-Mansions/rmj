@@ -100,9 +100,10 @@ int GetLetterPos(u8 letter)
 	letter -= 1;
 	y = (letter / 26);
 	x = letter - (y * 26);
-	y *= 16;
+	y *= 13;
 	x *= 8;
 
+	y += 10;
 	x += 256; // Offset to new font
 	return (y << 16 | x);
 }
@@ -144,7 +145,7 @@ void DrawAudioSubtitle()
 			}
 
 			int uv = 0;
-			int wh = 0x00100008;
+			int wh = 0x000D0008;
 
 			subtitle_part part = currSub.parts[currSub.nextPartIdx];
 			curAudioSubtitleLength = part.len;
@@ -162,7 +163,7 @@ void DrawAudioSubtitle()
 				}
 				else
 				{
-					yx = part.x | (part.y + 12) << 0x10;
+					yx = part.x | (part.y + 13) << 0x10;
 					curAudioSubtitleLength -= 1;
 				}
 			}
