@@ -24,11 +24,14 @@ Xcopy /E /q /Y graphics\tims\ cd\%working_name%_%disc%\ 1>nul
 Xcopy /E /q /Y graphics\tims_disc_%disc%\ cd\%working_name%_%disc%\ 1>nul
 echo:
 
-echo Generate audio subtitles for Ddsc 1
-tools\rmg_generate_audio_subtitles.exe trans\audio_subs\audio_translation.txt tools\font_mapping.txt disc1
+echo Generate audio subtitles for disc 1
+tools\rmj_generate_audio_subtitles.exe trans\audio_subs\audio_translation.txt tools\font_mapping.txt disc1
 
 echo Generate audio subtitles for disc 2
-tools\rmg_generate_audio_subtitles.exe trans\audio_subs\audio_translation.txt tools\font_mapping.txt disc2
+tools\rmj_generate_audio_subtitles.exe trans\audio_subs\audio_translation.txt tools\font_mapping.txt disc2
+
+echo Generate movie subtitles
+tools\rmj_generate_movie_subtitles.exe trans\movie_subs tools\movie_mapping.txt
 
 echo Building RMJ PSX code for disc 1
 pushd code\rmj
