@@ -1,0 +1,156 @@
+system_area {
+  file "rmj_2.sys"
+}
+
+volume {
+  system_id [PLAYSTATION]
+  volume_id []
+  volume_set_id []
+  publisher_id []
+  preparer_id []
+  application_id [PLAYSTATION]
+  copyright_file_id []
+  abstract_file_id []
+  bibliographic_file_id []
+  creation_date 1997-10-06 12:16:43.00 36
+  modification_date 0000-00-00 00:00:00.00 0
+  expiration_date 0000-00-00 00:00:00.00 0
+  effective_date 0000-00-00 00:00:00.00 0
+}
+
+dir {
+  file SLPS_010.88
+  file SYSTEM.CNF
+  file MJ0002.DAT
+  dir OL {
+    file OL10.TMS
+    file OL7.TMS
+    file OL8.TMS
+    file OL9.TMS
+  }
+  dir TIM {
+    file DIAG1.TMS
+    file DIAG2.TMS
+    file DIAG3.TMS
+    file DISKMSG.TIM
+    file ELEVATOR.TMS
+	file FONT.TMS
+    file GUARD1.TMS
+    file GUARD2.TMS
+    file INFLU.TMS
+    file ITEM.TMS
+    file NOWLOAD.TIM
+    file OVER.TMS
+    file POD.TMS
+    file PUZZLE.TMS
+    file SAVE.TMS
+    file SPEED.TMS
+    file STRFON.TMS
+    file TITLE.TMS
+    file VLCHECK.TMS
+    file WAIT.TMS
+    dir BS {
+      file DIC.BS
+      file MANUAL.BS
+      file NEWS.BS
+    }
+  }
+  dir BGM {
+    file BGM015.SEQ
+    file BGM015.VX
+    file BGM016.SEQ
+    file BGM016.VX
+    file BGM017.SEQ
+    file BGM017.VX
+    file BGM018.SEQ
+    file BGM018.VX
+    file BGM019.SEQ
+    file BGM019.VX
+    file BGM020.SEQ
+    file BGM020.VX
+    file BGM021.SEQ
+    file BGM021.VX
+  }
+  dir SOUND {
+    file FOOT2.VX
+    file FOOT2D.VX
+    file SEB.SEP
+    file SEB.VX
+    file SEG.SEP
+    file SEG.VX
+    file SEG030.SEQ
+    file SEG031.SEQ
+    file SEG032.SEQ
+    file SEG033.SEQ
+    file SEG038.SEQ
+    file SEG038.VX
+    file SEG051.SEQ
+    file SEG052.SEQ
+    file SEG053.SEQ
+    file SEG056.SEQ
+    file SEG057.SEQ
+    file SEG058.SEQ
+    file SEGINFL.VX
+    file SEGPUZZ.VX
+    dir XA1 {
+      file EMO1.INF
+      xafile EMO1.XAI
+      file EMO2.INF
+      xafile EMO2.XAI
+      file EMO3.INF
+      xafile EMO3.XAI
+      file EMO4.INF
+      xafile EMO4.XAI
+      file EMO5.INF
+      xafile EMO5.XAI
+      file EMO6.INF
+      xafile EMO6.XAI
+      file EMO7.INF
+      xafile EMO7.XAI
+      file GOK21.INF
+      xafile GOK21.XAI
+      file GOK22.INF
+      xafile GOK22.XAI
+      file GOK23.INF
+      xafile GOK23.XAI
+      file GOK24.INF
+      xafile GOK24.XAI
+      file SE1.INF
+      xafile SE1.XAI
+      file SE2.INF
+      xafile SE2.XAI
+      file SE3.INF
+      xafile SE3.XAI
+    }
+    dir XA2 {
+      file WP21.INF
+      xafile WP21.XAI
+      file WS21.INF
+      xafile WS21.XAI
+      file WS22.INF
+      xafile WS22.XAI
+      file WS23.INF
+      xafile WS23.XAI
+      file WS24.INF
+      xafile WS24.XAI
+    }
+  }
+  dir DATA {
+    xafile ENDA.DAT
+    file ENDA.INF
+    xafile EV3A.DAT
+    file EV3A.INF
+    xafile EV4A.DAT
+    file EV4A.INF
+	file SUBTITLES1.DAT
+    file WL2.DAT
+    file WL2.INF
+    xafile WL2A.DAT
+    file WL2A.INF
+    file WUC.DAT
+    file WUC.INF
+    xafile WUCA.DAT
+    file WUCA.INF
+  }
+  file ATMP.TMP
+}

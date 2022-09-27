@@ -10,6 +10,7 @@ SubFont:
 
 .open "exe\SLPS_010.88",0x8000F800
 
+.definelabel LoadTMS, 0x8004b440
 .definelabel DisplayFromGraphic16x16, 0x8004c588
 .definelabel FntPrint, 0x80060e8c
 .definelabel FntFlush, 0x80060b74

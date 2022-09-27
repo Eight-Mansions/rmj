@@ -17,6 +17,11 @@ del /q graphics\*.TMS 1>nul
 tools\rmj_tms_build.exe graphics\TITLE_TMS
 del /q cd\%working_name%_%disc%\TIM\TITLE.TMS
 copy graphics\TITLE.TMS cd\%working_name%_%disc%\TIM\TITLE.TMS
+
+tools\rmj_tms_build.exe graphics\FONT_TMS
+del /q cd\%working_name%_%disc%\TIM\FONT.TMS
+copy graphics\FONT.TMS cd\%working_name%_%disc%\TIM\FONT.TMS
+
 echo:
 
 echo Copying the raw TIM files over...

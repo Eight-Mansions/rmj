@@ -38,6 +38,7 @@ dir {
     file DIAG3.TMS
     file DISKMSG.TIM
     file ELEVATOR.TMS
+	file FONT.TMS
     file GUARD1.TMS
     file GUARD2.TMS
     file ITEM.TMS
