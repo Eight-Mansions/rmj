@@ -8,6 +8,8 @@ cd/rmj_*/*
 
 exe/SLPS_*
 
+graphics/TITLE.TMS
+
 *.xdelta3
 *.zip
 
