@@ -37,12 +37,19 @@ SubFont:
 
 .org 0x8001f1d8
 	jal InitVoiceSub
-	
+
+; Init subs for when in hazmat suit
+.org 0x8001f3b4
+	jal InitVoiceSubHazmat
+
 ;.org 0x8001a1cc ; branch to see if debug text is enabled
 ;	nop
 
 .org 0x8001f328
 	j DisplayVoiceSubs
+	
+.org 0x8001f3c4
+	j DisplayVoiceSubsHazmat
 	
 .org 0x8001cc88
 	j InitMovieSub
@@ -90,6 +97,16 @@ SubFont:
 		li v0, 0x01
 		j 0x8001f1e0
 		lui at, 0x8009
+		
+	InitVoiceSubHazmat:
+		jal InitVoiceSubtitle
+		nop
+	
+		jal 0x8004ffe8
+		lw a0, 0x18(fp)
+		
+		j 0x8001f3bc
+		nop
 
 	; DisplayDebug:
 		; addiu a0, r0, 0x01
@@ -108,6 +125,16 @@ SubFont:
 		nop
 		j 0x8001f330
 		nop
+		
+	DisplayVoiceSubsHazmat:
+		jal DrawAudioSubtitle
+		nop
+		
+		jal 0x800503c8
+		nop
+		
+		j 0x8001f3cc
+		nop 
 	
 	DisplayMovieSubs:
 		la a2, SubFont
