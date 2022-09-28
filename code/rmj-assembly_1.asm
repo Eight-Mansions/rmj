@@ -55,6 +55,9 @@ SubFont:
 	j InitMovieSub
 	nop
 	
+.org 0x8001ceb4
+	j ResetMovieSub
+	
 .org 0x8004a1a8
 	j DisplayMovieSubs
 	
@@ -164,6 +167,19 @@ SubFont:
 		lui v0, 0x8009
 		j 0x8001cc90
 		lw v0, 0x5da8(v0)
+		
+	ResetMovieSub:
+		addiu sp, sp, -4
+		sw ra, 0(sp)
+		
+		jal ResetMovieSubtitle
+		nop
+		
+		lw ra, 0(sp)
+		addiu sp, sp, 4
+		
+		jr ra
+		nop
 		
 		
 	StoreFrameNumber:

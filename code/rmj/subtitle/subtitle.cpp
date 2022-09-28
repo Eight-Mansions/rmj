@@ -215,6 +215,11 @@ void InitMovieSubtitle(const char* videoname)
 	}
 }
 
+void ResetMovieSubtitle()
+{
+	movieSubIdx = -1;
+}
+
 void DrawMovieSubtitle(RECT* area, u16* image, u16* font, u32 curFrame)
 {
 	u32 sliceW = area->w;
