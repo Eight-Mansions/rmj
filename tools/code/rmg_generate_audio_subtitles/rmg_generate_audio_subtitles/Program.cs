@@ -212,7 +212,7 @@ namespace rmg_generate_audio_subtitles
                     {
                         int y = 432;
                         string subLine = subLines[i].Replace("…", "...");
-                        if (subLine.Contains("shutters"))
+                        if (subLine.Contains("emergency"))
                         {
                             int boopme = 0;
                         }
@@ -221,6 +221,22 @@ namespace rmg_generate_audio_subtitles
                         if (String.IsNullOrEmpty(line))
                         {
                             line = " ";
+                        }
+
+                        int centerX = -1;
+                        foreach (string part in line.Split(new char[] { '\n'}))
+                        {
+                            if (part.IndexOf("emergency") >= 0)
+                            {
+                                int pauseme = 0;
+                            }
+                            int textWidth = GetWidth(part);
+
+                            int totalPadding = ((320 >> 1) - (textWidth >> 1));
+                            if (centerX == -1)
+                            {
+                                centerX = totalPadding;
+                            }
                         }
 
                         string timing = timings[i];
@@ -234,7 +250,7 @@ namespace rmg_generate_audio_subtitles
                             generated.WriteLine(String.Format("const u8 partdata_{0}[] = {{{1}}};", partIdx, String.Join(", ", encoding)));
                             generated.WriteLine("");
 
-                            partdata.Add(String.Format("{{(const char*)partdata_{0}, {1}, {2}, 5, {3}}},", partIdx, encoding.Length, timing, y));
+                            partdata.Add(String.Format("{{(const char*)partdata_{0}, {1}, {2}, {3}, {4}}},", partIdx, encoding.Length, timing, centerX, y));
 
                             int newLineCount = encoding.Where(x => x == 0xFF).Count();
                             newLineCount += 1;
