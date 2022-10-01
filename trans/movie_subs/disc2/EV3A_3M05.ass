@@ -10,13 +10,13 @@ PlayResX: 320
 PlayResY: 192
 
 [Aegisub Project Garbage]
-Audio File: EV3A.DAT[4].avi
-Video File: EV3A.DAT[4].avi
+Audio File: ../../../../resources/disc 2/videos/DATA/EV3A.DAT[4].avi
+Video File: ../../../../resources/disc 2/videos/DATA/EV3A.DAT[4].avi
 Video AR Mode: 4
 Video AR Value: 1.666667
-Video Zoom Percent: 2.000000
-Active Line: 1
-Video Position: 2303
+Video Zoom Percent: 3.000000
+Active Line: 20
+Video Position: 1891
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -42,9 +42,9 @@ Dialogue: 0,0:00:48.63,0:00:49.63,Default,,0,0,0,,Huh!?
 Dialogue: 0,0:00:50.36,0:00:53.10,Default,,0,0,0,,It's a top-class research group.
 Dialogue: 0,0:00:53.10,0:00:55.96,Default,,0,0,0,,They trapped the five of us\Nhere for their plan.
 Dialogue: 0,0:00:55.96,0:00:56.76,Default,,0,0,0,,Plan?
-Dialogue: 0,0:00:56.76,0:00:58.56,Default,,0,0,0,,The Asmodeus Legend.
+Dialogue: 0,0:00:56.76,0:00:58.56,Default,,0,0,0,,The Asmos Legend.
 Dialogue: 0,0:00:58.56,0:01:00.30,Default,,0,0,0,,Do you know of it?
-Dialogue: 0,0:01:01.16,0:01:03.30,Default,,0,0,0,,The legend of ancient\Nhumans evolving?
+Dialogue: 0,0:01:01.16,0:01:03.30,Default,,0,0,0,,The legend of ancient\Nevolved humans?
 Dialogue: 0,0:01:03.30,0:01:04.70,Default,,0,0,0,,That's right.
 Dialogue: 0,0:01:05.43,0:01:12.03,Default,,0,0,0,,S.T.G. has researched this legend\Nand has finally unraveled the puzzle.
 Dialogue: 0,0:01:15.43,0:01:20.10,Default,,0,0,0,,Asmos referred to a person\Nwith the perfect antibodies.
@@ -57,7 +57,7 @@ Dialogue: 0,0:01:34.76,0:01:40.30,Default,,0,0,0,,The ancient virus and a person
 Dialogue: 0,0:01:41.03,0:01:44.56,Default,,0,0,0,,With these, it's certainly\Npossible, Kisaragi.
 Dialogue: 0,0:01:44.56,0:01:46.16,Default,,0,0,0,,All this for THAT!?
 Dialogue: 0,0:01:48.36,0:01:51.76,Default,,0,0,0,,The ancient Asmodeus virus\Nis right here.
-Dialogue: 0,0:01:52.23,0:01:53.70,Default,,0,0,0,,That's me.
+Dialogue: 0,0:01:52.23,0:01:53.70,Default,,0,0,0,,Within me.
 Dialogue: 0,0:01:54.36,0:01:57.30,Default,,0,0,0,,Then, the one's with perfect\NDNA are--!
 Dialogue: 0,0:01:57.30,0:02:00.76,Default,,0,0,0,,Precisely. The perfect DNA, MJ.
 Dialogue: 0,0:02:00.76,0:02:03.10,Default,,0,0,0,,The MJ exists amongst you.

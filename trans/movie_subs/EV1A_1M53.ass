@@ -10,12 +10,13 @@ PlayResX: 320
 PlayResY: 192
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/yagen/OneDrive/Games/Translations/R-MJ/resources/disc 1/videos/DATA/videos_to_sub/EV1A.DAT[45].avi
-Video File: C:/Users/yagen/OneDrive/Games/Translations/R-MJ/resources/disc 1/videos/DATA/videos_to_sub/EV1A.DAT[45].avi
+Audio File: ../../../resources/disc 1/videos/DATA/videos_to_sub/EV1A.DAT[45].avi
+Video File: ../../../resources/disc 1/videos/DATA/videos_to_sub/EV1A.DAT[45].avi
 Video AR Mode: 4
 Video AR Value: 1.666667
-Active Line: 17
-Video Position: 692
+Scroll Position: 6
+Active Line: 14
+Video Position: 556
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -37,7 +38,7 @@ Dialogue: 0,0:00:25.03,0:00:26.43,Default,,0,0,0,,Wait, look over there!
 Dialogue: 0,0:00:27.63,0:00:28.70,Default,,0,0,0,,Is it an exit?
 Dialogue: 0,0:00:28.96,0:00:29.90,Default,,0,0,0,,No other options!
 Dialogue: 0,0:00:29.90,0:00:32.03,Default,,0,0,0,,No way, it looks super dangerous!
-Dialogue: 0,0:00:37.03,0:00:38.16,Default,,0,0,0,,Gas!?
+Dialogue: 0,0:00:37.03,0:00:38.16,Default,,0,0,0,,Smoke!?
 Dialogue: 0,0:00:38.16,0:00:41.03,Default,,0,0,0,,Come on...! We need to move!
 Dialogue: 0,0:00:41.03,0:00:42.30,Default,,0,0,0,,Misato, hurry up!
 Dialogue: 0,0:00:44.10,0:00:46.16,Default,,0,0,0,,I'm so sick of this!!

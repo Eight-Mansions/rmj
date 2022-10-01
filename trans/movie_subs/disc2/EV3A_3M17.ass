@@ -10,12 +10,12 @@ PlayResX: 320
 PlayResY: 192
 
 [Aegisub Project Garbage]
-Audio File: C:/Users/yagen/OneDrive/Games/Translations/R-MJ/resources/disc 2/videos/DATA/videos_to_sub/EV3A.DAT[13].avi
-Video File: C:/Users/yagen/OneDrive/Games/Translations/R-MJ/resources/disc 2/videos/DATA/videos_to_sub/EV3A.DAT[13].avi
+Audio File: ../../../../resources/disc 2/videos/DATA/videos_to_sub/EV3A.DAT[13].avi
+Video File: ../../../../resources/disc 2/videos/DATA/videos_to_sub/EV3A.DAT[13].avi
 Video AR Mode: 4
 Video AR Value: 1.666667
-Active Line: 10
-Video Position: 550
+Active Line: 11
+Video Position: 1085
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -34,7 +34,7 @@ Dialogue: 0,0:00:19.23,0:00:23.76,Default,,0,0,0,,S.T.G. would sell the cure and
 Dialogue: 0,0:00:23.76,0:00:24.70,Default,,0,0,0,,You monster!!
 Dialogue: 0,0:00:25.96,0:00:29.10,Default,,0,0,0,,To be honest, I don't even\Ncare about the medicine!
 Dialogue: 0,0:00:29.10,0:00:33.23,Default,,0,0,0,,A new race of humans shall be\Nborn that will rule over all!
-Dialogue: 0,0:00:34.63,0:00:36.56,Default,,0,0,0,,All according to Asmodeus's Legend.
+Dialogue: 0,0:00:34.63,0:00:36.56,Default,,0,0,0,,All according to the Asmos Legend.
 Dialogue: 0,0:00:36.56,0:00:38.43,Default,,0,0,0,,Won't everyone just die!?
 Dialogue: 0,0:00:38.43,0:00:43.10,Default,,0,0,0,,Those with the ancient\NDNA shall live!
 Dialogue: 0,0:00:43.16,0:00:44.36,Default,,0,0,0,,Then that means...
