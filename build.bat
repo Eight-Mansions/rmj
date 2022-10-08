@@ -27,6 +27,8 @@ echo:
 echo Copying the raw TIM files over...
 Xcopy /E /q /Y graphics\tims\ cd\%working_name%_%disc%\ 1>nul
 Xcopy /E /q /Y graphics\tims_disc_%disc%\ cd\%working_name%_%disc%\ 1>nul
+Xcopy /E /q /Y graphics\bs\ cd\%working_name%_%disc%\ 1>nul
+Xcopy /E /q /Y graphics\bs_disc_%disc%\ cd\%working_name%_%disc%\ 1>nul
 echo:
 
 echo Generate audio subtitles for disc 1
