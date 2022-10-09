@@ -141,6 +141,13 @@ namespace rmg_generate_audio_subtitles
                 {
                     mappings.Add(0x7F);
                 }
+                else if (line[i] == '<' && line[i + 1] == '$')
+                {
+                    int val = Int32.Parse(line[i + 2].ToString() + line[i + 3].ToString(), System.Globalization.NumberStyles.HexNumber);
+                    i += 4;
+
+                    mappings.Add(val);
+                }
                 else
                 {
                     mappings.Add(mapping.IndexOf(line[i]) + 1);
@@ -168,7 +175,7 @@ namespace rmg_generate_audio_subtitles
             string audioSubsDisc = args[2]; // "disc1";
 
             Subtitles all = JsonConvert.DeserializeObject<Subtitles>(File.ReadAllText(audioSubsPath));
-            List<Subtitle> subs = all.data.Where(x => !String.IsNullOrEmpty(x.notes)).ToList();
+            List<Subtitle> subs = all.data.Where(x => !String.IsNullOrEmpty(x.translated)).ToList();
 
             string mappingfilename = mappingFile;
             string mapping = File.ReadAllText(mappingfilename).Replace("\r", "").Replace("\n", "");
@@ -187,8 +194,6 @@ namespace rmg_generate_audio_subtitles
             {
                 if (sub.original.ToLower().Contains(audioSubsDisc))
                 {
-
-
                     string audioPath = sub.audioPath;
                     string audioId = sub.audioPath.Substring(sub.audioPath.LastIndexOf("_") + 1).Replace(".wav", "");
                     int hash = sdbmHash(audioId + "\0");
@@ -203,60 +208,82 @@ namespace rmg_generate_audio_subtitles
 
                     List<string> partdata = new List<string>();
 
-                    List<string> subLines = sub.translated.Split(new char[] { '\n' }).ToList();
-                    subLines.Add(" ");
-                    List<string> timings = new List<string> { "1" };
-                    timings.AddRange(sub.notes.Replace("0,1\n", "").Split(new char[] { '\n' }));
-
-                    for (int i = 0; i < subLines.Count; i++)
+                    string translated = "";
+                    string notes = "";
+                    if (sub.translated.Contains("disc"))
                     {
-                        int y = 432;
-                        string subLine = subLines[i].Replace("…", "...");
-                        if (subLine.Contains("emergency"))
-                        {
-                            int boopme = 0;
-                        }
-                        //string[] formatted = Format(subLine, 288, null).Split(new char[] { '\n' });
-                        string line = Format(subLine, 288, null);
-                        if (String.IsNullOrEmpty(line))
-                        {
-                            line = " ";
-                        }
+                        translated = subs.Where(x => x.audioPath == sub.translated.Replace("@", "")).Select(x => x.translated).FirstOrDefault();
+                        notes = subs.Where(x => x.audioPath == sub.translated.Replace("@", "")).Select(x => x.notes).FirstOrDefault();
+                    }
+                    else
+                    {
+                        translated = sub.translated;
+                        notes = sub.notes;
+                    }
 
-                        int centerX = -1;
-                        foreach (string part in line.Split(new char[] { '\n'}))
+                    if (!String.IsNullOrEmpty(translated))
+                    {
+
+                         List<string> subLines = translated.Split(new char[] { '\n' }).ToList();
+                        subLines.Add(" ");
+                        List<string> timings = new List<string> { "1" };
+                        timings.AddRange(notes.Replace("0,1\n", "").Split(new char[] { '\n' }));
+
+                        for (int i = 0; i < subLines.Count; i++)
                         {
-                            if (part.IndexOf("emergency") >= 0)
+                            int y = 432;
+                            string subLine = subLines[i].Replace("…", "...");
+
+                            //string[] formatted = Format(subLine, 288, null).Split(new char[] { '\n' });
+                            string line = Format(subLine, 288, null);
+                            if (String.IsNullOrEmpty(line))
                             {
-                                int pauseme = 0;
+                                line = " ";
                             }
-                            int textWidth = GetWidth(part);
 
-                            int totalPadding = ((320 >> 1) - (textWidth >> 1));
-                            if (centerX == -1)
+                            int centerX = -1;
+                            string centered = "";
+                            foreach (string part in line.Split(new char[] { '\n' }))
                             {
-                                centerX = totalPadding;
+                                if (!String.IsNullOrEmpty(centered))
+                                {
+                                    centered += "\n";
+                                }
+
+                                int textWidth = GetWidth(part);
+
+                                int totalPadding = ((320 >> 1) - (textWidth >> 1));
+                                if (centerX == -1)
+                                {
+                                    centerX = totalPadding;
+                                }
+                                else
+                                {
+                                    centered += "<$" + totalPadding.ToString("X2") + ">";
+                                }
+
+                                centered += part;
                             }
-                        }
 
-                        string timing = timings[i];
+                            string timing = timings[i];
 
-                       // foreach(string line in formatted)
-                        {
+                            // foreach(string line in formatted)
+                            {
 
-                            int[] encoding = GetEncoding(line, mapping);
+                                int[] encoding = GetEncoding(centered, mapping);
 
-                            generated.WriteLine("//" + audioPath + " | " + line.Replace("\n", "\\n"));
-                            generated.WriteLine(String.Format("const u8 partdata_{0}[] = {{{1}}};", partIdx, String.Join(", ", encoding)));
-                            generated.WriteLine("");
+                                generated.WriteLine("//" + audioPath + " | " + line.Replace("\n", "\\n"));
+                                generated.WriteLine(String.Format("const u8 partdata_{0}[] = {{{1}}};", partIdx, String.Join(", ", encoding)));
+                                generated.WriteLine("");
 
-                            partdata.Add(String.Format("{{(const char*)partdata_{0}, {1}, {2}, {3}, {4}}},", partIdx, encoding.Length, timing, centerX, y));
+                                partdata.Add(String.Format("{{(const char*)partdata_{0}, {1}, {2}, {3}, {4}}},", partIdx, encoding.Length, timing, centerX, y));
 
-                            int newLineCount = encoding.Where(x => x == 0xFF).Count();
-                            newLineCount += 1;
-                            y += newLineCount * 12;
-                            partIdx++;
+                                int newLineCount = encoding.Where(x => x == 0xFF).Count();
+                                newLineCount += 1;
+                                y += newLineCount * 12;
+                                partIdx++;
 
+                            }
                         }
                     }
 
