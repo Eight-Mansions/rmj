@@ -8,7 +8,7 @@ const u8 partdata_1[] = {76};
 
 const subtitle_part sub0_parts[] = {
 	{(const char*)partdata_0, 9, 1, 124, 432},
-	{(const char*)partdata_1, 1, , 156, 432},
+	{(const char*)partdata_1, 1, 44, 156, 432},
 };
 
 //disc1/XA1/EMO1_WTAV08.wav | Let's hurry!
@@ -1384,8 +1384,8 @@ const u8 partdata_256[] = {76};
 
 const subtitle_part sub119_parts[] = {
 	{(const char*)partdata_254, 12, 1, 112, 432},
-	{(const char*)partdata_255, 7, 0.1, 132, 432},
-	{(const char*)partdata_256, 1, 45, 156, 432},
+	{(const char*)partdata_255, 7, 45, 132, 432},
+	{(const char*)partdata_256, 1, 23, 156, 432},
 };
 
 //disc1/XA2/WP11_WTPL102.wav | There's a button here, but it's not\ndoing anything.
@@ -2254,8 +2254,8 @@ const u8 partdata_418[] = {76};
 
 const subtitle_part sub193_parts[] = {
 	{(const char*)partdata_416, 12, 1, 112, 432},
-	{(const char*)partdata_417, 7, 0.1, 132, 432},
-	{(const char*)partdata_418, 1, 45, 156, 432},
+	{(const char*)partdata_417, 7, 45, 132, 432},
+	{(const char*)partdata_418, 1, 23, 156, 432},
 };
 
 //disc1/XA2/WS14_WTPL102.wav | There's a button here, but it's not\ndoing anything.
