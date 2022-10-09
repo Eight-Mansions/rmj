@@ -199,8 +199,8 @@ MovieSubtitlePart sub11_parts[] = {
 //trans\movie_subs\disc1\EV1A_1M29 | I'm glad you two are okay.
 const u8 partdata_40[] = { 8, 62, 38, 76, 32, 37, 26, 29, 76, 50, 40, 46, 76, 45, 48, 40, 76, 26, 43, 30, 76, 40, 36, 26, 50, 52 };
 
-//trans\movie_subs\disc1\EV1A_1M29 | Hajime, whose the babe?
-const u8 partdata_41[] = { 7, 26, 35, 34, 38, 30, 53, 76, 48, 33, 40, 44, 30, 76, 45, 33, 30, 76, 27, 26, 27, 30, 55 };
+//trans\movie_subs\disc1\EV1A_1M29 | Hajime, who's the babe?
+const u8 partdata_41[] = { 7, 26, 35, 34, 38, 30, 53, 76, 48, 33, 40, 62, 44, 76, 45, 33, 30, 76, 27, 26, 27, 30, 55 };
 
 MovieSubtitlePart sub12_parts[] = {
 	{(const char*)partdata_40, 26, 255, 6, 30, 376, 144, 376, 144},
