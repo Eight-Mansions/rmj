@@ -163,8 +163,9 @@ void DrawAudioSubtitle()
 				}
 				else
 				{
-					yx = part.x | (part.y + 16) << 0x10;
-					curAudioSubtitleLength -= 1;
+					i++;
+					yx = text[i] | (part.y + 16) << 0x10;
+					curAudioSubtitleLength -= 2;
 				}
 			}
 

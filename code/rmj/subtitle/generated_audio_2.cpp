@@ -67,13 +67,13 @@ const subtitle_part sub5_parts[] = {
 };
 
 //disc2/XA1/GOK21_GBL204A.wav | Why do I smell water in a place\nlike this?
-const u8 partdata_12[] = {23, 34, 51, 76, 30, 41, 76, 9, 76, 45, 39, 31, 38, 38, 76, 49, 27, 46, 31, 44, 76, 35, 40, 76, 27, 76, 42, 38, 27, 29, 31, 127, 38, 35, 37, 31, 76, 46, 34, 35, 45, 56};
+const u8 partdata_12[] = {23, 34, 51, 76, 30, 41, 76, 9, 76, 45, 39, 31, 38, 38, 76, 49, 27, 46, 31, 44, 76, 35, 40, 76, 27, 76, 42, 38, 27, 29, 31, 127, 120, 38, 35, 37, 31, 76, 46, 34, 35, 45, 56};
 
 //disc2/XA1/GOK21_GBL204A.wav |  
 const u8 partdata_13[] = {76};
 
 const subtitle_part sub6_parts[] = {
-	{(const char*)partdata_12, 42, 1, 36, 432},
+	{(const char*)partdata_12, 43, 1, 36, 432},
 	{(const char*)partdata_13, 1, 70, 156, 432},
 };
 
@@ -370,7 +370,7 @@ const u8 partdata_66[] = {23, 34, 27, 46, 63, 45, 76, 46, 34, 35, 45, 56};
 const u8 partdata_67[] = {12, 41, 41, 37, 45, 76, 38, 35, 37, 31, 76, 27, 76, 42, 47, 52, 52, 38, 31, 53};
 
 //disc2/XA2/WP21_WTPL201.wav | Let's try solving it. Maybe it'll\nlet us out.
-const u8 partdata_68[] = {12, 31, 46, 63, 45, 76, 46, 44, 51, 76, 45, 41, 38, 48, 35, 40, 33, 76, 35, 46, 53, 76, 13, 27, 51, 28, 31, 76, 35, 46, 63, 38, 38, 127, 38, 31, 46, 76, 47, 45, 76, 41, 47, 46, 53};
+const u8 partdata_68[] = {12, 31, 46, 63, 45, 76, 46, 44, 51, 76, 45, 41, 38, 48, 35, 40, 33, 76, 35, 46, 53, 76, 13, 27, 51, 28, 31, 76, 35, 46, 63, 38, 38, 127, 116, 38, 31, 46, 76, 47, 45, 76, 41, 47, 46, 53};
 
 //disc2/XA2/WP21_WTPL201.wav |  
 const u8 partdata_69[] = {76};
@@ -378,7 +378,7 @@ const u8 partdata_69[] = {76};
 const subtitle_part sub33_parts[] = {
 	{(const char*)partdata_66, 12, 1, 112, 432},
 	{(const char*)partdata_67, 20, 52, 80, 432},
-	{(const char*)partdata_68, 45, 46, 28, 432},
+	{(const char*)partdata_68, 46, 46, 28, 432},
 	{(const char*)partdata_69, 1, 58, 156, 432},
 };
 
@@ -489,13 +489,13 @@ const subtitle_part sub39_parts[] = {
 };
 
 //disc2/XA2/WS21_WTAL201.wav | I'm sorry, I'm just holding you\nback...
-const u8 partdata_92[] = {9, 63, 39, 76, 45, 41, 44, 44, 51, 54, 76, 9, 63, 39, 76, 36, 47, 45, 46, 76, 34, 41, 38, 30, 35, 40, 33, 76, 51, 41, 47, 127, 28, 27, 29, 37, 53, 53, 53};
+const u8 partdata_92[] = {9, 63, 39, 76, 45, 41, 44, 44, 51, 54, 76, 9, 63, 39, 76, 36, 47, 45, 46, 76, 34, 41, 38, 30, 35, 40, 33, 76, 51, 41, 47, 127, 132, 28, 27, 29, 37, 53, 53, 53};
 
 //disc2/XA2/WS21_WTAL201.wav |  
 const u8 partdata_93[] = {76};
 
 const subtitle_part sub40_parts[] = {
-	{(const char*)partdata_92, 39, 1, 36, 432},
+	{(const char*)partdata_92, 40, 1, 36, 432},
 	{(const char*)partdata_93, 1, 76, 156, 432},
 };
 
@@ -566,13 +566,13 @@ const subtitle_part sub46_parts[] = {
 };
 
 //disc2/XA2/WS21_WTAL208.wav | To think the Director would be so\nterrible!
-const u8 partdata_106[] = {20, 41, 76, 46, 34, 35, 40, 37, 76, 46, 34, 31, 76, 4, 35, 44, 31, 29, 46, 41, 44, 76, 49, 41, 47, 38, 30, 76, 28, 31, 76, 45, 41, 127, 46, 31, 44, 44, 35, 28, 38, 31, 55};
+const u8 partdata_106[] = {20, 41, 76, 46, 34, 35, 40, 37, 76, 46, 34, 31, 76, 4, 35, 44, 31, 29, 46, 41, 44, 76, 49, 41, 47, 38, 30, 76, 28, 31, 76, 45, 41, 127, 124, 46, 31, 44, 44, 35, 28, 38, 31, 55};
 
 //disc2/XA2/WS21_WTAL208.wav |  
 const u8 partdata_107[] = {76};
 
 const subtitle_part sub47_parts[] = {
-	{(const char*)partdata_106, 43, 1, 28, 432},
+	{(const char*)partdata_106, 44, 1, 28, 432},
 	{(const char*)partdata_107, 1, 62, 156, 432},
 };
 
@@ -588,46 +588,46 @@ const subtitle_part sub48_parts[] = {
 };
 
 //disc2/XA2/WS21_WTAL210.wav | Are these plans to the hospital?\n(WTAL210)
-const u8 partdata_110[] = {1, 44, 31, 76, 46, 34, 31, 45, 31, 76, 42, 38, 27, 40, 45, 76, 46, 41, 76, 46, 34, 31, 76, 34, 41, 45, 42, 35, 46, 27, 38, 56, 127, 58, 23, 20, 1, 12, 67, 66, 65, 59};
+const u8 partdata_110[] = {1, 44, 31, 76, 46, 34, 31, 45, 31, 76, 42, 38, 27, 40, 45, 76, 46, 41, 76, 46, 34, 31, 76, 34, 41, 45, 42, 35, 46, 27, 38, 56, 127, 124, 58, 23, 20, 1, 12, 67, 66, 65, 59};
 
 //disc2/XA2/WS21_WTAL210.wav |  
 const u8 partdata_111[] = {76};
 
 const subtitle_part sub49_parts[] = {
-	{(const char*)partdata_110, 42, 1, 32, 432},
+	{(const char*)partdata_110, 43, 1, 32, 432},
 	{(const char*)partdata_111, 1, 62, 156, 432},
 };
 
 //disc2/XA2/WS21_WTAL211.wav | Ryo and the mummy have identical\nDNA?
-const u8 partdata_112[] = {18, 51, 41, 76, 27, 40, 30, 76, 46, 34, 31, 76, 39, 47, 39, 39, 51, 76, 34, 27, 48, 31, 76, 35, 30, 31, 40, 46, 35, 29, 27, 38, 127, 4, 14, 1, 56};
+const u8 partdata_112[] = {18, 51, 41, 76, 27, 40, 30, 76, 46, 34, 31, 76, 39, 47, 39, 39, 51, 76, 34, 27, 48, 31, 76, 35, 30, 31, 40, 46, 35, 29, 27, 38, 127, 144, 4, 14, 1, 56};
 
 //disc2/XA2/WS21_WTAL211.wav |  
 const u8 partdata_113[] = {76};
 
 const subtitle_part sub50_parts[] = {
-	{(const char*)partdata_112, 37, 1, 32, 432},
+	{(const char*)partdata_112, 38, 1, 32, 432},
 	{(const char*)partdata_113, 1, 80, 156, 432},
 };
 
 //disc2/XA2/WS21_WTAL212.wav | A constantly evolving virus... Flu\nof '99!? (WTAL212)
-const u8 partdata_114[] = {1, 76, 29, 41, 40, 45, 46, 27, 40, 46, 38, 51, 76, 31, 48, 41, 38, 48, 35, 40, 33, 76, 48, 35, 44, 47, 45, 53, 53, 53, 76, 6, 38, 47, 127, 41, 32, 76, 63, 74, 74, 55, 56, 76, 58, 23, 20, 1, 12, 67, 66, 67, 59};
+const u8 partdata_114[] = {1, 76, 29, 41, 40, 45, 46, 27, 40, 46, 38, 51, 76, 31, 48, 41, 38, 48, 35, 40, 33, 76, 48, 35, 44, 47, 45, 53, 53, 53, 76, 6, 38, 47, 127, 88, 41, 32, 76, 63, 74, 74, 55, 56, 76, 58, 23, 20, 1, 12, 67, 66, 67, 59};
 
 //disc2/XA2/WS21_WTAL212.wav |  
 const u8 partdata_115[] = {76};
 
 const subtitle_part sub51_parts[] = {
-	{(const char*)partdata_114, 53, 1, 24, 432},
+	{(const char*)partdata_114, 54, 1, 24, 432},
 	{(const char*)partdata_115, 1, 145, 156, 432},
 };
 
 //disc2/XA2/WS21_WTAL213.wav | The most powerful virus... Flu of\n'99!? (WTAL213)
-const u8 partdata_116[] = {20, 34, 31, 76, 39, 41, 45, 46, 76, 42, 41, 49, 31, 44, 32, 47, 38, 76, 48, 35, 44, 47, 45, 53, 53, 53, 76, 6, 38, 47, 76, 41, 32, 127, 63, 74, 74, 55, 56, 76, 58, 23, 20, 1, 12, 67, 66, 68, 59};
+const u8 partdata_116[] = {20, 34, 31, 76, 39, 41, 45, 46, 76, 42, 41, 49, 31, 44, 32, 47, 38, 76, 48, 35, 44, 47, 45, 53, 53, 53, 76, 6, 38, 47, 76, 41, 32, 127, 100, 63, 74, 74, 55, 56, 76, 58, 23, 20, 1, 12, 67, 66, 68, 59};
 
 //disc2/XA2/WS21_WTAL213.wav |  
 const u8 partdata_117[] = {76};
 
 const subtitle_part sub52_parts[] = {
-	{(const char*)partdata_116, 49, 1, 28, 432},
+	{(const char*)partdata_116, 50, 1, 28, 432},
 	{(const char*)partdata_117, 1, 140, 156, 432},
 };
 
@@ -654,35 +654,35 @@ const subtitle_part sub54_parts[] = {
 };
 
 //disc2/XA2/WS22_WTAUC01.wav | Why do I have to go through this\nshit!?
-const u8 partdata_122[] = {23, 34, 51, 76, 30, 41, 76, 9, 76, 34, 27, 48, 31, 76, 46, 41, 76, 33, 41, 76, 46, 34, 44, 41, 47, 33, 34, 76, 46, 34, 35, 45, 127, 45, 34, 35, 46, 55, 56};
+const u8 partdata_122[] = {23, 34, 51, 76, 30, 41, 76, 9, 76, 34, 27, 48, 31, 76, 46, 41, 76, 33, 41, 76, 46, 34, 44, 41, 47, 33, 34, 76, 46, 34, 35, 45, 127, 136, 45, 34, 35, 46, 55, 56};
 
 //disc2/XA2/WS22_WTAUC01.wav |  
 const u8 partdata_123[] = {76};
 
 const subtitle_part sub55_parts[] = {
-	{(const char*)partdata_122, 39, 1, 32, 432},
+	{(const char*)partdata_122, 40, 1, 32, 432},
 	{(const char*)partdata_123, 1, 46, 156, 432},
 };
 
 //disc2/XA2/WS22_WTAUC02.wav | Looks like there's even more ruins\nunder the water.
-const u8 partdata_124[] = {12, 41, 41, 37, 45, 76, 38, 35, 37, 31, 76, 46, 34, 31, 44, 31, 63, 45, 76, 31, 48, 31, 40, 76, 39, 41, 44, 31, 76, 44, 47, 35, 40, 45, 127, 47, 40, 30, 31, 44, 76, 46, 34, 31, 76, 49, 27, 46, 31, 44, 53};
+const u8 partdata_124[] = {12, 41, 41, 37, 45, 76, 38, 35, 37, 31, 76, 46, 34, 31, 44, 31, 63, 45, 76, 31, 48, 31, 40, 76, 39, 41, 44, 31, 76, 44, 47, 35, 40, 45, 127, 96, 47, 40, 30, 31, 44, 76, 46, 34, 31, 76, 49, 27, 46, 31, 44, 53};
 
 //disc2/XA2/WS22_WTAUC02.wav |  
 const u8 partdata_125[] = {76};
 
 const subtitle_part sub56_parts[] = {
-	{(const char*)partdata_124, 51, 1, 24, 432},
+	{(const char*)partdata_124, 52, 1, 24, 432},
 	{(const char*)partdata_125, 1, 76, 156, 432},
 };
 
 //disc2/XA2/WS22_WTAUC03.wav | Wind...? That means there's an exit\nahead!
-const u8 partdata_126[] = {23, 35, 40, 30, 53, 53, 53, 56, 76, 20, 34, 27, 46, 76, 39, 31, 27, 40, 45, 76, 46, 34, 31, 44, 31, 63, 45, 76, 27, 40, 76, 31, 50, 35, 46, 127, 27, 34, 31, 27, 30, 55};
+const u8 partdata_126[] = {23, 35, 40, 30, 53, 53, 53, 56, 76, 20, 34, 27, 46, 76, 39, 31, 27, 40, 45, 76, 46, 34, 31, 44, 31, 63, 45, 76, 27, 40, 76, 31, 50, 35, 46, 127, 136, 27, 34, 31, 27, 30, 55};
 
 //disc2/XA2/WS22_WTAUC03.wav |  
 const u8 partdata_127[] = {76};
 
 const subtitle_part sub57_parts[] = {
-	{(const char*)partdata_126, 42, 1, 20, 432},
+	{(const char*)partdata_126, 43, 1, 20, 432},
 	{(const char*)partdata_127, 1, 108, 156, 432},
 };
 
@@ -786,13 +786,13 @@ const subtitle_part sub66_parts[] = {
 };
 
 //disc2/XA2/WS23_WTAUC13.wav | Could they be inside these\ncapsules...?
-const u8 partdata_146[] = {3, 41, 47, 38, 30, 76, 46, 34, 31, 51, 76, 28, 31, 76, 35, 40, 45, 35, 30, 31, 76, 46, 34, 31, 45, 31, 127, 29, 27, 42, 45, 47, 38, 31, 45, 53, 53, 53, 56};
+const u8 partdata_146[] = {3, 41, 47, 38, 30, 76, 46, 34, 31, 51, 76, 28, 31, 76, 35, 40, 45, 35, 30, 31, 76, 46, 34, 31, 45, 31, 127, 112, 29, 27, 42, 45, 47, 38, 31, 45, 53, 53, 53, 56};
 
 //disc2/XA2/WS23_WTAUC13.wav |  
 const u8 partdata_147[] = {76};
 
 const subtitle_part sub67_parts[] = {
-	{(const char*)partdata_146, 39, 1, 56, 432},
+	{(const char*)partdata_146, 40, 1, 56, 432},
 	{(const char*)partdata_147, 1, 52, 156, 432},
 };
 
@@ -819,13 +819,13 @@ const subtitle_part sub69_parts[] = {
 };
 
 //disc2/XA2/WS23_WTAUC16.wav | A monster! Hajime, the panacea!\nGive it to me!
-const u8 partdata_152[] = {1, 76, 39, 41, 40, 45, 46, 31, 44, 55, 76, 8, 27, 36, 35, 39, 31, 54, 76, 46, 34, 31, 76, 42, 27, 40, 27, 29, 31, 27, 55, 127, 7, 35, 48, 31, 76, 35, 46, 76, 46, 41, 76, 39, 31, 55};
+const u8 partdata_152[] = {1, 76, 39, 41, 40, 45, 46, 31, 44, 55, 76, 8, 27, 36, 35, 39, 31, 54, 76, 46, 34, 31, 76, 42, 27, 40, 27, 29, 31, 27, 55, 127, 104, 7, 35, 48, 31, 76, 35, 46, 76, 46, 41, 76, 39, 31, 55};
 
 //disc2/XA2/WS23_WTAUC16.wav |  
 const u8 partdata_153[] = {76};
 
 const subtitle_part sub70_parts[] = {
-	{(const char*)partdata_152, 46, 1, 36, 432},
+	{(const char*)partdata_152, 47, 1, 36, 432},
 	{(const char*)partdata_153, 1, 117, 156, 432},
 };
 
