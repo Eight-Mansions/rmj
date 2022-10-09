@@ -4,6 +4,7 @@
 	.importobj "code\rmj\obj_disc1\subtitle.obj"
 	.importobj "code\rmj\obj_disc1\generated_audio_1.obj"
 	.importobj "code\rmj\obj_disc1\generated_movie_1.obj"
+	.org 0x801F6AC0
 SubFont:
 	.incbin "graphics\font\sub_font.bin" ; Font used for subtitles
 .close
@@ -34,6 +35,9 @@ SubFont:
 ; Code to load subtitles for both audio and video for disc 1
 .org 0x80012f3c
 	j LoadSubtitles1
+	
+.org 0x80014174
+	j LoadSubtitles2
 
 .org 0x8001f1d8
 	jal InitVoiceSub
@@ -86,6 +90,15 @@ SubFont:
 		nop
 		jr ra ; 0x80091f0c
 		addiu sp, sp, 4
+		
+	LoadSubtitles2:
+		la a0, 0x801F0000
+		jal LoadSubtitles
+		nop
+		jal 0x800154ec
+		nop
+		j 0x8001417c
+		nop
 		
 	InitVoiceSub:
 		addiu sp, sp, -8
