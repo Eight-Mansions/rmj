@@ -37,8 +37,11 @@ tools\rmj_generate_audio_subtitles.exe trans\audio_subs\audio_translation.txt to
 echo Generate audio subtitles for disc 2
 tools\rmj_generate_audio_subtitles.exe trans\audio_subs\audio_translation.txt tools\font_mapping.txt disc2
 
-echo Generate movie subtitles
-tools\rmj_generate_movie_subtitles.exe trans\movie_subs tools\movie_mapping.txt
+echo Generate movie subtitles for disc 1
+tools\rmj_generate_movie_subtitles.exe trans\movie_subs\disc1 tools\movie_mapping.txt disc1
+
+echo Generate movie subtitles for disc 2
+tools\rmj_generate_movie_subtitles.exe trans\movie_subs\disc2 tools\movie_mapping.txt disc2
 
 echo Building RMJ PSX code for disc 1
 pushd code\rmj

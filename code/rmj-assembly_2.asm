@@ -3,7 +3,7 @@
 .open "cd\rmj_2\DATA\SUBTITLES1.DAT",0x80100000
 	.importobj "code\rmj\obj_disc2\subtitle.obj"
 	.importobj "code\rmj\obj_disc2\generated_audio_2.obj"
-	.importobj "code\rmj\obj_disc2\generated_movie.obj"
+	.importobj "code\rmj\obj_disc2\generated_movie_2.obj"
 SubFont:
 	.incbin "graphics\font\sub_font.bin" ; Font used for subtitles
 .close
