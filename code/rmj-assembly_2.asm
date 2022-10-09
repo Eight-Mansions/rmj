@@ -37,7 +37,13 @@ SubFont:
 	j LoadSubtitles1
 	
 .org 0x80014174
-	j LoadSubtitles2
+	j LoadSubtitles2_1
+	
+.org 0x8001496c
+	j LoadSubtitles2_2
+
+.org 0x80054394
+	j LoadSubtitles2_3
 
 .org 0x8001f1d8
 	jal InitVoiceSub
@@ -84,13 +90,31 @@ SubFont:
 		jr ra ; 0x80091f0c
 		addiu sp, sp, 4
 		
-	LoadSubtitles2:
+	LoadSubtitles2_1:
 		la a0, 0x801F0000
 		jal LoadSubtitles
 		nop
 		jal 0x800154ec
 		nop
 		j 0x8001417c
+		nop
+		
+	LoadSubtitles2_2:
+		la a0, 0x801F0000
+		jal LoadSubtitles
+		nop
+		jal 0x800154ec
+		nop
+		j 0x80014974
+		nop
+		
+	LoadSubtitles2_3:
+		la a0, 0x801F0000
+		jal LoadSubtitles
+		nop
+		jal 0x800154ec
+		nop
+		j 0x8005439c
 		nop
 		
 	InitVoiceSub:
