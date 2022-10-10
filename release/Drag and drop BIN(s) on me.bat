@@ -15,7 +15,7 @@ for %%A in (%*) do (
     echo Patching %%A...
     echo:
 
-    patch_data\xdelta.exe -d -f -s %%A patch_data\%patch_file_1% "%filename_1%.bin"
+    patch_data\xdelta.exe -d -f -s %%A patch_data\%patch_file_1% "%filename_1%.bin" 2>nul
     if not errorlevel 1 (
         set found_disc=true
 
