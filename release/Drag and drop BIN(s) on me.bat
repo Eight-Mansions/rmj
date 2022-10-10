@@ -2,8 +2,8 @@
 set filename_1=RMJ_The_Mystery_Hospital_Disc_1
 set filename_2=RMJ_The_Mystery_Hospital_Disc_2
 set file_type=BIN
-set patch_file_1=rmj_disc_1-patch.xdelta3
-set patch_file_2=rmj_disc_2-patch.xdelta3
+set patch_file_1=rmj_disc_1-patch.xdelta
+set patch_file_2=rmj_disc_2-patch.xdelta
 
 set found_disc=
 
