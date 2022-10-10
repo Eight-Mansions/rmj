@@ -63,9 +63,12 @@ goto :EXIT
 :NOPATCHFOUND
 echo No patch found suitable for those files.
 echo Please make sure to drag in clean BIN files of either disc 1 or 2.
+echo:
+echo If the problem persists, go throw a sad puppy at SnowyAria ; _;
 
 :EXIT
 popd
+echo:
 echo Press any key to close this window
 pause >nul
 exit
