@@ -559,8 +559,8 @@ const u8 partdata_119[] = { 8, 44, 39, 62, 45, 76, 45, 33, 26, 45, 76, 32, 43, 3
 //trans\movie_subs\disc1\EV1A_1M51 | No need to fear Lamia
 const u8 partdata_120[] = { 13, 40, 76, 39, 30, 30, 29, 76, 45, 40, 76, 31, 30, 26, 43, 76, 11, 26, 38, 34, 26 };
 
-//trans\movie_subs\disc1\EV1A_1M51 | if we have the vaccine!
-const u8 partdata_121[] = { 34, 31, 76, 48, 30, 76, 33, 26, 47, 30, 76, 45, 33, 30, 76, 47, 26, 28, 28, 34, 39, 30, 54 };
+//trans\movie_subs\disc1\EV1A_1M51 | if we have this medicine!
+const u8 partdata_121[] = { 34, 31, 76, 48, 30, 76, 33, 26, 47, 30, 76, 45, 33, 34, 44, 76, 38, 30, 29, 34, 28, 34, 39, 30, 54 };
 
 //trans\movie_subs\disc1\EV1A_1M51 | Let's all take some as well
 const u8 partdata_122[] = { 11, 30, 45, 62, 44, 76, 26, 37, 37, 76, 45, 26, 36, 30, 76, 44, 40, 38, 30, 76, 26, 44, 76, 48, 30, 37, 37 };
@@ -584,7 +584,7 @@ MovieSubtitlePart sub27_parts[] = {
 	{(const char*)partdata_118, 12, 255, 157, 192, 432, 160, 432, 160},
 	{(const char*)partdata_119, 25, 255, 197, 224, 376, 144, 376, 144},
 	{(const char*)partdata_120, 21, 255, 224, 262, 392, 144, 392, 144},
-	{(const char*)partdata_121, 23, 255, 224, 262, 384, 160, 384, 160},
+	{(const char*)partdata_121, 25, 255, 224, 262, 376, 160, 376, 160},
 	{(const char*)partdata_122, 27, 255, 336, 368, 368, 144, 368, 144},
 	{(const char*)partdata_123, 11, 255, 336, 368, 432, 160, 432, 160},
 	{(const char*)partdata_124, 17, 255, 375, 388, 408, 144, 408, 144},
