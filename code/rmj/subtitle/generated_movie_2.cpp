@@ -959,15 +959,15 @@ const u8 partdata_220[] = { 8, 63, 8, 62, 38, 76, 27, 46, 43, 39, 34, 39, 32, 76
 //trans\movie_subs\disc2\EV4A_4M28 | Misato!
 const u8 partdata_221[] = { 12, 34, 44, 26, 45, 40, 54 };
 
-//trans\movie_subs\disc2\EV4A_4M28 | FUCK YOU PEPSI MAN!!!
-const u8 partdata_222[] = { 5, 20, 2, 10, 76, 24, 14, 20, 76, 15, 4, 15, 18, 8, 76, 12, 0, 13, 54, 54, 54 };
+//trans\movie_subs\disc2\EV4A_4M28 | FUCK YOU, YOU BASTARD!!!
+const u8 partdata_222[] = { 5, 20, 2, 10, 76, 24, 14, 20, 53, 76, 24, 14, 20, 76, 1, 0, 18, 19, 0, 17, 3, 54, 54, 54 };
 
 MovieSubtitlePart sub25_parts[] = {
 	{(const char*)partdata_218, 9, 255, 29, 44, 440, 144, 440, 144},
 	{(const char*)partdata_219, 20, 255, 44, 66, 400, 144, 400, 144},
 	{(const char*)partdata_220, 20, 255, 82, 114, 400, 144, 400, 144},
 	{(const char*)partdata_221, 7, 255, 237, 254, 448, 144, 448, 144},
-	{(const char*)partdata_222, 21, 255, 491, 514, 392, 144, 392, 144},
+	{(const char*)partdata_222, 24, 255, 491, 514, 384, 144, 384, 144},
 };
 
 //trans\movie_subs\disc2\EV4A_4M35 | Hajime...

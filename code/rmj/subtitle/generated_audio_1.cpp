@@ -253,14 +253,14 @@ const subtitle_part sub22_parts[] = {
 	{(const char*)partdata_45, 1, 46, 156, 432},
 };
 
-//disc1/XA1/EMO3_WTMV15.wav | Oh, it's cleared away! (WTMV15)
-const u8 partdata_46[] = {15, 34, 54, 76, 35, 46, 63, 45, 76, 29, 38, 31, 27, 44, 31, 30, 76, 27, 49, 27, 51, 55, 76, 58, 23, 20, 13, 22, 66, 70, 59};
+//disc1/XA1/EMO3_WTMV15.wav | Oh, I've got goosebumps!
+const u8 partdata_46[] = {15, 34, 54, 76, 9, 63, 48, 31, 76, 33, 41, 46, 76, 33, 41, 41, 45, 31, 28, 47, 39, 42, 45, 55};
 
 //disc1/XA1/EMO3_WTMV15.wav |  
 const u8 partdata_47[] = {76};
 
 const subtitle_part sub23_parts[] = {
-	{(const char*)partdata_46, 31, 1, 36, 432},
+	{(const char*)partdata_46, 24, 1, 64, 432},
 	{(const char*)partdata_47, 1, 58, 156, 432},
 };
 

@@ -256,14 +256,14 @@ const subtitle_part sub23_parts[] = {
 	{(const char*)partdata_45, 1, 46, 156, 432},
 };
 
-//disc2/XA1/EMO3_WTMV15.wav | Oh, it's cleared away! (WTMV15)
-const u8 partdata_46[] = {15, 34, 54, 76, 35, 46, 63, 45, 76, 29, 38, 31, 27, 44, 31, 30, 76, 27, 49, 27, 51, 55, 76, 58, 23, 20, 13, 22, 66, 70, 59};
+//disc2/XA1/EMO3_WTMV15.wav | Oh, I've got goosebumps!
+const u8 partdata_46[] = {15, 34, 54, 76, 9, 63, 48, 31, 76, 33, 41, 46, 76, 33, 41, 41, 45, 31, 28, 47, 39, 42, 45, 55};
 
 //disc2/XA1/EMO3_WTMV15.wav |  
 const u8 partdata_47[] = {76};
 
 const subtitle_part sub24_parts[] = {
-	{(const char*)partdata_46, 31, 1, 36, 432},
+	{(const char*)partdata_46, 24, 1, 64, 432},
 	{(const char*)partdata_47, 1, 58, 156, 432},
 };
 
@@ -724,14 +724,14 @@ const subtitle_part sub67_parts[] = {
 	{(const char*)partdata_129, 1, 24, 156, 432},
 };
 
-//disc2/XA1/GOK21_GBL201A.wav | (GBL201A)
-const u8 partdata_130[] = {58, 7, 2, 12, 67, 65, 66, 1, 59};
+//disc2/XA1/GOK21_GBL201A.wav | Grease?
+const u8 partdata_130[] = {7, 44, 31, 27, 45, 31, 56};
 
 //disc2/XA1/GOK21_GBL201A.wav |  
 const u8 partdata_131[] = {76};
 
 const subtitle_part sub68_parts[] = {
-	{(const char*)partdata_130, 9, 1, 124, 432},
+	{(const char*)partdata_130, 7, 1, 132, 432},
 	{(const char*)partdata_131, 1, 44, 156, 432},
 };
 
@@ -1010,14 +1010,14 @@ const subtitle_part sub93_parts[] = {
 	{(const char*)partdata_181, 1, 26, 156, 432},
 };
 
-//disc2/XA1/GOK23_GBUC08Q.wav | I... can't see anything! (GBUC08Q)
-const u8 partdata_182[] = {9, 53, 53, 53, 76, 29, 27, 40, 63, 46, 76, 45, 31, 31, 76, 27, 40, 51, 46, 34, 35, 40, 33, 55, 76, 58, 7, 2, 21, 3, 65, 73, 17, 59};
+//disc2/XA1/GOK23_GBUC08Q.wav | I... can't see anything!
+const u8 partdata_182[] = {9, 53, 53, 53, 76, 29, 27, 40, 63, 46, 76, 45, 31, 31, 76, 27, 40, 51, 46, 34, 35, 40, 33, 55};
 
 //disc2/XA1/GOK23_GBUC08Q.wav |  
 const u8 partdata_183[] = {76};
 
 const subtitle_part sub94_parts[] = {
-	{(const char*)partdata_182, 34, 1, 24, 432},
+	{(const char*)partdata_182, 24, 1, 64, 432},
 	{(const char*)partdata_183, 1, 62, 156, 432},
 };
 
@@ -1311,14 +1311,14 @@ const subtitle_part sub116_parts[] = {
 	{(const char*)partdata_239, 1, 62, 156, 432},
 };
 
-//disc2/XA2/WS21_WTAL210.wav | Are these plans to the hospital?\n(WTAL210)
-const u8 partdata_240[] = {1, 44, 31, 76, 46, 34, 31, 45, 31, 76, 42, 38, 27, 40, 45, 76, 46, 41, 76, 46, 34, 31, 76, 34, 41, 45, 42, 35, 46, 27, 38, 56, 127, 124, 58, 23, 20, 1, 12, 67, 66, 65, 59};
+//disc2/XA2/WS21_WTAL210.wav | Are these plans to the hospital?
+const u8 partdata_240[] = {1, 44, 31, 76, 46, 34, 31, 45, 31, 76, 42, 38, 27, 40, 45, 76, 46, 41, 76, 46, 34, 31, 76, 34, 41, 45, 42, 35, 46, 27, 38, 56};
 
 //disc2/XA2/WS21_WTAL210.wav |  
 const u8 partdata_241[] = {76};
 
 const subtitle_part sub117_parts[] = {
-	{(const char*)partdata_240, 43, 1, 32, 432},
+	{(const char*)partdata_240, 32, 1, 32, 432},
 	{(const char*)partdata_241, 1, 62, 156, 432},
 };
 
@@ -1333,25 +1333,25 @@ const subtitle_part sub118_parts[] = {
 	{(const char*)partdata_243, 1, 80, 156, 432},
 };
 
-//disc2/XA2/WS21_WTAL212.wav | A constantly evolving virus... Flu\nof '99!? (WTAL212)
-const u8 partdata_244[] = {1, 76, 29, 41, 40, 45, 46, 27, 40, 46, 38, 51, 76, 31, 48, 41, 38, 48, 35, 40, 33, 76, 48, 35, 44, 47, 45, 53, 53, 53, 76, 6, 38, 47, 127, 88, 41, 32, 76, 63, 74, 74, 55, 56, 76, 58, 23, 20, 1, 12, 67, 66, 67, 59};
+//disc2/XA2/WS21_WTAL212.wav | A constantly evolving\nvirus... Flu of '99!?
+const u8 partdata_244[] = {1, 76, 29, 41, 40, 45, 46, 27, 40, 46, 38, 51, 76, 31, 48, 41, 38, 48, 35, 40, 33, 127, 76, 48, 35, 44, 47, 45, 53, 53, 53, 76, 6, 38, 47, 76, 41, 32, 76, 63, 74, 74, 55, 56};
 
 //disc2/XA2/WS21_WTAL212.wav |  
 const u8 partdata_245[] = {76};
 
 const subtitle_part sub119_parts[] = {
-	{(const char*)partdata_244, 54, 1, 24, 432},
+	{(const char*)partdata_244, 44, 1, 76, 432},
 	{(const char*)partdata_245, 1, 145, 156, 432},
 };
 
-//disc2/XA2/WS21_WTAL213.wav | The most powerful virus... Flu of\n'99!? (WTAL213)
-const u8 partdata_246[] = {20, 34, 31, 76, 39, 41, 45, 46, 76, 42, 41, 49, 31, 44, 32, 47, 38, 76, 48, 35, 44, 47, 45, 53, 53, 53, 76, 6, 38, 47, 76, 41, 32, 127, 100, 63, 74, 74, 55, 56, 76, 58, 23, 20, 1, 12, 67, 66, 68, 59};
+//disc2/XA2/WS21_WTAL213.wav | The most powerful\nvirus... Flu of '99!?
+const u8 partdata_246[] = {20, 34, 31, 76, 39, 41, 45, 46, 76, 42, 41, 49, 31, 44, 32, 47, 38, 127, 76, 48, 35, 44, 47, 45, 53, 53, 53, 76, 6, 38, 47, 76, 41, 32, 76, 63, 74, 74, 55, 56};
 
 //disc2/XA2/WS21_WTAL213.wav |  
 const u8 partdata_247[] = {76};
 
 const subtitle_part sub120_parts[] = {
-	{(const char*)partdata_246, 50, 1, 28, 432},
+	{(const char*)partdata_246, 40, 1, 92, 432},
 	{(const char*)partdata_247, 1, 140, 156, 432},
 };
 
