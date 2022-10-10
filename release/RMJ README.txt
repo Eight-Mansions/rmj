@@ -52,6 +52,9 @@ SnowyAria - Translation, image editing
 Cargodin - Image editing
 blametherobots - Image editing
 
+## Special Thanks ##
+Kotcrab, for lending us the Fate subtitle timer!
+
 ## Contact ##
 Have any issues or run into any problems? Feel free to drop by our discord here:
 *  https://discord.gg/bewGNtm
