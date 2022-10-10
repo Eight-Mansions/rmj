@@ -50,8 +50,12 @@ namespace rmg_generate_audio_subtitles
 
         static string Format(string block, int max_len, Dictionary<string, int> widths)
         {
+            if (block.Contains("A constant"))
+            {
+                int boopme = 0;
+            }
             //block = block.Replace("\\n", "\r");
-            string[] lines = block.Split(new string[] { "\\n" }, StringSplitOptions.None);
+            string[] lines = block.Split(new string[] { "\\r" }, StringSplitOptions.None);
 
 
             string formattedBlock = "";
