@@ -1,0 +1,4 @@
+## **Emulator Compatability Issues!** ##
+Duckstation - The movie subtitles don't show properly in Duckstation by default,
+but this can be fixed by going to Settings -> Console Settings, then setting
+Execution Mode under CPU Emulation to either Interpreter or Cached Interpreter.
