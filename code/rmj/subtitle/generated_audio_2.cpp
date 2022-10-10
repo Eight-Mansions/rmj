@@ -399,14 +399,14 @@ const subtitle_part sub36_parts[] = {
 	{(const char*)partdata_71, 1, 38, 156, 432},
 };
 
-//disc2/XA1/EMO5_WTRV11.wav | Still not there yet, huh? (WTRV11)
-const u8 partdata_72[] = {19, 46, 35, 38, 38, 76, 40, 41, 46, 76, 46, 34, 31, 44, 31, 76, 51, 31, 46, 54, 76, 34, 47, 34, 56, 76, 58, 23, 20, 18, 22, 66, 66, 59};
+//disc2/XA1/EMO5_WTRV11.wav | Still not there yet, huh?
+const u8 partdata_72[] = {19, 46, 35, 38, 38, 76, 40, 41, 46, 76, 46, 34, 31, 44, 31, 76, 51, 31, 46, 54, 76, 34, 47, 34, 56};
 
 //disc2/XA1/EMO5_WTRV11.wav |  
 const u8 partdata_73[] = {76};
 
 const subtitle_part sub37_parts[] = {
-	{(const char*)partdata_72, 34, 1, 24, 432},
+	{(const char*)partdata_72, 25, 1, 60, 432},
 	{(const char*)partdata_73, 1, 64, 156, 432},
 };
 
@@ -812,14 +812,14 @@ const subtitle_part sub75_parts[] = {
 	{(const char*)partdata_145, 1, 32, 156, 432},
 };
 
-//disc2/XA1/GOK21_GBL205A.wav | It's dried blood (GBL205A)!
-const u8 partdata_146[] = {9, 46, 63, 45, 76, 30, 44, 35, 31, 30, 76, 28, 38, 41, 41, 30, 76, 58, 7, 2, 12, 67, 65, 70, 1, 59, 55};
+//disc2/XA1/GOK21_GBL205A.wav | The blood...!
+const u8 partdata_146[] = {20, 34, 31, 76, 28, 38, 41, 41, 30, 53, 53, 53, 55};
 
 //disc2/XA1/GOK21_GBL205A.wav |  
 const u8 partdata_147[] = {76};
 
 const subtitle_part sub76_parts[] = {
-	{(const char*)partdata_146, 27, 1, 52, 432},
+	{(const char*)partdata_146, 13, 1, 108, 432},
 	{(const char*)partdata_147, 1, 42, 156, 432},
 };
 
@@ -1476,14 +1476,14 @@ const subtitle_part sub131_parts[] = {
 	{(const char*)partdata_269, 1, 44, 156, 432},
 };
 
-//disc2/XA2/WS22_WTAUC10.wav | (WTAUC10)
-const u8 partdata_270[] = {58, 23, 20, 1, 21, 3, 66, 65, 59};
+//disc2/XA2/WS22_WTAUC10.wav | It's huge!
+const u8 partdata_270[] = {9, 46, 63, 45, 76, 34, 47, 33, 31, 55};
 
 //disc2/XA2/WS22_WTAUC10.wav |  
 const u8 partdata_271[] = {76};
 
 const subtitle_part sub132_parts[] = {
-	{(const char*)partdata_270, 9, 1, 124, 432},
+	{(const char*)partdata_270, 10, 1, 120, 432},
 	{(const char*)partdata_271, 1, 34, 156, 432},
 };
 
@@ -1586,14 +1586,14 @@ const subtitle_part sub141_parts[] = {
 	{(const char*)partdata_289, 1, 48, 156, 432},
 };
 
-//disc2/XA2/WS23_WTML202.wav | (WTML202)
-const u8 partdata_290[] = {58, 23, 20, 13, 12, 67, 65, 67, 59};
+//disc2/XA2/WS23_WTML202.wav | Who's the one with a look-a-like?
+const u8 partdata_290[] = {23, 34, 41, 63, 45, 76, 46, 34, 31, 76, 41, 40, 31, 76, 49, 35, 46, 34, 76, 27, 76, 38, 41, 41, 37, 64, 27, 64, 38, 35, 37, 31, 56};
 
 //disc2/XA2/WS23_WTML202.wav |  
 const u8 partdata_291[] = {76};
 
 const subtitle_part sub142_parts[] = {
-	{(const char*)partdata_290, 9, 1, 124, 432},
+	{(const char*)partdata_290, 33, 1, 28, 432},
 	{(const char*)partdata_291, 1, 78, 156, 432},
 };
 

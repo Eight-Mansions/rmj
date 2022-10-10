@@ -396,14 +396,14 @@ const subtitle_part sub35_parts[] = {
 	{(const char*)partdata_71, 1, 38, 156, 432},
 };
 
-//disc1/XA1/EMO5_WTRV11.wav | Still not there yet, huh? (WTRV11)
-const u8 partdata_72[] = {19, 46, 35, 38, 38, 76, 40, 41, 46, 76, 46, 34, 31, 44, 31, 76, 51, 31, 46, 54, 76, 34, 47, 34, 56, 76, 58, 23, 20, 18, 22, 66, 66, 59};
+//disc1/XA1/EMO5_WTRV11.wav | Still not there yet, huh?
+const u8 partdata_72[] = {19, 46, 35, 38, 38, 76, 40, 41, 46, 76, 46, 34, 31, 44, 31, 76, 51, 31, 46, 54, 76, 34, 47, 34, 56};
 
 //disc1/XA1/EMO5_WTRV11.wav |  
 const u8 partdata_73[] = {76};
 
 const subtitle_part sub36_parts[] = {
-	{(const char*)partdata_72, 34, 1, 24, 432},
+	{(const char*)partdata_72, 25, 1, 60, 432},
 	{(const char*)partdata_73, 1, 64, 156, 432},
 };
 
@@ -825,14 +825,14 @@ const subtitle_part sub74_parts[] = {
 	{(const char*)partdata_149, 1, 38, 156, 432},
 };
 
-//disc1/XA1/GOK11_GBH06A.wav | It's just my/your/our imagination.\n(GBH06A)
-const u8 partdata_150[] = {9, 46, 63, 45, 76, 36, 47, 45, 46, 76, 39, 51, 0, 51, 41, 47, 44, 0, 41, 47, 44, 76, 35, 39, 27, 33, 35, 40, 27, 46, 35, 41, 40, 53, 127, 128, 58, 7, 2, 8, 65, 71, 1, 59};
+//disc1/XA1/GOK11_GBH06A.wav | It's just my imagination.
+const u8 partdata_150[] = {9, 46, 63, 45, 76, 36, 47, 45, 46, 76, 39, 51, 76, 35, 39, 27, 33, 35, 40, 27, 46, 35, 41, 40, 53};
 
 //disc1/XA1/GOK11_GBH06A.wav |  
 const u8 partdata_151[] = {76};
 
 const subtitle_part sub75_parts[] = {
-	{(const char*)partdata_150, 44, 1, 24, 432},
+	{(const char*)partdata_150, 25, 1, 60, 432},
 	{(const char*)partdata_151, 1, 40, 156, 432},
 };
 
@@ -1373,8 +1373,8 @@ const u8 partdata_254[] = {76};
 
 const subtitle_part sub118_parts[] = {
 	{(const char*)partdata_252, 12, 1, 112, 432},
-	{(const char*)partdata_253, 7, 0.1, 132, 432},
-	{(const char*)partdata_254, 1, 45, 156, 432},
+	{(const char*)partdata_253, 7, 45, 132, 432},
+	{(const char*)partdata_254, 1, 23, 156, 432},
 };
 
 //disc1/XA2/WP11_WTPL102.wav | There's a button here, but it's not\ndoing anything.
@@ -1990,8 +1990,8 @@ const subtitle_part sub172_parts[] = {
 //disc1/XA2/WS13_WTAH30.wav | A jet injector's with the vaccine!
 const u8 partdata_367[] = {1, 76, 36, 31, 46, 76, 35, 40, 36, 31, 29, 46, 41, 44, 63, 45, 76, 49, 35, 46, 34, 76, 46, 34, 31, 76, 48, 27, 29, 29, 35, 40, 31, 55};
 
-//disc1/XA2/WS13_WTAH30.wav | We can help Tomowo if we fine S.T.\nMedicine...
-const u8 partdata_368[] = {23, 31, 76, 29, 27, 40, 76, 34, 31, 38, 42, 76, 20, 41, 39, 41, 49, 41, 76, 35, 32, 76, 49, 31, 76, 32, 35, 40, 31, 76, 19, 53, 20, 53, 127, 116, 13, 31, 30, 35, 29, 35, 40, 31, 53, 53, 53};
+//disc1/XA2/WS13_WTAH30.wav | We can help Tomowo if we find S.T.\nMedicine...
+const u8 partdata_368[] = {23, 31, 76, 29, 27, 40, 76, 34, 31, 38, 42, 76, 20, 41, 39, 41, 49, 41, 76, 35, 32, 76, 49, 31, 76, 32, 35, 40, 30, 76, 19, 53, 20, 53, 127, 116, 13, 31, 30, 35, 29, 35, 40, 31, 53, 53, 53};
 
 //disc1/XA2/WS13_WTAH30.wav |  
 const u8 partdata_369[] = {76};
@@ -2243,8 +2243,8 @@ const u8 partdata_416[] = {76};
 
 const subtitle_part sub192_parts[] = {
 	{(const char*)partdata_414, 12, 1, 112, 432},
-	{(const char*)partdata_415, 7, 0.1, 132, 432},
-	{(const char*)partdata_416, 1, 45, 156, 432},
+	{(const char*)partdata_415, 7, 45, 132, 432},
+	{(const char*)partdata_416, 1, 23, 156, 432},
 };
 
 //disc1/XA2/WS14_WTPL102.wav | There's a button here, but it's not\ndoing anything.
@@ -2478,14 +2478,14 @@ const subtitle_part sub213_parts[] = {
 	{(const char*)partdata_458, 1, 56, 156, 432},
 };
 
-//disc1/XA2/WS16_WTRH02.wav | It's just some stiches, don't\nworry. (WTRH02)
-const u8 partdata_459[] = {9, 46, 63, 45, 76, 36, 47, 45, 46, 76, 45, 41, 39, 31, 76, 45, 46, 35, 29, 34, 31, 45, 54, 76, 30, 41, 40, 63, 46, 127, 100, 49, 41, 44, 44, 51, 53, 76, 58, 23, 20, 18, 8, 65, 67, 59};
+//disc1/XA2/WS16_WTRH02.wav | It's not much, don't worry about it.
+const u8 partdata_459[] = {9, 46, 63, 45, 76, 40, 41, 46, 76, 39, 47, 29, 34, 54, 76, 30, 41, 40, 63, 46, 76, 49, 41, 44, 44, 51, 76, 27, 28, 41, 47, 46, 76, 35, 46, 53};
 
 //disc1/XA2/WS16_WTRH02.wav |  
 const u8 partdata_460[] = {76};
 
 const subtitle_part sub214_parts[] = {
-	{(const char*)partdata_459, 46, 1, 44, 432},
+	{(const char*)partdata_459, 36, 1, 16, 432},
 	{(const char*)partdata_460, 1, 65, 156, 432},
 };
 
