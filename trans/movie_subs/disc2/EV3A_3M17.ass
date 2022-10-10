@@ -14,8 +14,9 @@ Audio File: ../../../../resources/disc 2/videos/DATA/videos_to_sub/EV3A.DAT[13].
 Video File: ../../../../resources/disc 2/videos/DATA/videos_to_sub/EV3A.DAT[13].avi
 Video AR Mode: 4
 Video AR Value: 1.666667
-Active Line: 11
-Video Position: 1085
+Video Zoom Percent: 3.000000
+Active Line: 3
+Video Position: 248
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -26,7 +27,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 0,0:00:00.01,0:00:05.50,Default,,0,0,0,,My dear old Papa discovered\Nthis mummy years ago.
 Dialogue: 0,0:00:05.50,0:00:08.63,Default,,0,0,0,,Then we found this ancient\Nvirus still inside.
 Dialogue: 0,0:00:08.63,0:00:09.70,Default,,0,0,0,,That was Asmodeus?
-Dialogue: 0,0:00:09.70,0:00:12.63,Default,,0,0,0,,Perhaps! Could also have\Nbeen Beelzebub!
+Dialogue: 0,0:00:09.70,0:00:12.63,Default,,0,0,0,,Perhaps! Beelzebub was there\Ntoo, you know?
 Dialogue: 0,0:00:12.63,0:00:14.70,Default,,0,0,0,,S.T.G. would create a pandemic!?
 Dialogue: 0,0:00:14.70,0:00:16.16,Default,,0,0,0,,Of course!
 Dialogue: 0,0:00:16.16,0:00:19.23,Default,,0,0,0,,Then, using the panacea created\Nfrom MJ and Asmodeus,
