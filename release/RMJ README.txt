@@ -18,6 +18,11 @@ In addition to looking around for items and solving puzzles, the player must
 utilize the "5 senses button," which acts as an additional way to investigate.
 Other characters will prompt you for these moments, such as "what's that smell?"
 
+## **Emulator Compatability Issues!** ##
+Duckstation - The movie subtitles don't show properly in Duckstation by default,
+but this can be fixed by going to Settings -> Console Settings, then setting
+Execution Mode under CPU Emulation to either Interpreter or Cached Interpreter.
+
 ## Patch Instructions ##
 * The patcher expects the BIN version of both discs*
 
