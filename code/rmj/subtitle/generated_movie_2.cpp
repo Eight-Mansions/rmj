@@ -566,11 +566,11 @@ const u8 partdata_134[] = { 47, 34, 43, 46, 44, 76, 44, 45, 34, 37, 37, 76, 34, 
 //trans\movie_subs\disc2\EV3A_3M17 | That was Asmodeus?
 const u8 partdata_135[] = { 19, 33, 26, 45, 76, 48, 26, 44, 76, 0, 44, 38, 40, 29, 30, 46, 44, 55 };
 
-//trans\movie_subs\disc2\EV3A_3M17 | Perhaps! Could also have
-const u8 partdata_136[] = { 15, 30, 43, 33, 26, 41, 44, 54, 76, 2, 40, 46, 37, 29, 76, 26, 37, 44, 40, 76, 33, 26, 47, 30 };
+//trans\movie_subs\disc2\EV3A_3M17 | Perhaps! Beelzebub was there
+const u8 partdata_136[] = { 15, 30, 43, 33, 26, 41, 44, 54, 76, 1, 30, 30, 37, 51, 30, 27, 46, 27, 76, 48, 26, 44, 76, 45, 33, 30, 43, 30 };
 
-//trans\movie_subs\disc2\EV3A_3M17 | been Beelzebub!
-const u8 partdata_137[] = { 27, 30, 30, 39, 76, 1, 30, 30, 37, 51, 30, 27, 46, 27, 54 };
+//trans\movie_subs\disc2\EV3A_3M17 | too, you know?
+const u8 partdata_137[] = { 45, 40, 40, 53, 76, 50, 40, 46, 76, 36, 39, 40, 48, 55 };
 
 //trans\movie_subs\disc2\EV3A_3M17 | S.T.G. would create a pandemic!?
 const u8 partdata_138[] = { 18, 52, 19, 52, 6, 52, 76, 48, 40, 46, 37, 29, 76, 28, 43, 30, 26, 45, 30, 76, 26, 76, 41, 26, 39, 29, 30, 38, 34, 28, 54, 55 };
@@ -659,8 +659,8 @@ MovieSubtitlePart sub9_parts[] = {
 	{(const char*)partdata_133, 26, 255, 82, 129, 376, 144, 376, 144},
 	{(const char*)partdata_134, 19, 255, 82, 129, 400, 160, 400, 160},
 	{(const char*)partdata_135, 18, 255, 129, 145, 408, 144, 408, 144},
-	{(const char*)partdata_136, 24, 255, 145, 189, 384, 144, 384, 144},
-	{(const char*)partdata_137, 15, 255, 145, 189, 416, 160, 416, 160},
+	{(const char*)partdata_136, 28, 255, 145, 189, 368, 144, 368, 144},
+	{(const char*)partdata_137, 14, 255, 145, 189, 424, 160, 424, 160},
 	{(const char*)partdata_138, 32, 255, 189, 220, 352, 144, 352, 144},
 	{(const char*)partdata_139, 10, 255, 220, 242, 440, 144, 440, 144},
 	{(const char*)partdata_140, 31, 255, 242, 288, 352, 144, 352, 144},

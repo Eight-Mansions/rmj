@@ -36,6 +36,20 @@ SubFont:
 .org 0x80012f3c
 	j LoadSubtitles1
 	
+	
+// Reload subtitles disc 1
+.org 0x800137f0
+	j LoadSubtitles1_1
+	
+.org 0x800142a8
+	j LoadSubtitles1_2
+
+.org 0x8001af6c
+	j LoadSubtitles1_3
+	
+	
+
+// Reload subtitles disc 2	
 .org 0x80014174
 	j LoadSubtitles2_1
 	
@@ -96,6 +110,33 @@ SubFont:
 		nop
 		jr ra ; 0x80091f0c
 		addiu sp, sp, 4
+		
+	LoadSubtitles1_1:
+		la a0, 0x801F0000
+		jal LoadSubtitles
+		nop
+		jal 0x800153f8
+		nop
+		j 0x800137f8
+		nop
+		
+	LoadSubtitles1_2:
+		la a0, 0x801F0000
+		jal LoadSubtitles
+		nop
+		jal 0x800153f8
+		nop
+		j 0x800142b0
+		nop
+		
+	LoadSubtitles1_3:
+		la a0, 0x801F0000
+		jal LoadSubtitles
+		nop
+		jal 0x800153f8
+		nop
+		j 0x8001af74
+		nop
 		
 	LoadSubtitles2_1:
 		la a0, 0x801F0000
