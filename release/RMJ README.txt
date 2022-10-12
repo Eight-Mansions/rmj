@@ -49,6 +49,9 @@ to xdelta to help with compatability. The .xdelta files are located in the
 - This game *only* supports autosaving! As long as you have a memory card in,
   the game will save at key locations. Dying will take you back to the last
   auto save.
+- There are a handful of pathogens in this game, both viruses and bacteria,
+  that cause different symptoms. Try and remember what symptoms go with
+  which infection!
 - NO FEAR!
 
 ## Credits ##
@@ -59,6 +62,7 @@ blametherobots - Image editing
 
 ## Special Thanks ##
 Kotcrab, for lending us the Fate subtitle timer!
+Gwyndolin, blueskyrunner, TurnipTheBeet - Playtesting!
 
 ## Contact ##
 Have any issues or run into any problems? Feel free to drop by our discord here:
