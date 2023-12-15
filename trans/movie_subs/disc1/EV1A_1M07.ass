@@ -23,6 +23,6 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.90,0:00:04.03,Default,,0,0,0,,Let's form two groups and check\Nthe Security Room and elsewhere.
-Dialogue: 0,0:00:04.03,0:00:06.56,Default,,0,0,0,,Works for me.\NLet's decide with this.
-Dialogue: 0,0:00:06.56,0:00:09.63,Default,,0,0,0,,Oooh, doing your cool coin toss?\NYou really love doing that!
+Dialogue: 0,0:00:00.90,0:00:04.03,Default,,0,0,0,,Formemos grupos y revisemos la\NSala de Seguridad y dem(s...
+Dialogue: 0,0:00:04.03,0:00:06.56,Default,,0,0,0,,Me parece bien.\NDecidamos con esto.
+Dialogue: 0,0:00:06.56,0:00:09.63,Default,,0,0,0,,Oooh, *vas a lanzar la moneda?\N-Te encanta hacer eso, eh!

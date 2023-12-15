@@ -23,9 +23,9 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:06.83,0:00:07.70,Default,,0,0,0,,What's wrong!?
-Dialogue: 0,0:00:07.70,0:00:10.30,Default,,0,0,0,,I-it's Lamia! I'm infected!!!
-Dialogue: 0,0:00:10.63,0:00:11.63,Default,,0,0,0,,WHAT!?
-Dialogue: 0,0:00:12.83,0:00:13.76,Default,,0,0,0,,Just kidding~
-Dialogue: 0,0:00:13.76,0:00:15.70,Default,,0,0,0,,Don't joke about something like that!
-Dialogue: 0,0:00:15.70,0:00:17.90,Default,,0,0,0,,You'd be long dead if you\Nwere infected with Lamia!
+Dialogue: 0,0:00:06.83,0:00:07.70,Default,,0,0,0,,*-Qu) ocurre!?
+Dialogue: 0,0:00:07.70,0:00:10.30,Default,,0,0,0,,-Es Lamia! ---Estoy infectado!!!
+Dialogue: 0,0:00:10.63,0:00:11.63,Default,,0,0,0,,*-Qu)!?
+Dialogue: 0,0:00:12.83,0:00:13.76,Default,,0,0,0,,Es broma...
+Dialogue: 0,0:00:13.76,0:00:15.70,Default,,0,0,0,,-No bromees con algo as;!
+Dialogue: 0,0:00:15.70,0:00:17.90,Default,,0,0,0,,-Habr;as muerto hace tiempo\Nsi tuvieses Lamia!

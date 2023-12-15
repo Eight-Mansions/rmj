@@ -23,9 +23,9 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.01,0:00:02.03,Default,,0,0,0,,This is another patient, Misato.
-Dialogue: 0,0:00:02.03,0:00:05.76,Default,,0,0,0,,Who cares about that, how have\Nyou three boys not handled this!?
-Dialogue: 0,0:00:06.10,0:00:08.43,Default,,0,0,0,,She's got a sharp tongue for\Nsuch a cute face~
-Dialogue: 0,0:00:08.70,0:00:10.96,Default,,0,0,0,,Your small stature is your\Ncharm, I see.
-Dialogue: 0,0:00:10.96,0:00:13.76,Default,,0,0,0,,How dare you, I'm super\Nsensitive about that!!
-Dialogue: 0,0:00:13.76,0:00:16.43,Default,,0,0,0,,Anyway Hajime, how was it?
+Dialogue: 0,0:00:00.01,0:00:02.03,Default,,0,0,0,,Es otra paciente, Misato.
+Dialogue: 0,0:00:02.03,0:00:05.76,Default,,0,0,0,,*-A qui)n le importa, c~mo no\Nhab)is manejado esto ya!?
+Dialogue: 0,0:00:06.10,0:00:08.43,Default,,0,0,0,,Tiene una lengua muy afilada\Npara una cara tan linda...
+Dialogue: 0,0:00:08.70,0:00:10.96,Default,,0,0,0,,Tu pequeña estatura es\Ntu encanto, ya veo.
+Dialogue: 0,0:00:10.96,0:00:13.76,Default,,0,0,0,,--C~mo te atreves, soy s'per\Nsensible con eso!!
+Dialogue: 0,0:00:13.76,0:00:16.43,Default,,0,0,0,,Da igual, Hajime, *qu) tal?

@@ -23,7 +23,7 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.90,0:00:02.16,Default,,0,0,0,,You did it.
-Dialogue: 0,0:00:02.16,0:00:04.03,Default,,0,0,0,,You've saved me!
-Dialogue: 0,0:00:04.03,0:00:06.10,Default,,0,0,0,,I thought I was a goner!
-Dialogue: 0,0:00:07.03,0:00:08.30,Default,,0,0,0,,Misato!
+Dialogue: 0,0:00:00.90,0:00:02.16,Default,,0,0,0,,Lo hiciste.
+Dialogue: 0,0:00:02.16,0:00:04.03,Default,,0,0,0,,-Me has salvado!
+Dialogue: 0,0:00:04.03,0:00:06.10,Default,,0,0,0,,-Pens) que no saldr;a de esta!
+Dialogue: 0,0:00:07.03,0:00:08.30,Default,,0,0,0,,-Misato!

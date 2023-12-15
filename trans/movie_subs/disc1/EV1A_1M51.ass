@@ -23,12 +23,12 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:04.10,0:00:05.76,Default,,0,0,0,,Aya, please hurry!
-Dialogue: 0,0:00:05.76,0:00:08.10,Default,,0,0,0,,Ah, I found the jet injector!
-Dialogue: 0,0:00:10.50,0:00:12.83,Default,,0,0,0,,This should get you feeling\Nbetter soon!
-Dialogue: 0,0:00:13.16,0:00:14.96,Default,,0,0,0,,Isn't that great, Tomowo?
-Dialogue: 0,0:00:14.96,0:00:17.50,Default,,0,0,0,,No need to fear Lamia\Nif we have this medicine!
-Dialogue: 0,0:00:22.43,0:00:24.56,Default,,0,0,0,,Let's all take some as well\Nto be safe.
-Dialogue: 0,0:00:25.03,0:00:25.90,Default,,0,0,0,,I don't need any.
-Dialogue: 0,0:00:25.90,0:00:26.50,Default,,0,0,0,,WHY!?
-Dialogue: 0,0:00:26.50,0:00:28.36,Default,,0,0,0,,Aya, me first!!
+Dialogue: 0,0:00:04.10,0:00:05.76,Default,,0,0,0,,-Aya, por favor date prisa!
+Dialogue: 0,0:00:05.76,0:00:08.10,Default,,0,0,0,,-Ah, encontr) el inyector!
+Dialogue: 0,0:00:10.50,0:00:12.83,Default,,0,0,0,,-Esto deber;a hacerte\Nsentir mejor!
+Dialogue: 0,0:00:13.16,0:00:14.96,Default,,0,0,0,,*No es genial, Tomowo?
+Dialogue: 0,0:00:14.96,0:00:17.50,Default,,0,0,0,,-No hay que temer la Lamia\Nteniendo esta medicina!
+Dialogue: 0,0:00:22.43,0:00:24.56,Default,,0,0,0,,Tomemos todos un poco para\Nestar seguros.
+Dialogue: 0,0:00:25.03,0:00:25.90,Default,,0,0,0,,Yo no necesito nada.
+Dialogue: 0,0:00:25.90,0:00:26.50,Default,,0,0,0,,*-Por qu)!?
+Dialogue: 0,0:00:26.50,0:00:28.36,Default,,0,0,0,,--Aya, yo primero!!

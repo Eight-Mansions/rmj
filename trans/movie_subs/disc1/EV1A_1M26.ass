@@ -23,8 +23,8 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:05.30,0:00:07.50,Default,,0,0,0,,Oh, Misato's here too!
-Dialogue: 0,0:00:07.83,0:00:10.43,Default,,0,0,0,,What's going on here,\Nsomeone tell me already!
-Dialogue: 0,0:00:11.03,0:00:13.03,Default,,0,0,0,,I'm sorry, I don't have a clue.
-Dialogue: 0,0:00:13.43,0:00:15.23,Default,,0,0,0,,Oh right, this is Hajime--
-Dialogue: 0,0:00:15.23,0:00:17.16,Default,,0,0,0,,Who cares, just get me out!
+Dialogue: 0,0:00:05.30,0:00:07.50,Default,,0,0,0,,-Oh, Misato est( tambi)n aqu;!
+Dialogue: 0,0:00:07.83,0:00:10.43,Default,,0,0,0,,-Qu) est( pasando aqu;,\Nque alguien me lo diga!
+Dialogue: 0,0:00:11.03,0:00:13.03,Default,,0,0,0,,Lo siento, no tengo ni idea.
+Dialogue: 0,0:00:13.43,0:00:15.23,Default,,0,0,0,,Oh s;, este es Hajime...
+Dialogue: 0,0:00:15.23,0:00:17.16,Default,,0,0,0,,-A qui)n le importa, s~lo s(quenme!

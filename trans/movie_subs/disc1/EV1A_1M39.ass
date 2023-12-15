@@ -23,11 +23,11 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:01.70,0:00:05.76,Default,,0,0,0,,M-my face, it's burning, it's burning!!
-Dialogue: 0,0:00:05.96,0:00:08.36,Default,,0,0,0,,Hold it, Tomowo! Get back here!
-Dialogue: 0,0:00:08.36,0:00:09.36,Default,,0,0,0,,Ryo!
-Dialogue: 0,0:00:10.90,0:00:14.83,Default,,0,0,0,,It's got to be Lamia...\NWhat should we do, Hajime?
-Dialogue: 0,0:00:15.03,0:00:17.10,Default,,0,0,0,,I don't wanna be near Tomowo!
-Dialogue: 0,0:00:17.10,0:00:20.36,Default,,0,0,0,,Misato! The virus is around\Nus already.
-Dialogue: 0,0:00:20.36,0:00:21.36,Default,,0,0,0,,Yeah, but...
-Dialogue: 0,0:00:21.36,0:00:24.70,Default,,0,0,0,,We need each other to get out.\NLet's find them, okay?
+Dialogue: 0,0:00:01.70,0:00:05.76,Default,,0,0,0,,--Mi cara, arde, est( ardiendo!!
+Dialogue: 0,0:00:05.96,0:00:08.36,Default,,0,0,0,,-Aguanta, Tomowo! -Vuelve!
+Dialogue: 0,0:00:08.36,0:00:09.36,Default,,0,0,0,,-Ryo!
+Dialogue: 0,0:00:10.90,0:00:14.83,Default,,0,0,0,,Tiene que ser Lamia...\N*Qu) hacemos, Hajime?
+Dialogue: 0,0:00:15.03,0:00:17.10,Default,,0,0,0,,-No estar) cerca de Tomowo!
+Dialogue: 0,0:00:17.10,0:00:20.36,Default,,0,0,0,,-Misato! El virus est( a\Nnuestro alrededor.
+Dialogue: 0,0:00:20.36,0:00:21.36,Default,,0,0,0,,S;, pero...
+Dialogue: 0,0:00:21.36,0:00:24.70,Default,,0,0,0,,*Nos necesitamos para escapar.\NVamos a buscarlos, *vale?

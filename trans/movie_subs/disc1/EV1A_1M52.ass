@@ -23,7 +23,7 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.56,0:00:01.90,Default,,0,0,0,,I found this earlier.
+Dialogue: 0,0:00:00.56,0:00:01.90,Default,,0,0,0,,Encontr) esto antes.
 Dialogue: 0,0:00:04.76,0:00:05.50,Default,,0,0,0,,Tomowo!
 Dialogue: 0,0:00:06.36,0:00:08.16,Default,,0,0,0,,Tomowo...\NTomowo!
-Dialogue: 0,0:00:10.10,0:00:12.16,Default,,0,0,0,,Let's try using that ID card.
+Dialogue: 0,0:00:10.10,0:00:12.16,Default,,0,0,0,,Usemos la identificaci~n.

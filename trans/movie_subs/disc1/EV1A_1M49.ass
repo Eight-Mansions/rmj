@@ -23,5 +23,5 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:01.03,0:00:03.16,Default,,0,0,0,,Ahh! It's so gross!
-Dialogue: 0,0:00:03.16,0:00:04.90,Default,,0,0,0,,Someone was definitely here!
+Dialogue: 0,0:00:01.03,0:00:03.16,Default,,0,0,0,,-Ah! -Es asqueroso!
+Dialogue: 0,0:00:03.16,0:00:04.90,Default,,0,0,0,,-Alguien ha estado aqu;!

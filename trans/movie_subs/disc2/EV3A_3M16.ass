@@ -22,5 +22,5 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:25.30,0:00:28.23,Default,,0,0,0,,Robert, carry that thing for me.
-Dialogue: 0,0:00:28.23,0:00:29.36,Default,,0,0,0,,Yes, sir!
+Dialogue: 0,0:00:25.30,0:00:28.23,Default,,0,0,0,,Robert, lleva esa cosa por m;.
+Dialogue: 0,0:00:28.23,0:00:29.36,Default,,0,0,0,,-S;, señor!

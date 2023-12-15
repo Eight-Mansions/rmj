@@ -24,26 +24,26 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.01,0:00:05.50,Default,,0,0,0,,My dear old Papa discovered\Nthis mummy years ago.
-Dialogue: 0,0:00:05.50,0:00:08.63,Default,,0,0,0,,Then we found this ancient\Nvirus still inside.
-Dialogue: 0,0:00:08.63,0:00:09.70,Default,,0,0,0,,That was Asmodeus?
-Dialogue: 0,0:00:09.70,0:00:12.63,Default,,0,0,0,,Perhaps! Beelzebub was there\Ntoo, you know?
-Dialogue: 0,0:00:12.63,0:00:14.70,Default,,0,0,0,,S.T.G. would create a pandemic!?
-Dialogue: 0,0:00:14.70,0:00:16.16,Default,,0,0,0,,Of course!
-Dialogue: 0,0:00:16.16,0:00:19.23,Default,,0,0,0,,Then, using the panacea created\Nfrom MJ and Asmodeus,
-Dialogue: 0,0:00:19.23,0:00:23.76,Default,,0,0,0,,S.T.G. would sell the cure and\Nbecome the richest in the world!
-Dialogue: 0,0:00:23.76,0:00:24.70,Default,,0,0,0,,You monster!!
-Dialogue: 0,0:00:25.96,0:00:29.10,Default,,0,0,0,,To be honest, I don't even\Ncare about the medicine!
-Dialogue: 0,0:00:29.10,0:00:33.23,Default,,0,0,0,,A new race of humans shall be\Nborn that will rule over all!
-Dialogue: 0,0:00:34.63,0:00:36.56,Default,,0,0,0,,All according to the Asmos Legend.
-Dialogue: 0,0:00:36.56,0:00:38.43,Default,,0,0,0,,Won't everyone just die!?
-Dialogue: 0,0:00:38.43,0:00:43.10,Default,,0,0,0,,Those with the ancient\NDNA shall live!
-Dialogue: 0,0:00:43.16,0:00:44.36,Default,,0,0,0,,Then that means...
-Dialogue: 0,0:00:44.36,0:00:45.50,Default,,0,0,0,,Yes!
-Dialogue: 0,0:00:45.50,0:00:51.10,Default,,0,0,0,,To fulfill the legend, I created\Nthat Ryo from the mummy's DNA!
-Dialogue: 0,0:00:51.10,0:00:52.03,Default,,0,0,0,,What!?
-Dialogue: 0,0:00:52.90,0:00:58.16,Default,,0,0,0,,Ryo might have been a failure, but\Nhe still lead me to MJ in the end!
-Dialogue: 0,0:00:59.16,0:01:00.70,Default,,0,0,0,,I'm eternally grateful.
-Dialogue: 0,0:01:02.23,0:01:03.63,Default,,0,0,0,,You're a cruel man!
-Dialogue: 0,0:01:04.50,0:01:07.50,Default,,0,0,0,,A cruel man who will control\Nhumanity's fate!
-Dialogue: 0,0:01:07.50,0:01:10.16,Default,,0,0,0,,Someone's got to accept the burden!
+Dialogue: 0,0:00:00.01,0:00:05.50,Default,,0,0,0,,Mi querido pap( descubri~ esta\Nmomia hace años.
+Dialogue: 0,0:00:05.50,0:00:08.63,Default,,0,0,0,,Luego encontramos este antiguo\Nvirus todav;a dentro.
+Dialogue: 0,0:00:08.63,0:00:09.70,Default,,0,0,0,,*Ese era Asmodeo?
+Dialogue: 0,0:00:09.70,0:00:12.63,Default,,0,0,0,,-Tal vez! Beelzebub estaba all;,\N*sabes?
+Dialogue: 0,0:00:12.63,0:00:14.70,Default,,0,0,0,,-*STG crear;a una pandemia!?
+Dialogue: 0,0:00:14.70,0:00:16.16,Default,,0,0,0,,-Por supuesto!
+Dialogue: 0,0:00:16.16,0:00:19.23,Default,,0,0,0,,Luego, usando la panacea creada a\Npartir de MJ y Asmodeus,
+Dialogue: 0,0:00:19.23,0:00:23.76,Default,,0,0,0,,STG -Vender( la cura y ser(n los\nm(s rico del mundo!
+Dialogue: 0,0:00:23.76,0:00:24.70,Default,,0,0,0,,--T', monstruo!!
+Dialogue: 0,0:00:25.96,0:00:29.10,Default,,0,0,0,,Para ser honesto, -ni siquiera\Nme importa la medicina!
+Dialogue: 0,0:00:29.10,0:00:33.23,Default,,0,0,0,,-Nacer( una nueva raza de humanos\Nque gobernar( sobre todo!
+Dialogue: 0,0:00:34.63,0:00:36.56,Default,,0,0,0,,Todo seg'n la Leyenda de Asmos.
+Dialogue: 0,0:00:36.56,0:00:38.43,Default,,0,0,0,,*-No morir(n todos!?
+Dialogue: 0,0:00:38.43,0:00:43.10,Default,,0,0,0,,-Aquellos con el ADN\Nantiguo vivir(n!
+Dialogue: 0,0:00:43.16,0:00:44.36,Default,,0,0,0,,Eso significa...
+Dialogue: 0,0:00:44.36,0:00:45.50,Default,,0,0,0,,-S;!
+Dialogue: 0,0:00:45.50,0:00:51.10,Default,,0,0,0,,Como dice la leyenda, -cre) a Ryo a\Npartir del ADN de la momia!
+Dialogue: 0,0:00:51.10,0:00:52.03,Default,,0,0,0,,*-Qu)!?
+Dialogue: 0,0:00:52.90,0:00:58.16,Default,,0,0,0,,Ryo podr;a haber sido un fracaso,\N-pero al final me llev~ hasta MJ!
+Dialogue: 0,0:00:59.16,0:01:00.70,Default,,0,0,0,,Estoy eternamente agradecido.
+Dialogue: 0,0:01:02.23,0:01:03.63,Default,,0,0,0,,-Eres un hombre cruel!
+Dialogue: 0,0:01:04.50,0:01:07.50,Default,,0,0,0,,-Un hombre cruel que controlar(\Nel destino de la humanidad!
+Dialogue: 0,0:01:07.50,0:01:10.16,Default,,0,0,0,,-Alguien tiene que aceptar la carga!

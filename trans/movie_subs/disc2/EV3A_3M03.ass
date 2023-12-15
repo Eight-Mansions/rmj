@@ -24,6 +24,6 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:07.16,0:00:08.96,Default,,0,0,0,,Woah, bingo!
-Dialogue: 0,0:00:08.96,0:00:10.10,Default,,0,0,0,,We can get out now!
-Dialogue: 0,0:00:10.10,0:00:10.96,Default,,0,0,0,,Let's go.
+Dialogue: 0,0:00:07.16,0:00:08.96,Default,,0,0,0,,-Vaya, bingo!
+Dialogue: 0,0:00:08.96,0:00:10.10,Default,,0,0,0,,-Podemos salir ahora!
+Dialogue: 0,0:00:10.10,0:00:10.96,Default,,0,0,0,,Vamos.
