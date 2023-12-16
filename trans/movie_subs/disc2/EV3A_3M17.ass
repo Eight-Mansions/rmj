@@ -24,7 +24,7 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.01,0:00:05.50,Default,,0,0,0,,Mi querido pap( descubri~ esta\Nmomia hace años.
+Dialogue: 0,0:00:00.01,0:00:05.50,Default,,0,0,0,,Mi querido pap( descubri~ esta\Nmomia hace decadas.
 Dialogue: 0,0:00:05.50,0:00:08.63,Default,,0,0,0,,Luego encontramos este antiguo\Nvirus todav;a dentro.
 Dialogue: 0,0:00:08.63,0:00:09.70,Default,,0,0,0,,*Ese era Asmodeo?
 Dialogue: 0,0:00:09.70,0:00:12.63,Default,,0,0,0,,-Tal vez! Beelzebub estaba all;,\N*sabes?
