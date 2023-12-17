@@ -25,4 +25,4 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 0,0:00:00.63,0:00:03.10,Default,,0,0,0,,Oye, parece que est(s de\Nuna sola pieza.
 Dialogue: 0,0:00:03.50,0:00:05.30,Default,,0,0,0,,Vas a hacer algo al respecto,\N*no?
-Dialogue: 0,0:00:05.70,0:00:06.96,Default,,0,0,0,,Ella es una...
+Dialogue: 0,0:00:05.70,0:00:06.96,Default,,0,0,0,,Ella es una…

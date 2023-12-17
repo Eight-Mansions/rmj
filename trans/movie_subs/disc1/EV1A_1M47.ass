@@ -23,6 +23,6 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:02.76,0:00:07.50,Default,,0,0,0,,Tienen efecto de recuperaci~n pero\Nnecesitamos un inyector...
+Dialogue: 0,0:00:02.76,0:00:07.50,Default,,0,0,0,,Tienen efecto de recuperaci~n pero\Nnecesitamos un inyector…
 Dialogue: 0,0:00:07.50,0:00:09.16,Default,,0,0,0,,Ah, claro, eso es un tipo de jeringa.
 Dialogue: 0,0:00:09.16,0:00:10.83,Default,,0,0,0,,-Uf, odio las agujas!

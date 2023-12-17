@@ -23,7 +23,7 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.01,0:00:02.36,Default,,0,0,0,,-El temblor es cada vez peor...!
+Dialogue: 0,0:00:00.01,0:00:02.36,Default,,0,0,0,,-El temblor es cada vez peor…!
 Dialogue: 0,0:00:02.36,0:00:04.56,Default,,0,0,0,,-Viene directo hacia nosotros!
 Dialogue: 0,0:00:09.90,0:00:11.76,Default,,0,0,0,,-Maldita sea, haz algo!
 Dialogue: 0,0:00:11.76,0:00:14.03,Default,,0,0,0,,-Mierda! ---MIERDA!!!
