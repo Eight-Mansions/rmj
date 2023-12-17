@@ -24,7 +24,7 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:04.96,0:00:07.90,Default,,0,0,0,,MJ! Can you guess which\None is the true Ryo!?
+Dialogue: 0,0:00:04.96,0:00:07.90,Default,,0,0,0,,-MJ! *-Adivinas cual\Nes el verdadero Ryo!?
 Dialogue: 0,0:00:07.90,0:00:11.10,Default,,0,0,0,,Si le das a Ryo la medicina\Nque robaste,
 Dialogue: 0,0:00:11.10,0:00:13.23,Default,,0,0,0,,-volver( a ser humano!
 Dialogue: 0,0:00:13.23,0:00:17.36,Default,,0,0,0,,Pero si te equivocas,\N---Asmodeo revivir(!!!
