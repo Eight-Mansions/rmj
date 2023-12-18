@@ -24,5 +24,5 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 0,0:00:02.96,0:00:06.30,Default,,0,0,0,,F-Ryo!? FY esa es Misato?
-Dialogue: 0,0:00:08.63,0:00:10.70,Default,,0,0,0,,Ella tampoco pudo escapar\Nentonces…
+Dialogue: 0,0:00:08.63,0:00:10.70,Default,,0,0,0,,Ella tampoco pudo escapar\Nentonces...
 Dialogue: 0,0:00:14.10,0:00:15.63,Default,,0,0,0,,F-Esos tres est(n bien!?
