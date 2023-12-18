@@ -68,7 +68,7 @@
     <NMakeBuildCommandLine>pmake -e RELMODE=DEBUG -e OUTFILE=main -e OPTIMIZE=2</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>pmake -e RELMODE=DEBUG rebuild</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>pmake -e RELMODE=DEBUG clean</NMakeCleanCommandLine>
-    <NMakeIncludeSearchPath>d:\projects\psxdev\include</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>D:\psxsdk\include</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <NMakeOutput>rmj.exe</NMakeOutput>

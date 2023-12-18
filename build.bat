@@ -1,4 +1,4 @@
-@echo off
+
 :: Parameters are passed via "build_disc_1.bat" or "build_disc_2.bat"
 set working_name=%1
 set disc=%2
@@ -52,7 +52,7 @@ pmake -e RELMODE=DEBUG -e OUTFILE=main -e OPTIMIZE=2 -f disc1
 
 pmake -e RELMODE=DEBUG clean
 mkdir Debug
-mkdira obj_disc2
+mkdir obj_disc2
 pmake -e RELMODE=DEBUG -e OUTFILE=main -e OPTIMIZE=2 -f disc2
 popd
 
