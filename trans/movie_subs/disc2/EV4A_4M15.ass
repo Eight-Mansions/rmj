@@ -23,6 +23,6 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:05.03,0:00:06.43,Default,,0,0,0,,*Hajime…?
-Dialogue: 0,0:00:16.30,0:00:17.70,Default,,0,0,0,,*Aya…?
-Dialogue: 0,0:00:17.70,0:00:19.03,Default,,0,0,0,,*Hajime…?
+Dialogue: 0,0:00:05.03,0:00:06.43,Default,,0,0,0,,FHajime…?
+Dialogue: 0,0:00:16.30,0:00:17.70,Default,,0,0,0,,FAya…?
+Dialogue: 0,0:00:17.70,0:00:19.03,Default,,0,0,0,,FHajime…?

@@ -25,8 +25,8 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 0,0:00:00.01,0:00:02.03,Default,,0,0,0,,-Que vista tan hermosa!
 Dialogue: 0,0:00:02.03,0:00:03.83,Default,,0,0,0,,Deben habernos rescatado.
-Dialogue: 0,0:00:03.83,0:00:05.96,Default,,0,0,0,,*Es Ryo el que habla?
-Dialogue: 0,0:00:05.96,0:00:07.10,Default,,0,0,0,,*D~nde est( Hajime?
-Dialogue: 0,0:00:07.10,0:00:10.63,Default,,0,0,0,,Mmm… -Hajime! *D~nde est(s?
+Dialogue: 0,0:00:03.83,0:00:05.96,Default,,0,0,0,,FEs Ryo el que habla?
+Dialogue: 0,0:00:05.96,0:00:07.10,Default,,0,0,0,,FD~nde est( Hajime?
+Dialogue: 0,0:00:07.10,0:00:10.63,Default,,0,0,0,,Mmm… -Hajime! FD~nde est(s?
 Dialogue: 0,0:00:10.63,0:00:13.16,Default,,0,0,0,,-Hajime! --Hajime!!
 Dialogue: 0,0:00:13.16,0:00:15.36,Default,,0,0,0,,Estoy aqu;.

@@ -23,9 +23,9 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:10.10,0:00:13.23,Default,,0,0,0,,*-No puede ser!? *-Este no es MJ!?
-Dialogue: 0,0:00:15.70,0:00:17.63,Default,,0,0,0,,*-D~nde est(!?
-Dialogue: 0,0:00:19.03,0:00:21.76,Default,,0,0,0,,Si MJ no est( aqu;…\N*qu) hemos…?
+Dialogue: 0,0:00:10.10,0:00:13.23,Default,,0,0,0,,F-No puede ser!? F-Este no es MJ!?
+Dialogue: 0,0:00:15.70,0:00:17.63,Default,,0,0,0,,F-D~nde est(!?
+Dialogue: 0,0:00:19.03,0:00:21.76,Default,,0,0,0,,Si MJ no est( aqu;…\NFqu) hemos…?
 Dialogue: 0,0:00:21.96,0:00:23.63,Default,,0,0,0,,-Jefe! -MJ!
 Dialogue: 0,0:00:23.83,0:00:25.36,Default,,0,0,0,,-Oh dios m;o!
 Dialogue: 0,0:00:25.83,0:00:27.90,Default,,0,0,0,,MJ… -Es MJ!
@@ -35,5 +35,5 @@ Dialogue: 0,0:00:41.56,0:00:44.96,Default,,0,0,0,,-Ahora prob)moslo en esos mons
 Dialogue: 0,0:00:52.10,0:00:54.70,Default,,0,0,0,,-Las leyendas eran ciertas!
 Dialogue: 0,0:00:54.70,0:00:57.63,Default,,0,0,0,,-Jefe! Recib; datos confirmados.
 Dialogue: 0,0:00:57.63,0:00:59.36,Default,,0,0,0,,-Debemos irnos ahora!
-Dialogue: 0,0:00:59.96,0:01:03.36,Default,,0,0,0,,*-Qu)!? -Robert, asegura esto!
+Dialogue: 0,0:00:59.96,0:01:03.36,Default,,0,0,0,,F-Qu)!? -Robert, asegura esto!
 Dialogue: 0,0:01:03.36,0:01:04.56,Default,,0,0,0,,-A sus ordenes!

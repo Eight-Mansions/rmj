@@ -26,8 +26,8 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 0,0:00:00.01,0:00:02.56,Default,,0,0,0,,-Puaj! --Est( rancio!!
 Dialogue: 0,0:00:06.50,0:00:08.56,Default,,0,0,0,,--Dios, qu) asqueroso!!
-Dialogue: 0,0:00:02.56,0:00:04.30,Default,,0,0,0,,*-Qu) es este OLOR!?
-Dialogue: 0,0:00:08.56,0:00:10.43,Default,,0,0,0,,*-Est(s bien, Misato!?
+Dialogue: 0,0:00:02.56,0:00:04.30,Default,,0,0,0,,F-Qu) es este OLOR!?
+Dialogue: 0,0:00:08.56,0:00:10.43,Default,,0,0,0,,F-Est(s bien, Misato!?
 Dialogue: 0,0:00:10.90,0:00:13.10,Default,,0,0,0,,-Mira! -Hay alguien dentro!
 Dialogue: 0,0:00:15.16,0:00:16.30,Default,,0,0,0,,-Ryo!
 Dialogue: 0,0:00:16.30,0:00:17.03,Default,,0,0,0,,-Imposible!
@@ -35,27 +35,27 @@ Dialogue: 0,0:00:17.03,0:00:20.43,Default,,0,0,0,,-Hajime! -Tomowo! -Corred!\N--
 Dialogue: 0,0:00:23.03,0:00:25.36,Default,,0,0,0,,Sabes, era un rollo
 Dialogue: 0,0:00:25.70,0:00:27.90,Default,,0,0,0,,guardar todo esto durante\Ntanto tiempo.
 Dialogue: 0,0:00:36.50,0:00:37.90,Default,,0,0,0,,-Director Tenma!
-Dialogue: 0,0:00:37.90,0:00:39.63,Default,,0,0,0,,*Director? *del hospital?
+Dialogue: 0,0:00:37.90,0:00:39.63,Default,,0,0,0,,FDirector? Fdel hospital?
 Dialogue: 0,0:00:41.43,0:00:45.76,Default,,0,0,0,,Tambi)n soy agente del\NS.T.G.
-Dialogue: 0,0:00:45.76,0:00:47.90,Default,,0,0,0,,*-Qu)!? *-STG!?
-Dialogue: 0,0:00:48.63,0:00:49.63,Default,,0,0,0,,*-Eh!?
+Dialogue: 0,0:00:45.76,0:00:47.90,Default,,0,0,0,,F-Qu)!? F-STG!?
+Dialogue: 0,0:00:48.63,0:00:49.63,Default,,0,0,0,,F-Eh!?
 Dialogue: 0,0:00:50.36,0:00:53.10,Default,,0,0,0,,Un grupo de investigaci~n de elite.
 Dialogue: 0,0:00:53.10,0:00:55.96,Default,,0,0,0,,Nos atraparon a los cinco aqu;\Npara sus planes.
-Dialogue: 0,0:00:55.96,0:00:56.76,Default,,0,0,0,,*Planes?
+Dialogue: 0,0:00:55.96,0:00:56.76,Default,,0,0,0,,FPlanes?
 Dialogue: 0,0:00:56.76,0:00:58.56,Default,,0,0,0,,La leyenda de Asmos.
-Dialogue: 0,0:00:58.56,0:01:00.30,Default,,0,0,0,,*Lo sab;as?
-Dialogue: 0,0:01:01.16,0:01:03.30,Default,,0,0,0,,*La leyenda de los humanos\Nevolucionados?
+Dialogue: 0,0:00:58.56,0:01:00.30,Default,,0,0,0,,FLo sab;as?
+Dialogue: 0,0:01:01.16,0:01:03.30,Default,,0,0,0,,FLa leyenda de los humanos\Nevolucionados?
 Dialogue: 0,0:01:03.30,0:01:04.70,Default,,0,0,0,,Eso es.
 Dialogue: 0,0:01:05.43,0:01:12.03,Default,,0,0,0,,STG ha investigado esta leyenda y\Nfinalmente ha revelado el enigma.
 Dialogue: 0,0:01:15.43,0:01:20.10,Default,,0,0,0,,Asmos se refer;a a una persona\Ncon anticuerpos perfectos.
-Dialogue: 0,0:01:20.50,0:01:21.76,Default,,0,0,0,,*Anticuerpos?
+Dialogue: 0,0:01:20.50,0:01:21.76,Default,,0,0,0,,FAnticuerpos?
 Dialogue: 0,0:01:22.10,0:01:25.10,Default,,0,0,0,,Un sistema que protege al cuerpo\Nde las infecciones.
 Dialogue: 0,0:01:25.10,0:01:27.43,Default,,0,0,0,,Con c)lulas de Asmos perfectas,
 Dialogue: 0,0:01:27.43,0:01:31.10,Default,,0,0,0,,podr;amos curar todas y cada una\Nde las dolencias del mundo.
 Dialogue: 0,0:01:31.10,0:01:33.10,Default,,0,0,0,,-Eso es imposible!
 Dialogue: 0,0:01:34.76,0:01:40.30,Default,,0,0,0,,Un virus antiguo y una persona\Ncon el ADN perfecto.
 Dialogue: 0,0:01:41.03,0:01:44.56,Default,,0,0,0,,Con eso, ciertamente es\Nposible, Kisaragi.
-Dialogue: 0,0:01:44.56,0:01:46.16,Default,,0,0,0,,*-Todo esto por ESO!?
+Dialogue: 0,0:01:44.56,0:01:46.16,Default,,0,0,0,,F-Todo esto por ESO!?
 Dialogue: 0,0:01:48.36,0:01:51.76,Default,,0,0,0,,El antiguo virus Asmodeus\Nest( aqu;.
 Dialogue: 0,0:01:52.23,0:01:53.70,Default,,0,0,0,,Dentro de mi.
 Dialogue: 0,0:01:54.36,0:01:57.30,Default,,0,0,0,,Entonces, -Tienen ese ADN perfecto…!
@@ -63,13 +63,13 @@ Dialogue: 0,0:01:57.30,0:02:00.76,Default,,0,0,0,,Precisamente. El ADN perfecto,
 Dialogue: 0,0:02:00.76,0:02:03.10,Default,,0,0,0,,El MJ existe entre vosotros.
 Dialogue: 0,0:02:03.10,0:02:07.23,Default,,0,0,0,,No pudimos encontrar a MJ despu)s\Nde muchos experimentos.
 Dialogue: 0,0:02:07.23,0:02:10.23,Default,,0,0,0,,---PERO!!! MJ finalmente nos\Nhonr~ con su presencia…
-Dialogue: 0,0:02:10.23,0:02:11.63,Default,,0,0,0,,*C~mo puedes estar seguro?
+Dialogue: 0,0:02:10.23,0:02:11.63,Default,,0,0,0,,FC~mo puedes estar seguro?
 Dialogue: 0,0:02:11.63,0:02:15.23,Default,,0,0,0,,Pudimos determinar que MJ exist;a\Nen esta regi~n,
 Dialogue: 0,0:02:15.23,0:02:20.03,Default,,0,0,0,,y creamos un hospital donde pudimos\Nobtener miles de muestras de ADN.
 Dialogue: 0,0:02:20.03,0:02:23.90,Default,,0,0,0,,Y finalmente, os encontramos.
-Dialogue: 0,0:02:23.90,0:02:28.56,Default,,0,0,0,,*No crees que es un escondite\Nperfecto para la investigaci~n?
+Dialogue: 0,0:02:23.90,0:02:28.56,Default,,0,0,0,,FNo crees que es un escondite\Nperfecto para la investigaci~n?
 Dialogue: 0,0:02:28.56,0:02:31.63,Default,,0,0,0,,Nadie pensar;a nada con un\Nbrote o dos.
-Dialogue: 0,0:02:32.36,0:02:34.16,Default,,0,0,0,,*-Y te haces llamar m)dico!?
+Dialogue: 0,0:02:32.36,0:02:34.16,Default,,0,0,0,,F-Y te haces llamar m)dico!?
 Dialogue: 0,0:02:34.16,0:02:37.90,Default,,0,0,0,,-Lo 'nico que importa es\Nencontrar a MJ cuanto antes!
 Dialogue: 0,0:02:37.90,0:02:39.90,Default,,0,0,0,,-Robert, empieza!
 Dialogue: 0,0:02:39.90,0:02:41.10,Default,,0,0,0,,-A sus ordenes!

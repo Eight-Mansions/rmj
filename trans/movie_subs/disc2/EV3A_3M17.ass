@@ -26,9 +26,9 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 0,0:00:00.01,0:00:05.50,Default,,0,0,0,,Mi querido pap( descubri~ esta\Nmomia hace decadas.
 Dialogue: 0,0:00:05.50,0:00:08.63,Default,,0,0,0,,Luego encontramos este antiguo\Nvirus todav;a dentro.
-Dialogue: 0,0:00:08.63,0:00:09.70,Default,,0,0,0,,*Ese era Asmodeo?
-Dialogue: 0,0:00:09.70,0:00:12.63,Default,,0,0,0,,-Tal vez! Beelzebub estaba all;,\N*sabes?
-Dialogue: 0,0:00:12.63,0:00:14.70,Default,,0,0,0,,-*STG crear;a una pandemia!?
+Dialogue: 0,0:00:08.63,0:00:09.70,Default,,0,0,0,,FEse era Asmodeo?
+Dialogue: 0,0:00:09.70,0:00:12.63,Default,,0,0,0,,-Tal vez! Beelzebub estaba all;,\NFsabes?
+Dialogue: 0,0:00:12.63,0:00:14.70,Default,,0,0,0,,-FSTG crear;a una pandemia!?
 Dialogue: 0,0:00:14.70,0:00:16.16,Default,,0,0,0,,-Por supuesto!
 Dialogue: 0,0:00:16.16,0:00:19.23,Default,,0,0,0,,Luego, usando la panacea creada a\Npartir de MJ y Asmodeus,
 Dialogue: 0,0:00:19.23,0:00:23.76,Default,,0,0,0,,STG -Vender( la cura y ser(n los\Nm(s rico del mundo!
@@ -36,12 +36,12 @@ Dialogue: 0,0:00:23.76,0:00:24.70,Default,,0,0,0,,--T', monstruo!!
 Dialogue: 0,0:00:25.96,0:00:29.10,Default,,0,0,0,,Para ser honesto, -ni siquiera\Nme importa la medicina!
 Dialogue: 0,0:00:29.10,0:00:33.23,Default,,0,0,0,,-Nacer( una nueva raza de humanos\Nque gobernar( sobre todo!
 Dialogue: 0,0:00:34.63,0:00:36.56,Default,,0,0,0,,Todo seg'n la Leyenda de Asmos.
-Dialogue: 0,0:00:36.56,0:00:38.43,Default,,0,0,0,,*-No morir(n todos!?
+Dialogue: 0,0:00:36.56,0:00:38.43,Default,,0,0,0,,F-No morir(n todos!?
 Dialogue: 0,0:00:38.43,0:00:43.10,Default,,0,0,0,,-Aquellos con el ADN\Nantiguo vivir(n!
 Dialogue: 0,0:00:43.16,0:00:44.36,Default,,0,0,0,,Eso significa…
 Dialogue: 0,0:00:44.36,0:00:45.50,Default,,0,0,0,,-S;!
 Dialogue: 0,0:00:45.50,0:00:51.10,Default,,0,0,0,,Como dice la leyenda, -cre) a Ryo a\Npartir del ADN de la momia!
-Dialogue: 0,0:00:51.10,0:00:52.03,Default,,0,0,0,,*-Qu)!?
+Dialogue: 0,0:00:51.10,0:00:52.03,Default,,0,0,0,,F-Qu)!?
 Dialogue: 0,0:00:52.90,0:00:58.16,Default,,0,0,0,,Ryo podr;a haber sido un fracaso,\N-pero al final me llev~ hasta MJ!
 Dialogue: 0,0:00:59.16,0:01:00.70,Default,,0,0,0,,Estoy eternamente agradecido.
 Dialogue: 0,0:01:02.23,0:01:03.63,Default,,0,0,0,,-Eres un hombre cruel!
