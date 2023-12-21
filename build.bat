@@ -47,7 +47,7 @@ echo Building RMJ PSX code for disc 1
 pushd code\rmj
 pmake -e RELMODE=DEBUG clean
 mkdir Debug
-mdkir obj_disc1
+mkdir obj_disc1
 pmake -e RELMODE=DEBUG -e OUTFILE=main -e OPTIMIZE=2 -f disc1
 
 pmake -e RELMODE=DEBUG clean

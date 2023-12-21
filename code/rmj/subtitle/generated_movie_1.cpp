@@ -1,7 +1,7 @@
 #include "generated.h"
 
-//trans\movie_subs\disc1\EV1A_1M01 | -Oye, abre la puerta! -OYE!
-const u8 partdata_0[] = { 63, 14, 50, 30, 53, 76, 26, 27, 43, 30, 76, 37, 26, 76, 41, 46, 30, 43, 45, 26, 54, 76, 63, 14, 24, 4, 54 };
+//trans\movie_subs\disc1\EV1A_1M01 | -Oye, abrid la puerta! -OYE!
+const u8 partdata_0[] = { 63, 14, 50, 30, 53, 76, 26, 27, 43, 34, 29, 76, 37, 26, 76, 41, 46, 30, 43, 45, 26, 54, 76, 63, 14, 24, 4, 54 };
 
 //trans\movie_subs\disc1\EV1A_1M01 | -Ayuda, alguien!
 const u8 partdata_1[] = { 63, 0, 50, 46, 29, 26, 53, 76, 26, 37, 32, 46, 34, 30, 39, 54 };
@@ -25,7 +25,7 @@ const u8 partdata_6[] = { 0, 37, 32, 46, 34, 30, 39, 76, 39, 40, 44, 76, 30, 39,
 const u8 partdata_7[] = { 5, 16, 46, 58, 76, 41, 46, 30, 29, 40, 76, 33, 26, 28, 30, 43, 76, 41, 26, 43, 26, 76, 26, 50, 46, 29, 26, 43, 55 };
 
 MovieSubtitlePart sub0_parts[] = {
-	{(const char*)partdata_0, 27, 255, 200, 248, 368, 144, 368, 144},
+	{(const char*)partdata_0, 28, 255, 200, 248, 368, 144, 368, 144},
 	{(const char*)partdata_1, 16, 255, 248, 270, 416, 144, 416, 144},
 	{(const char*)partdata_2, 13, 255, 287, 298, 424, 144, 424, 144},
 	{(const char*)partdata_3, 15, 255, 343, 358, 416, 144, 416, 144},

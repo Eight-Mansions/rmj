@@ -278,14 +278,14 @@ const subtitle_part sub25_parts[] = {
 	{(const char*)partdata_49, 1, 46, 156, 432},
 };
 
-//disc2/XA1/EMO3_WTMV17.wav | -Eres lo peor!
-const u8 partdata_50[] = {64, 5, 44, 31, 45, 76, 38, 41, 76, 42, 31, 41, 44, 55};
+//disc2/XA1/EMO3_WTMV17.wav | -Esto es horrible!
+const u8 partdata_50[] = {64, 5, 45, 46, 41, 76, 31, 45, 76, 34, 41, 44, 44, 35, 28, 38, 31, 55};
 
 //disc2/XA1/EMO3_WTMV17.wav |  
 const u8 partdata_51[] = {76};
 
 const subtitle_part sub26_parts[] = {
-	{(const char*)partdata_50, 14, 1, 104, 432},
+	{(const char*)partdata_50, 18, 1, 88, 432},
 	{(const char*)partdata_51, 1, 58, 156, 432},
 };
 

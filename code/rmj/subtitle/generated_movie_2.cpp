@@ -66,8 +66,8 @@ MovieSubtitlePart sub1_parts[] = {
 	{(const char*)partdata_14, 11, 255, 197, 230, 432, 144, 432, 144},
 };
 
-//trans\movie_subs\disc2\EV3A_3M01 | Parece... FMuy viejo?
-const u8 partdata_15[] = { 15, 26, 43, 30, 28, 30, 52, 52, 52, 76, 5, 12, 46, 50, 76, 47, 34, 30, 35, 40, 55 };
+//trans\movie_subs\disc2\EV3A_3M01 | Parece... Fmuy antiguo?
+const u8 partdata_15[] = { 15, 26, 43, 30, 28, 30, 52, 52, 52, 76, 5, 38, 46, 50, 76, 26, 39, 45, 34, 32, 46, 40, 55 };
 
 //trans\movie_subs\disc2\EV3A_3M01 | F-Ahora que!?
 const u8 partdata_16[] = { 5, 63, 0, 33, 40, 43, 26, 76, 42, 46, 30, 54, 55 };
@@ -124,7 +124,7 @@ const u8 partdata_32[] = { 63, 3, 30, 76, 26, 28, 46, 30, 43, 29, 40, 54, 76, 1,
 const u8 partdata_33[] = { 46, 39, 26, 76, 44, 26, 37, 34, 29, 26, 52 };
 
 MovieSubtitlePart sub2_parts[] = {
-	{(const char*)partdata_15, 21, 255, 87, 120, 392, 144, 392, 144},
+	{(const char*)partdata_15, 23, 255, 87, 120, 384, 144, 384, 144},
 	{(const char*)partdata_16, 13, 255, 200, 216, 424, 144, 424, 144},
 	{(const char*)partdata_17, 28, 255, 216, 240, 368, 144, 368, 144},
 	{(const char*)partdata_18, 30, 255, 295, 314, 360, 144, 360, 144},
