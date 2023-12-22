@@ -1228,8 +1228,8 @@ const subtitle_part sub110_parts[] = {
 //disc1/XA2/WP11_WTPH01.wav | FHay otra salida? -Hay una salida\nde emergencia!
 const u8 partdata_223[] = {6, 8, 27, 51, 76, 41, 46, 44, 27, 76, 45, 27, 38, 35, 30, 27, 56, 76, 64, 8, 27, 51, 76, 47, 40, 27, 76, 45, 27, 38, 35, 30, 27, 127, 104, 30, 31, 76, 31, 39, 31, 44, 33, 31, 40, 29, 35, 27, 55};
 
-//disc1/XA2/WP11_WTPH01.wav | Pero, las contraventanas...
-const u8 partdata_224[] = {16, 31, 44, 41, 54, 76, 38, 27, 45, 76, 29, 41, 40, 46, 44, 27, 48, 31, 40, 46, 27, 40, 27, 45, 53, 53, 53};
+//disc1/XA2/WP11_WTPH01.wav | Pero, los cierres...
+const u8 partdata_224[] = {16, 31, 44, 41, 54, 76, 38, 41, 45, 76, 29, 35, 31, 44, 44, 31, 45, 53, 53, 53};
 
 //disc1/XA2/WP11_WTPH01.wav | -Busquemos alrededor!
 const u8 partdata_225[] = {64, 2, 47, 45, 43, 47, 31, 39, 41, 45, 76, 27, 38, 44, 31, 30, 31, 30, 41, 44, 55};
@@ -1239,7 +1239,7 @@ const u8 partdata_226[] = {76};
 
 const subtitle_part sub111_parts[] = {
 	{(const char*)partdata_223, 49, 1, 28, 432},
-	{(const char*)partdata_224, 27, 50, 52, 432},
+	{(const char*)partdata_224, 20, 50, 80, 432},
 	{(const char*)partdata_225, 21, 78, 76, 432},
 	{(const char*)partdata_226, 1, 42, 156, 432},
 };
@@ -1730,14 +1730,14 @@ const subtitle_part sub149_parts[] = {
 	{(const char*)partdata_319, 1, 43, 156, 432},
 };
 
-//disc1/XA2/WS11_WTAH07.wav | -Todas las contraventanas est(n\nselladas!
-const u8 partdata_320[] = {64, 20, 41, 30, 27, 45, 76, 38, 27, 45, 76, 29, 41, 40, 46, 44, 27, 48, 31, 40, 46, 27, 40, 27, 45, 76, 31, 45, 46, 58, 40, 127, 124, 45, 31, 38, 38, 27, 30, 27, 45, 55};
+//disc1/XA2/WS11_WTAH07.wav | -Todos los accesos est(n cerrados!
+const u8 partdata_320[] = {64, 20, 41, 30, 41, 45, 76, 38, 41, 45, 76, 27, 29, 29, 31, 45, 41, 45, 76, 31, 45, 46, 58, 40, 76, 29, 31, 44, 44, 27, 30, 41, 45, 55};
 
 //disc1/XA2/WS11_WTAH07.wav |  
 const u8 partdata_321[] = {76};
 
 const subtitle_part sub150_parts[] = {
-	{(const char*)partdata_320, 42, 1, 36, 432},
+	{(const char*)partdata_320, 34, 1, 24, 432},
 	{(const char*)partdata_321, 1, 86, 156, 432},
 };
 
@@ -1943,14 +1943,14 @@ const subtitle_part sub168_parts[] = {
 	{(const char*)partdata_358, 1, 54, 156, 432},
 };
 
-//disc1/XA2/WS13_WTAH26.wav | Hajime, the llave.
-const u8 partdata_359[] = {8, 27, 36, 35, 39, 31, 54, 76, 46, 34, 31, 76, 38, 38, 27, 48, 31, 53};
+//disc1/XA2/WS13_WTAH26.wav | Hajime, la llave.
+const u8 partdata_359[] = {8, 27, 36, 35, 39, 31, 54, 76, 38, 27, 76, 38, 38, 27, 48, 31, 53};
 
 //disc1/XA2/WS13_WTAH26.wav |  
 const u8 partdata_360[] = {76};
 
 const subtitle_part sub169_parts[] = {
-	{(const char*)partdata_359, 18, 1, 88, 432},
+	{(const char*)partdata_359, 17, 1, 92, 432},
 	{(const char*)partdata_360, 1, 45, 156, 432},
 };
 
@@ -2137,8 +2137,8 @@ const subtitle_part sub185_parts[] = {
 //disc1/XA2/WS14_WTPH01.wav | FHay otra salida? -Hay una salida\nde emergencia!
 const u8 partdata_394[] = {6, 8, 27, 51, 76, 41, 46, 44, 27, 76, 45, 27, 38, 35, 30, 27, 56, 76, 64, 8, 27, 51, 76, 47, 40, 27, 76, 45, 27, 38, 35, 30, 27, 127, 104, 30, 31, 76, 31, 39, 31, 44, 33, 31, 40, 29, 35, 27, 55};
 
-//disc1/XA2/WS14_WTPH01.wav | Pero, las contraventanas...
-const u8 partdata_395[] = {16, 31, 44, 41, 54, 76, 38, 27, 45, 76, 29, 41, 40, 46, 44, 27, 48, 31, 40, 46, 27, 40, 27, 45, 53, 53, 53};
+//disc1/XA2/WS14_WTPH01.wav | Pero, los cierres...
+const u8 partdata_395[] = {16, 31, 44, 41, 54, 76, 38, 41, 45, 76, 29, 35, 31, 44, 44, 31, 45, 53, 53, 53};
 
 //disc1/XA2/WS14_WTPH01.wav | -Busquemos alrededor!
 const u8 partdata_396[] = {64, 2, 47, 45, 43, 47, 31, 39, 41, 45, 76, 27, 38, 44, 31, 30, 31, 30, 41, 44, 55};
@@ -2148,7 +2148,7 @@ const u8 partdata_397[] = {76};
 
 const subtitle_part sub186_parts[] = {
 	{(const char*)partdata_394, 49, 1, 28, 432},
-	{(const char*)partdata_395, 27, 50, 52, 432},
+	{(const char*)partdata_395, 20, 50, 80, 432},
 	{(const char*)partdata_396, 21, 78, 76, 432},
 	{(const char*)partdata_397, 1, 42, 156, 432},
 };

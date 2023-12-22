@@ -1,0 +1,5 @@
+## Problemas de compatibilidad con el emulador Duckstation ##
+
+Los subtítulos de las películas no se muestran correctamente en Duckstation por defecto,
+pero esto se puede arreglar yendo a Ajustes -> Ajustes de la Consola, y luego configurando
+el Modo de Ejecución en Emulación de CPU a Intérprete o Intérprete en Caché.

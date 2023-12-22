@@ -1,72 +1,74 @@
-########################################################
-R?MJ - The Mystery Hospital English Patch (October 2022)
-########################################################
+##############################################################
+R?MJ - The Mystery Hospital Parche Español (diciembre de 2023)
+##############################################################
 
 ## Intro ##
-The events of R?MJ take place in the summer of 1999. Hajime and Tomowo rush to
-the S.T.G. Hospital after hearing their friend Ryo was in a suspicious
-motorcycle accident, but they're trapped in the hospital after an explosion
-seals their exit. Together with Aya, a nurse who looks after Ryo, Hajime and
-friends much find a way out while a deadly virus threatens to end their
-search for freedom. There's something else amiss about this hospital, however.
-Strange paintings depicting an ancient civilization decorate the hospital
-walls. Just what is the Asmos Legend?
+Los acontecimientos de R?MJ tienen lugar en el verano de 1999. Hajime y Tomowo acuden
+al Hospital S.T.G. tras enterarse de que su amigo Ryo ha sufrido un sospechoso
+accidente de moto, pero quedan atrapados en el hospital después de que una explosión
+cierre las salidas. Junto a Aya, una enfermera que cuida de Ryo, Hajime y sus
+amigos buscarán una salida mientras un virus mortal amenaza con acabar con su
+búsqueda de  libertad. Sin embargo, hay algo más raro en este hospital...
+Extrañas pinturas que representan una antigua civilización decoran las paredes
+del hospital. ¿Qué es la Leyenda de Asmos?
 
-R?MJ is an interactive horror game with full voice-acting and movement like
-Kenji Eno's D, where a video plays to show the player's selected movement.
-In addition to looking around for items and solving puzzles, the player must
-utilize the "5 senses button," which acts as an additional way to investigate.
-Other characters will prompt you for these moments, such as "what's that smell?"
+R?MJ es un juego de terror interactivo con voces y movimientos como los del juego D de Kenji Eno,
+en el que se reproduce un vídeo para mostrar el movimiento seleccionado.
+Además de buscar objetos y resolver puzles, el jugador debe utilizar el "botón de los 5 sentidos".
+El botón X actúa como una forma adicional de investigar. Otros personajes le dirán cosas en
+momentos específicos, como "¿qué es ese olor?".
 
-## **Emulator Compatability Issues!** ##
-Duckstation - The movie subtitles don't show properly in Duckstation by default,
-but this can be fixed by going to Settings -> Console Settings, then setting
-Execution Mode under CPU Emulation to either Interpreter or Cached Interpreter.
+## **Problemas de compatibilidad** ##
+Los subtítulos de las películas no se muestran correctamente en Duckstation por defecto,
+pero esto se puede arreglar yendo a Ajustes -> Ajustes de la Consola, y luego configurando
+el Modo de Ejecución bajo Emulación de CPU a Intérprete o Intérprete en Caché.
 
 ## Patch Instructions ##
-* The patcher expects the BIN version of both discs*
+* El parche necesita la versión BIN de ambos discos*
 
 ### Windows ###
-1. Select any number of .bin files you wish to patch.
-2. Drag and drop them on the file called "Drag and drop BIN(s) on me.bat"
-3. If a valid disc image is found, patched .bin/.cue files will be created
-   in this folder.
+1. Seleccione el número de archivos .bin que desee parchear.
+2. Arrástrelos y suéltelos en el archivo llamado "Drag and drop BIN(s) on me.bat"
+3. Si se encuentra una imagen de disco válida, se crearán archivos .bin/.cue parcheados
+   en esta carpeta.
 
-### Other OS ###
-This release uses a basic .xdelta patch, so any web-based patching tool or
-OS-specific .xdelta patcher should work okay. We've switched from xdelta3
-to xdelta to help with compatability. The .xdelta files are located in the
-"patch_data" folder. Apply the appropriate patch to each disc.
+### Otros sistemas operativos ###
+Esta versión utiliza un parche .xdelta básico, por lo que cualquier herramienta de parcheo basada en web o
+parcheador .xdelta específico de cualquier sistema operativo debería funcionar correctamente.
+Hemos cambiado de xdelta3 a xdelta para facilitar la compatibilidad. Los archivos .xdelta se encuentran
+en la carpeta "patch_data". Aplique el parche adecuado a cada disco.
 
-## Tips ##
-- The X button acts as a "5 senses" button. If a character says something
-  like "did you hear that?" or "what's that smell?" then press X to react
-  to it. Sometimes the prompt disappears if you're slow, so try spinning
-  around and trying again.
-- A spoiler-free walkthrough has been included to reference in case you get
-  lost. It's not as bad about "go to this specific spot" as ...iru! is,
-  but there's a few confusing points early on.
-- This game *only* supports autosaving! As long as you have a memory card in,
-  the game will save at key locations. Dying will take you back to the last
-  auto save.
-- There are a handful of pathogens in this game, both viruses and bacteria,
-  that cause different symptoms. Try and remember what symptoms go with
-  which infection!
-- NO FEAR!
+## Consejos ##
+- El botón X actúa como un botón de "5 sentidos". Si un personaje dice algo
+  como "¿has oído eso?" o "¿qué es ese olor?", pulsa X para reaccionar.
+  A veces el mensaje desaparece si eres lento, así que intenta girar
+  y vuelve a intentarlo.
+- Se ha incluido una guía sin spoilers por si te pierdes.
+  ¡No es tan malo en cuanto a "ve a este punto específico" como es ...iru!
+  pero hay algunos puntos confusos al principio.
+- ¡Este juego *sólo* admite autoguardado! Mientras tengas una tarjeta de memoria,
+  el juego se guardará en lugares clave. Si mueres, volverás al último
+  guardado automático.
+- Hay un puñado de patógenos en este juego, tanto virus como bacterias,
+  que causan diferentes síntomas. Intenta recordar qué síntomas causa
+  cada infección.
+- ¡SIN MIEDO!
 
-## Credits ##
+
+## Creditos ##
 EsperKnight - Hacking
-SnowyAria - Translation, image editing
-Cargodin - Image editing
-blametherobots - Image editing
+SnowyAria - Traducción, edición de imágenes
+Cargodin - Edición de imágenes
+blametherobots - Edición de imágenes
+Mr.Nobody - Traducción al español
 
 ## Special Thanks ##
-Kotcrab, for lending us the Fate subtitle timer!
+Kotcrab, por prestarnos el ¡Fate subtitle timer!
 Gwyndolin, blueskyrunner, TurnipTheBeet - Playtesting!
 
 ## Contact ##
-Have any issues or run into any problems? Feel free to drop by our discord here:
+¿Encontraste algún bug? No dudes en pasarte por nuestro discord:
 *  https://discord.gg/bewGNtm
 
-Alternatively, you can message SnowyAria/ArcaneAria on ROMhacking.net or on
-Twitter at @SnowyAria.
+También puedes enviar un mensaje a SnowyAria/ArcaneAria o a Mr.Nobody en ROMhacking.net o en
+Twitter/X a @SnowyAria o @mrnobodystudios 

@@ -1344,14 +1344,14 @@ const subtitle_part sub119_parts[] = {
 	{(const char*)partdata_245, 1, 145, 156, 432},
 };
 
-//disc2/XA2/WS21_WTAL213.wav | El virus m(s poderoso... F-La gripe\ndel 99!?
-const u8 partdata_246[] = {5, 38, 76, 48, 35, 44, 47, 45, 76, 39, 58, 45, 76, 42, 41, 30, 31, 44, 41, 45, 41, 53, 53, 53, 76, 6, 64, 12, 27, 76, 33, 44, 35, 42, 31, 127, 128, 30, 31, 38, 76, 74, 74, 55, 56};
+//disc2/XA2/WS21_WTAL213.wav | El virus m(s fuerte...F-Gripe del\n99!?
+const u8 partdata_246[] = {5, 38, 76, 48, 35, 44, 47, 45, 76, 39, 58, 45, 76, 32, 47, 31, 44, 46, 31, 53, 53, 53, 6, 64, 7, 44, 35, 42, 31, 76, 30, 31, 38, 127, 144, 74, 74, 55, 56};
 
 //disc2/XA2/WS21_WTAL213.wav |  
 const u8 partdata_247[] = {76};
 
 const subtitle_part sub120_parts[] = {
-	{(const char*)partdata_246, 45, 1, 20, 432},
+	{(const char*)partdata_246, 39, 1, 28, 432},
 	{(const char*)partdata_247, 1, 140, 156, 432},
 };
 

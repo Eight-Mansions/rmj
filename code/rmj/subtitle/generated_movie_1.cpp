@@ -42,11 +42,11 @@ MovieSubtitlePart sub1_parts[] = {
 	{(const char*)partdata_8, 31, 255, 35, 56, 352, 144, 352, 144},
 };
 
-//trans\movie_subs\disc1\EV1A_1M07 | Formemos grupos y revisemos la
-const u8 partdata_9[] = { 5, 40, 43, 38, 30, 38, 40, 44, 76, 32, 43, 46, 41, 40, 44, 76, 50, 76, 43, 30, 47, 34, 44, 30, 38, 40, 44, 76, 37, 26 };
+//trans\movie_subs\disc1\EV1A_1M07 | Divid(monos y revisemos la
+const u8 partdata_9[] = { 3, 34, 47, 34, 29, 57, 38, 40, 39, 40, 44, 76, 50, 76, 43, 30, 47, 34, 44, 30, 38, 40, 44, 76, 37, 26 };
 
-//trans\movie_subs\disc1\EV1A_1M07 | Sala de Seguridad y dem(s...
-const u8 partdata_10[] = { 18, 26, 37, 26, 76, 29, 30, 76, 18, 30, 32, 46, 43, 34, 29, 26, 29, 76, 50, 76, 29, 30, 38, 57, 44, 52, 52, 52 };
+//trans\movie_subs\disc1\EV1A_1M07 | sala de Seguridad y dem(s...
+const u8 partdata_10[] = { 44, 26, 37, 26, 76, 29, 30, 76, 18, 30, 32, 46, 43, 34, 29, 26, 29, 76, 50, 76, 29, 30, 38, 57, 44, 52, 52, 52 };
 
 //trans\movie_subs\disc1\EV1A_1M07 | Me parece bien.
 const u8 partdata_11[] = { 12, 30, 76, 41, 26, 43, 30, 28, 30, 76, 27, 34, 30, 39, 52 };
@@ -61,7 +61,7 @@ const u8 partdata_13[] = { 14, 40, 40, 33, 53, 76, 5, 47, 26, 44, 76, 26, 76, 37
 const u8 partdata_14[] = { 63, 19, 30, 76, 30, 39, 28, 26, 39, 45, 26, 76, 33, 26, 28, 30, 43, 76, 30, 44, 40, 53, 76, 30, 33, 54 };
 
 MovieSubtitlePart sub2_parts[] = {
-	{(const char*)partdata_9, 30, 255, 13, 60, 360, 144, 360, 144},
+	{(const char*)partdata_9, 26, 255, 13, 60, 376, 144, 376, 144},
 	{(const char*)partdata_10, 28, 255, 13, 60, 368, 160, 368, 160},
 	{(const char*)partdata_11, 15, 255, 60, 98, 416, 144, 416, 144},
 	{(const char*)partdata_12, 19, 255, 60, 98, 400, 160, 400, 160},
@@ -100,14 +100,14 @@ const u8 partdata_20[] = { 4, 37, 37, 26, 76, 45, 26, 38, 41, 40, 28, 40, 76, 41
 //trans\movie_subs\disc1\EV1A_1M14 | entonces...
 const u8 partdata_21[] = { 30, 39, 45, 40, 39, 28, 30, 44, 52, 52, 52 };
 
-//trans\movie_subs\disc1\EV1A_1M14 | F-Esos tres est(n bien!?
-const u8 partdata_22[] = { 5, 63, 4, 44, 40, 44, 76, 45, 43, 30, 44, 76, 30, 44, 45, 57, 39, 76, 27, 34, 30, 39, 54, 55 };
+//trans\movie_subs\disc1\EV1A_1M14 | F-Estar(n bien!?
+const u8 partdata_22[] = { 5, 63, 4, 44, 45, 26, 43, 57, 39, 76, 27, 34, 30, 39, 54, 55 };
 
 MovieSubtitlePart sub5_parts[] = {
 	{(const char*)partdata_19, 25, 255, 44, 94, 376, 144, 376, 144},
 	{(const char*)partdata_20, 25, 255, 129, 160, 376, 144, 376, 144},
 	{(const char*)partdata_21, 11, 255, 129, 160, 432, 160, 432, 160},
-	{(const char*)partdata_22, 24, 255, 211, 234, 384, 144, 384, 144},
+	{(const char*)partdata_22, 16, 255, 211, 234, 416, 144, 416, 144},
 };
 
 //trans\movie_subs\disc1\EV1A_1M17 | Oye, parece que est(s de
@@ -122,15 +122,15 @@ const u8 partdata_25[] = { 21, 26, 44, 76, 26, 76, 33, 26, 28, 30, 43, 76, 26, 3
 //trans\movie_subs\disc1\EV1A_1M17 | Fno?
 const u8 partdata_26[] = { 5, 39, 40, 55 };
 
-//trans\movie_subs\disc1\EV1A_1M17 | Ella es una...
-const u8 partdata_27[] = { 4, 37, 37, 26, 76, 30, 44, 76, 46, 39, 26, 52, 52, 52 };
+//trans\movie_subs\disc1\EV1A_1M17 | Ella es un poco...
+const u8 partdata_27[] = { 4, 37, 37, 26, 76, 30, 44, 76, 46, 39, 76, 41, 40, 28, 40, 52, 52, 52 };
 
 MovieSubtitlePart sub6_parts[] = {
 	{(const char*)partdata_23, 24, 255, 9, 46, 384, 144, 384, 144},
 	{(const char*)partdata_24, 15, 255, 9, 46, 416, 160, 416, 160},
 	{(const char*)partdata_25, 29, 255, 52, 79, 360, 144, 360, 144},
 	{(const char*)partdata_26, 4, 255, 52, 79, 464, 160, 464, 160},
-	{(const char*)partdata_27, 14, 255, 85, 104, 424, 144, 424, 144},
+	{(const char*)partdata_27, 18, 255, 85, 104, 408, 144, 408, 144},
 };
 
 //trans\movie_subs\disc1\EV1A_1M23 | FY si vuelve a explotar...?
@@ -216,11 +216,11 @@ const u8 partdata_43[] = { 5, 63, 0, 76, 42, 46, 34, 58, 39, 76, 37, 30, 76, 34,
 //trans\movie_subs\disc1\EV1A_1M30 | hab)is manejado esto ya!?
 const u8 partdata_44[] = { 33, 26, 27, 58, 34, 44, 76, 38, 26, 39, 30, 35, 26, 29, 40, 76, 30, 44, 45, 40, 76, 50, 26, 54, 55 };
 
-//trans\movie_subs\disc1\EV1A_1M30 | Tiene una lengua muy afilada
-const u8 partdata_45[] = { 19, 34, 30, 39, 30, 76, 46, 39, 26, 76, 37, 30, 39, 32, 46, 26, 76, 38, 46, 50, 76, 26, 31, 34, 37, 26, 29, 26 };
+//trans\movie_subs\disc1\EV1A_1M30 | Tienes una lengua muy afilada
+const u8 partdata_45[] = { 19, 34, 30, 39, 30, 44, 76, 46, 39, 26, 76, 37, 30, 39, 32, 46, 26, 76, 38, 46, 50, 76, 26, 31, 34, 37, 26, 29, 26 };
 
-//trans\movie_subs\disc1\EV1A_1M30 | para una cara tan linda...
-const u8 partdata_46[] = { 41, 26, 43, 26, 76, 46, 39, 26, 76, 28, 26, 43, 26, 76, 45, 26, 39, 76, 37, 34, 39, 29, 26, 52, 52, 52 };
+//trans\movie_subs\disc1\EV1A_1M30 | para ser tan linda...
+const u8 partdata_46[] = { 41, 26, 43, 26, 76, 44, 30, 43, 76, 45, 26, 39, 76, 37, 34, 39, 29, 26, 52, 52, 52 };
 
 //trans\movie_subs\disc1\EV1A_1M30 | Tu poquita estatura es
 const u8 partdata_47[] = { 19, 46, 76, 41, 40, 42, 46, 34, 45, 26, 76, 30, 44, 45, 26, 45, 46, 43, 26, 76, 30, 44 };
@@ -241,8 +241,8 @@ MovieSubtitlePart sub13_parts[] = {
 	{(const char*)partdata_42, 25, 255, 0, 30, 376, 144, 376, 144},
 	{(const char*)partdata_43, 29, 255, 30, 86, 360, 144, 360, 144},
 	{(const char*)partdata_44, 25, 255, 30, 86, 376, 160, 376, 160},
-	{(const char*)partdata_45, 28, 255, 91, 126, 368, 144, 368, 144},
-	{(const char*)partdata_46, 26, 255, 91, 126, 376, 160, 376, 160},
+	{(const char*)partdata_45, 29, 255, 91, 126, 360, 144, 360, 144},
+	{(const char*)partdata_46, 21, 255, 91, 126, 392, 160, 392, 160},
 	{(const char*)partdata_47, 22, 255, 130, 164, 392, 144, 392, 144},
 	{(const char*)partdata_48, 19, 255, 130, 164, 400, 160, 400, 160},
 	{(const char*)partdata_49, 28, 255, 164, 206, 368, 144, 368, 144},
@@ -284,8 +284,8 @@ MovieSubtitlePart sub14_parts[] = {
 //trans\movie_subs\disc1\EV1A_1M32 | Vaya, las lineas no funcionan...
 const u8 partdata_59[] = { 21, 26, 50, 26, 53, 76, 37, 26, 44, 76, 37, 34, 39, 30, 26, 44, 76, 39, 40, 76, 31, 46, 39, 28, 34, 40, 39, 26, 39, 52, 52, 52 };
 
-//trans\movie_subs\disc1\EV1A_1M32 | Las encontramos nosotros.
-const u8 partdata_60[] = { 11, 26, 44, 76, 30, 39, 28, 40, 39, 45, 43, 26, 38, 40, 44, 76, 39, 40, 44, 40, 45, 43, 40, 44, 52 };
+//trans\movie_subs\disc1\EV1A_1M32 | Encontramos esto.
+const u8 partdata_60[] = { 4, 39, 28, 40, 39, 45, 43, 26, 38, 40, 44, 76, 30, 44, 45, 40, 52 };
 
 //trans\movie_subs\disc1\EV1A_1M32 | -Oye, revisemos el sistema
 const u8 partdata_61[] = { 63, 14, 50, 30, 53, 76, 43, 30, 47, 34, 44, 30, 38, 40, 44, 76, 30, 37, 76, 44, 34, 44, 45, 30, 38, 26 };
@@ -295,7 +295,7 @@ const u8 partdata_62[] = { 29, 30, 76, 28, 40, 38, 46, 39, 34, 28, 26, 28, 34, 6
 
 MovieSubtitlePart sub15_parts[] = {
 	{(const char*)partdata_59, 32, 255, 33, 75, 352, 144, 352, 144},
-	{(const char*)partdata_60, 25, 255, 87, 110, 376, 144, 376, 144},
+	{(const char*)partdata_60, 17, 255, 87, 110, 408, 144, 408, 144},
 	{(const char*)partdata_61, 26, 255, 110, 153, 376, 144, 376, 144},
 	{(const char*)partdata_62, 27, 255, 110, 153, 368, 160, 368, 160},
 };

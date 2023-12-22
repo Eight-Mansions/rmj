@@ -9,8 +9,8 @@ const u8 partdata_1[] = { 19, 43, 26, 29, 46, 28, 28, 34, 61, 39, 76, 41, 40, 43
 //trans\movie_subs\disc2\ENDA_EM01 | Eight Mansions Translations
 const u8 partdata_2[] = { 4, 34, 32, 33, 45, 76, 12, 26, 39, 44, 34, 40, 39, 44, 76, 19, 43, 26, 39, 44, 37, 26, 45, 34, 40, 39, 44 };
 
-//trans\movie_subs\disc2\ENDA_EM01 | Translation: SnowyAria, Mr.Nobody
-const u8 partdata_3[] = { 19, 43, 26, 39, 44, 37, 26, 45, 34, 40, 39, 59, 76, 18, 39, 40, 48, 50, 0, 43, 34, 26, 53, 76, 12, 43, 52, 13, 40, 27, 40, 29, 50 };
+//trans\movie_subs\disc2\ENDA_EM01 | Traducci~n: SnowyAria, Mr.Nobody
+const u8 partdata_3[] = { 19, 43, 26, 29, 46, 28, 28, 34, 61, 39, 59, 76, 18, 39, 40, 48, 50, 0, 43, 34, 26, 53, 76, 12, 43, 52, 13, 40, 27, 40, 29, 50 };
 
 //trans\movie_subs\disc2\ENDA_EM01 | Hacking: EsperKnight
 const u8 partdata_4[] = { 7, 26, 28, 36, 34, 39, 32, 59, 76, 4, 44, 41, 30, 43, 10, 39, 34, 32, 33, 45 };
@@ -21,18 +21,18 @@ const u8 partdata_5[] = { 6, 43, 57, 31, 34, 28, 40, 44, 59, 76, 18, 39, 40, 48,
 //trans\movie_subs\disc2\ENDA_EM01 | Cargodin, blametherobots
 const u8 partdata_6[] = { 2, 26, 43, 32, 40, 29, 34, 39, 53, 76, 27, 37, 26, 38, 30, 45, 33, 30, 43, 40, 27, 40, 45, 44 };
 
-//trans\movie_subs\disc2\ENDA_EM01 | NO FEAR
-const u8 partdata_7[] = { 13, 14, 76, 5, 4, 0, 17 };
+//trans\movie_subs\disc2\ENDA_EM01 | SIN MIEDO
+const u8 partdata_7[] = { 18, 8, 13, 76, 12, 8, 4, 3, 14 };
 
 MovieSubtitlePart sub0_parts[] = {
 	{(const char*)partdata_0, 16, 255, 322, 340, 416, 144, 416, 144},
 	{(const char*)partdata_1, 15, 255, 2861, 2922, 416, 144, 416, 144},
 	{(const char*)partdata_2, 27, 255, 2861, 2922, 368, 160, 368, 160},
-	{(const char*)partdata_3, 33, 255, 2922, 2983, 344, 144, 344, 144},
+	{(const char*)partdata_3, 32, 255, 2922, 2983, 352, 144, 352, 144},
 	{(const char*)partdata_4, 20, 255, 2922, 2983, 400, 160, 400, 160},
 	{(const char*)partdata_5, 31, 255, 2983, 3044, 352, 144, 352, 144},
 	{(const char*)partdata_6, 24, 255, 2983, 3044, 384, 160, 384, 160},
-	{(const char*)partdata_7, 7, 255, 3044, 3100, 448, 144, 448, 144},
+	{(const char*)partdata_7, 9, 255, 3044, 3100, 440, 144, 440, 144},
 };
 
 //trans\movie_subs\disc2\ENDA_EM02 | -Que vista tan hermosa!
@@ -781,11 +781,11 @@ MovieSubtitlePart sub14_parts[] = {
 	{(const char*)partdata_183, 11, 255, 235, 258, 432, 144, 432, 144},
 };
 
-//trans\movie_subs\disc2\EV4A_4M12 | -Vamos a moverlo!
-const u8 partdata_184[] = { 63, 21, 26, 38, 40, 44, 76, 26, 76, 38, 40, 47, 30, 43, 37, 40, 54 };
+//trans\movie_subs\disc2\EV4A_4M12 | -Sigamos!
+const u8 partdata_184[] = { 63, 18, 34, 32, 26, 38, 40, 44, 54 };
 
-//trans\movie_subs\disc2\EV4A_4M12 | FC~mo algo como esto ha...?
-const u8 partdata_185[] = { 5, 2, 61, 38, 40, 76, 26, 37, 32, 40, 76, 28, 40, 38, 40, 76, 30, 44, 45, 40, 76, 33, 26, 52, 52, 52, 55 };
+//trans\movie_subs\disc2\EV4A_4M12 | FC~mo ha pasado esto...?
+const u8 partdata_185[] = { 5, 2, 61, 38, 40, 76, 33, 26, 76, 41, 26, 44, 26, 29, 40, 76, 30, 44, 45, 40, 52, 52, 52, 55 };
 
 //trans\movie_subs\disc2\EV4A_4M12 | -Est( temblando!
 const u8 partdata_186[] = { 63, 4, 44, 45, 57, 76, 45, 30, 38, 27, 37, 26, 39, 29, 40, 54 };
@@ -797,30 +797,30 @@ const u8 partdata_187[] = { 63, 21, 34, 30, 39, 30, 76, 46, 39, 76, 45, 43, 30, 
 const u8 partdata_188[] = { 63, 12, 34, 30, 43, 29, 26, 53, 76, 29, 30, 27, 30, 38, 40, 44, 76, 30, 44, 28, 40, 39, 29, 30, 43, 39, 40, 44, 54 };
 
 MovieSubtitlePart sub15_parts[] = {
-	{(const char*)partdata_184, 17, 255, 47, 64, 408, 144, 408, 144},
-	{(const char*)partdata_185, 27, 255, 113, 140, 368, 144, 368, 144},
+	{(const char*)partdata_184, 9, 255, 47, 64, 440, 144, 440, 144},
+	{(const char*)partdata_185, 24, 255, 113, 140, 384, 144, 384, 144},
 	{(const char*)partdata_186, 16, 255, 147, 170, 416, 144, 416, 144},
 	{(const char*)partdata_187, 15, 255, 247, 264, 416, 144, 416, 144},
 	{(const char*)partdata_188, 29, 255, 277, 310, 360, 144, 360, 144},
 };
 
-//trans\movie_subs\disc2\EV4A_4M13 | Explorar) el tren. -Cuida a los
-const u8 partdata_189[] = { 4, 49, 41, 37, 40, 43, 26, 43, 58, 76, 30, 37, 76, 45, 43, 30, 39, 52, 76, 63, 2, 46, 34, 29, 26, 76, 26, 76, 37, 40, 44 };
+//trans\movie_subs\disc2\EV4A_4M13 | Explorar) el tren. -Cuida del
+const u8 partdata_189[] = { 4, 49, 41, 37, 40, 43, 26, 43, 58, 76, 30, 37, 76, 45, 43, 30, 39, 52, 76, 63, 2, 46, 34, 29, 26, 76, 29, 30, 37 };
 
-//trans\movie_subs\disc2\EV4A_4M13 | dem(s por m;!
-const u8 partdata_190[] = { 29, 30, 38, 57, 44, 76, 41, 40, 43, 76, 38, 60, 54 };
+//trans\movie_subs\disc2\EV4A_4M13 | resto por m;!
+const u8 partdata_190[] = { 43, 30, 44, 45, 40, 76, 41, 40, 43, 76, 38, 60, 54 };
 
 //trans\movie_subs\disc2\EV4A_4M13 | -Oh, mierda!
 const u8 partdata_191[] = { 63, 14, 33, 53, 76, 38, 34, 30, 43, 29, 26, 54 };
 
-//trans\movie_subs\disc2\EV4A_4M13 | -Ve a ayudar a los dem(s! -Vete!
-const u8 partdata_192[] = { 63, 21, 30, 76, 26, 76, 26, 50, 46, 29, 26, 43, 76, 26, 76, 37, 40, 44, 76, 29, 30, 38, 57, 44, 54, 76, 63, 21, 30, 45, 30, 54 };
+//trans\movie_subs\disc2\EV4A_4M13 | -Ir a ayudar a los dem(s! -Iros!
+const u8 partdata_192[] = { 63, 8, 43, 76, 26, 76, 26, 50, 46, 29, 26, 43, 76, 26, 76, 37, 40, 44, 76, 29, 30, 38, 57, 44, 54, 76, 63, 8, 43, 40, 44, 54 };
 
 //trans\movie_subs\disc2\EV4A_4M13 | -Hajime, vamos!
 const u8 partdata_193[] = { 63, 7, 26, 35, 34, 38, 30, 53, 76, 47, 26, 38, 40, 44, 54 };
 
 MovieSubtitlePart sub16_parts[] = {
-	{(const char*)partdata_189, 31, 255, 30, 75, 352, 144, 352, 144},
+	{(const char*)partdata_189, 29, 255, 30, 75, 360, 144, 360, 144},
 	{(const char*)partdata_190, 13, 255, 30, 75, 424, 160, 424, 160},
 	{(const char*)partdata_191, 12, 255, 239, 258, 432, 144, 432, 144},
 	{(const char*)partdata_192, 32, 255, 263, 289, 352, 144, 352, 144},
@@ -874,24 +874,24 @@ const u8 partdata_203[] = { 63, 19, 14, 12, 14, 22, 14, 54 };
 //trans\movie_subs\disc2\EV4A_4M18 | -Vamos!
 const u8 partdata_204[] = { 63, 21, 26, 38, 40, 44, 54 };
 
-//trans\movie_subs\disc2\EV4A_4M18 | -Sube al puto tren ahora!
-const u8 partdata_205[] = { 63, 18, 46, 27, 30, 76, 26, 37, 76, 41, 46, 45, 40, 76, 45, 43, 30, 39, 76, 26, 33, 40, 43, 26, 54 };
+//trans\movie_subs\disc2\EV4A_4M18 | -Subid al puto tren ya!
+const u8 partdata_205[] = { 63, 18, 46, 27, 34, 29, 76, 26, 37, 76, 41, 46, 45, 40, 76, 45, 43, 30, 39, 76, 50, 26, 54 };
 
 MovieSubtitlePart sub19_parts[] = {
 	{(const char*)partdata_202, 5, 255, 27, 38, 456, 144, 456, 144},
 	{(const char*)partdata_203, 8, 255, 206, 270, 448, 144, 448, 144},
 	{(const char*)partdata_204, 7, 255, 288, 302, 448, 144, 448, 144},
-	{(const char*)partdata_205, 25, 255, 554, 590, 376, 144, 376, 144},
+	{(const char*)partdata_205, 23, 255, 554, 590, 384, 144, 384, 144},
 };
 
-//trans\movie_subs\disc2\EV4A_4M20 | FC~mo pudo Tomowo...?
-const u8 partdata_206[] = { 5, 2, 61, 38, 40, 76, 41, 46, 29, 40, 76, 19, 40, 38, 40, 48, 40, 52, 52, 52, 55 };
+//trans\movie_subs\disc2\EV4A_4M20 | FTomowo ha...?
+const u8 partdata_206[] = { 5, 19, 40, 38, 40, 48, 40, 76, 33, 26, 52, 52, 52, 55 };
 
 //trans\movie_subs\disc2\EV4A_4M20 | Tomowo...
 const u8 partdata_207[] = { 19, 40, 38, 40, 48, 40, 52, 52, 52 };
 
 MovieSubtitlePart sub20_parts[] = {
-	{(const char*)partdata_206, 21, 255, 31, 66, 392, 144, 392, 144},
+	{(const char*)partdata_206, 14, 255, 31, 66, 424, 144, 424, 144},
 	{(const char*)partdata_207, 9, 255, 215, 248, 440, 144, 440, 144},
 };
 
